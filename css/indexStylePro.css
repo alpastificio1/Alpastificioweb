@@ -1,0 +1,450 @@
+/* =========================
+   RESET GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    background:#F8F3EA;
+    color:#2F2A24;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+section{
+    padding:80px 5%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:#F8F3EA;
+
+    border-bottom:2px solid #E5DCCB;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.logo-link{
+    display:flex;
+    align-items:center;
+}
+
+.logo-img{
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    background:#EDE4D3;
+    object-fit:contain;
+}
+
+/* =========================
+   MENÚ HAMBURGUESA
+========================= */
+
+.hamburger{
+    background:none;
+    border:none;
+    cursor:pointer;
+
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.hamburger-line{
+    width:30px;
+    height:3px;
+    background:#5E7A47;
+    border-radius:10px;
+}
+
+.menu-navegacion{
+    position:fixed;
+
+    top:0;
+    left:-100%;
+
+    width:280px;
+    height:100vh;
+
+    background:#F8F3EA;
+
+    padding-top:100px;
+
+    transition:.4s ease;
+
+    box-shadow:3px 0 20px rgba(0,0,0,.15);
+}
+
+.menu-navegacion.active{
+    left:0;
+}
+
+.menu-navegacion ul{
+    list-style:none;
+}
+
+.menu-navegacion li{
+    padding:18px 30px;
+    border-bottom:1px solid #E5DCCB;
+}
+
+.menu-navegacion a{
+    color:#2F2A24;
+    font-weight:600;
+}
+
+.menu-navegacion a:hover{
+    color:#7A1F27;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:85vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #7A1F27,
+        #5E7A47
+    );
+}
+
+.hero-overlay{
+    color:white;
+    max-width:800px;
+    padding:30px;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:5rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:30px;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.btn-principal{
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    background:white;
+    color:#7A1F27;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.btn-principal:hover{
+    background:#C4A46B;
+    color:white;
+}
+
+/* =========================
+   TITULOS
+========================= */
+
+.categoria-titulo,
+.menu-section h2,
+.reserva h2,
+.nosotros h2,
+.contacto h2{
+    text-align:center;
+
+    margin-bottom:40px;
+
+    color:#7A1F27;
+
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+}
+
+/* =========================
+   CATEGORÍAS
+========================= */
+
+.categorias{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.categoria-card{
+    height:220px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.categoria-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.categoria-card h3{
+    color:white;
+
+    font-size:1.8rem;
+
+    font-family:'Playfair Display',serif;
+}
+
+/* =========================
+   COLORES CATEGORÍAS
+========================= */
+
+.pastas{
+    background:#5E7A47;
+}
+
+.pizzas{
+    background:#7A1F27;
+}
+
+.sanduches{
+    background:#8B6B43;
+}
+
+.ensaladas{
+    background:#6F8F4E;
+}
+
+.sopas{
+    background:#A65E2E;
+}
+
+.postres{
+    background:#B8865B;
+}
+
+.bebidas{
+    background:#4A6A8A;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.menu-section{
+    max-width:1000px;
+    margin:auto;
+}
+
+.plato{
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    border-left:6px solid #C4A46B;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.plato h3{
+    color:#5E7A47;
+    margin-bottom:10px;
+}
+
+.plato p{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.plato span{
+    color:#7A1F27;
+
+    font-weight:bold;
+
+    font-size:1.1rem;
+}
+
+/* =========================
+   RESERVAS
+========================= */
+
+.reserva{
+    text-align:center;
+    background:#EDE4D3;
+}
+
+.reserva p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+/* =========================
+   NOSOTROS
+========================= */
+
+.nosotros{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto{
+    text-align:center;
+    background:#F2ECE0;
+}
+
+.contacto p{
+    margin-bottom:10px;
+}
+
+/* =========================
+   BOTÓN FLOTANTE
+========================= */
+
+.contacto-boton{
+    position:fixed;
+
+    right:20px;
+    bottom:20px;
+
+    width:65px;
+    height:65px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    z-index:999;
+}
+
+.contacto-boton:hover{
+    transform:scale(1.1);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#3E5330;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+footer h3{
+    color:#C4A46B;
+
+    margin-bottom:10px;
+
+    font-family:'Playfair Display',serif;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .categoria-card{
+        height:180px;
+    }
+
+    .categoria-card h3{
+        font-size:1.4rem;
+    }
+
+    .menu-section h2{
+        font-size:2rem;
+    }
+
+    .logo-img{
+        width:60px;
+        height:60px;
+    }
+}
