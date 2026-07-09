@@ -1,0 +1,327 @@
+/* ======================================
+   AL PASTIFICIO - MENU
+====================================== */
+
+:root{
+
+    --verde:#4A5A37;
+    --verde-hover:#5D6D45;
+
+    --madera:#3B2A20;
+
+    --ocre:#B78A52;
+
+    --papel:#F8F3E8;
+
+    --texto:#35291F;
+
+}
+
+/* ===========================
+RESET
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Open Sans',sans-serif;
+
+    background:#ece7dc;
+
+    color:var(--texto);
+
+}
+
+/* ===========================
+CONTENEDOR
+=========================== */
+
+.menu-container{
+
+    width:100%;
+    max-width:460px;
+
+    margin:auto;
+
+    padding:18px;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+.header{
+
+    background:var(--madera);
+
+    border-radius:24px;
+
+    padding:35px 25px;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+/* ===========================
+LOGO
+=========================== */
+
+.logo{
+
+    width:170px;
+
+    display:block;
+
+    margin:0 auto 20px auto;
+
+}
+
+/* ===========================
+TITULO
+=========================== */
+
+.header h1{
+
+    font-family:'Playfair Display',serif;
+
+    color:#FFF7EB;
+
+    font-size:2.3rem;
+
+    margin-bottom:15px;
+
+}
+
+.header p{
+
+    color:#D7C7A8;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+}
+
+/* ===========================
+BOTON IDIOMA
+=========================== */
+
+.language{
+
+    display:inline-block;
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    background:var(--verde);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.language:hover{
+
+    background:var(--verde-hover);
+
+}
+
+/* ===========================
+CATEGORIAS
+=========================== */
+
+.categories{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+/* ===========================
+CARD
+=========================== */
+
+.card{
+
+    display:block;
+
+    width:100%;
+
+    background:var(--papel);
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    border:1px solid rgba(183,138,82,.25);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+IMAGEN
+=========================== */
+
+.card img{
+
+    display:block;
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    object-fit:cover;
+
+    object-position:center;
+
+}
+
+/* ===========================
+INFO
+=========================== */
+
+.card-info{
+
+    padding:22px;
+
+    text-align:center;
+
+}
+
+.card-info h2{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2rem;
+
+    color:var(--verde);
+
+    margin-bottom:10px;
+
+    letter-spacing:1px;
+
+}
+
+.card-info p{
+
+    color:#6E6255;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+.footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#7A6B5E;
+
+    font-size:14px;
+
+}
+
+.footer-logo{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+/* ===========================
+CELULARES PEQUEÑOS
+=========================== */
+
+@media (max-width:480px){
+
+    .menu-container{
+
+        padding:14px;
+
+    }
+
+    .header{
+
+        padding:28px 18px;
+
+    }
+
+    .logo{
+
+        width:140px;
+
+    }
+
+    .header h1{
+
+        font-size:1.9rem;
+
+    }
+
+    .card-info{
+
+        padding:18px;
+
+    }
+
+    .card-info h2{
+
+        font-size:1.7rem;
+
+    }
+
+}
