@@ -1,0 +1,896 @@
+/* =====================================
+   AL PASTIFICIO
+   HOME
+===================================== */
+
+
+/* =====================================
+   COLORES
+===================================== */
+
+:root{
+
+    --azul:#183640;
+
+    --azul-oscuro:#102A33;
+
+    --verde-olivo:#4A5A37;
+
+    --verde-hover:#5D6D45;
+
+    --crema:#F8F5EF;
+
+    --papel:#F8F3E8;
+
+    --madera:#3B2A20;
+
+    --dorado:#B78A52;
+
+    --blanco:#FFFFFF;
+
+    --texto:#35291F;
+
+
+    /* RECTÁNGULO SUPERIOR */
+
+    --rectangulosuperior:#102A33;
+
+
+    /* RECTÁNGULO INFERIOR */
+
+    --rectangulo-inferior:#102A33;
+
+}
+
+
+/* =====================================
+   RESET
+===================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html,
+body{
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+body{
+
+    font-family:'Open Sans',sans-serif;
+
+    overflow:hidden;
+
+    background:var(--azul);
+
+}
+
+
+/* =====================================
+   CONTENEDOR PRINCIPAL
+===================================== */
+
+.home{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    height:100svh;
+
+    overflow:hidden;
+
+}
+
+
+/* =====================================
+   CAPA 1
+   IMAGEN DE FONDO
+===================================== */
+
+.fondo{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:80%;
+
+    background-image:
+
+        linear-gradient(
+
+            rgba(10,30,38,.45),
+
+            rgba(10,30,38,.45)
+
+        ),
+
+        url("media/pasta-fondo.jpeg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    z-index:1;
+
+}
+
+
+/* =====================================
+   CAPA 2
+   RECTÁNGULO SUPERIOR
+===================================== */
+
+.rectangulo-superior{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:135px;
+
+    background:var(--rectangulosuperior);
+
+    z-index:2;
+
+}
+
+
+/* =====================================
+   CAPA 2
+   RECTÁNGULO INFERIOR
+===================================== */
+
+.rectangulo-inferior{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:510px;
+
+    background:var(--rectangulo-inferior);
+
+    z-index:2;
+
+}
+
+
+/* =====================================
+   CAPA 3
+   BOTONES DE IDIOMA
+===================================== */
+
+.idiomas{
+
+    position:absolute;
+
+    z-index:5;
+
+    top:250px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+/* =====================================
+   BOTONES
+===================================== */
+
+.btn{
+
+    width:calc(100% - 40px);
+
+    max-width:330px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--verde-olivo);
+
+    color:var(--blanco);
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    border:1px solid rgba(183,138,82,.45);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:.2px;
+
+    box-shadow:
+
+        0 4px 12px
+
+        rgba(0,0,0,.30);
+
+    transition:.25s ease;
+
+}
+
+
+.btn:hover{
+
+    background:var(--verde-hover);
+
+    border-color:var(--dorado);
+
+    transform:translateY(-2px);
+
+}
+
+
+.btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* =====================================
+   CAPA 4
+   LOGO + TEXTOS + DECORACIÓN
+===================================== */
+
+.contenido{
+
+    position:absolute;
+
+    z-index:6;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo{
+
+    position:absolute;
+
+    top:5px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:200px;
+
+    height:auto;
+
+    max-width:90%;
+
+    object-fit:contain;
+
+}
+
+
+/* =====================================
+   BIENVENIDO
+===================================== */
+
+h1{
+
+    position:absolute;
+
+    top:180px;
+
+    left:0;
+
+    width:100%;
+
+    text-align:center;
+
+    font-family:'Playfair Display',serif;
+
+    color:var(--crema);
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+    text-shadow:
+
+        0 3px 10px
+
+        rgba(0,0,0,.65);
+
+}
+
+
+/* =====================================
+   DECORACIÓN DORADA
+===================================== */
+
+.decoracion{
+
+    position:absolute;
+
+    top:295px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:9px;
+
+}
+
+
+.decoracion::before,
+.decoracion::after{
+
+    content:"";
+
+    display:block;
+
+    width:38px;
+
+    height:1px;
+
+    background:var(--dorado);
+
+}
+
+
+.decoracion span{
+
+    width:6px;
+
+    height:6px;
+
+    background:var(--dorado);
+
+    transform:rotate(45deg);
+
+}
+
+
+/* =====================================
+   TEXTO INFERIOR
+===================================== */
+
+.detalle{
+
+    position:absolute;
+
+    z-index:6;
+
+    top:460px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    color:var(--crema);
+
+    font-size:10px;
+
+    letter-spacing:1.8px;
+
+    text-transform:uppercase;
+
+    text-shadow:
+
+        0 2px 6px
+
+        rgba(0,0,0,.65);
+
+}
+
+
+/* =====================================
+   LÍNEA DORADA
+===================================== */
+
+.detalle::before{
+
+    content:"";
+
+    width:32px;
+
+    height:1px;
+
+    background:var(--dorado);
+
+    margin-bottom:7px;
+
+}
+
+
+/* =====================================
+   CAPA 7
+   REDES SOCIALES
+===================================== */
+
+.redes{
+
+    position:absolute;
+
+    z-index:7;
+
+    top:570px;
+
+    left:0;
+
+    width:100%;
+
+    padding:0 20px;
+
+}
+
+
+/* =====================================
+   TÍTULO REDES
+===================================== */
+
+.titulo-redes{
+
+    font-family:'Playfair Display',serif;
+
+    color:var(--crema);
+
+    text-align:center;
+
+    font-size:1.25rem;
+
+    margin-bottom:12px;
+
+    text-shadow:
+
+        0 2px 7px
+
+        rgba(0,0,0,.5);
+
+}
+
+
+/* =====================================
+   GRID 2 x 2
+===================================== */
+
+.redes-grid{
+
+    position:relative;
+
+    z-index:8;
+
+    width:100%;
+
+    max-width:420px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+}
+
+
+/* =====================================
+   TARJETAS
+===================================== */
+
+.red-social{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:85px;
+
+    background:var(--papel);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:var(--texto);
+
+    border:1px solid rgba(183,138,82,.35);
+
+    box-shadow:
+
+        0 8px 18px
+
+        rgba(0,0,0,.20);
+
+    transition:.3s ease;
+
+}
+
+
+.red-social:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 12px 25px
+
+        rgba(0,0,0,.28);
+
+    border-color:var(--dorado);
+
+}
+
+
+.red-social:active{
+
+    transform:scale(.97);
+
+}
+
+
+/* =====================================
+   CONTENEDOR DEL ICONO
+===================================== */
+
+.red-social-icono{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--verde-olivo);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    margin-bottom:7px;
+
+    flex-shrink:0;
+
+}
+
+
+/* =====================================
+   IMÁGENES DE REDES
+===================================== */
+
+.red-social-icono img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    display:block;
+
+}
+
+
+/*
+   Si tus PNG tienen fondo blanco,
+   esta opción ayuda a integrarlos.
+*/
+
+.red-social-icono img{
+
+    max-width:100%;
+
+    max-height:100%;
+
+}
+
+
+/* =====================================
+   TEXTO DE LA TARJETA
+===================================== */
+
+.red-social-info{
+
+    text-align:center;
+
+}
+
+
+.red-social-info h3{
+
+    font-family:'Playfair Display',serif;
+
+    color:var(--verde-olivo);
+
+    font-size:1rem;
+
+    letter-spacing:.3px;
+
+}
+
+
+/* =====================================
+   CELULARES PEQUEÑOS
+===================================== */
+
+@media(max-width:380px){
+
+    .logo{
+
+        width:145px;
+
+        top:18px;
+
+    }
+
+
+    h1{
+
+        top:235px;
+
+        font-size:1.7rem;
+
+    }
+
+
+    .decoracion{
+
+        top:278px;
+
+    }
+
+
+    .decoracion::before,
+    .decoracion::after{
+
+        width:32px;
+
+    }
+
+
+    .idiomas{
+
+        top:300px;
+
+    }
+
+
+    .btn{
+
+        max-width:300px;
+
+        height:45px;
+
+        font-size:13px;
+
+    }
+
+
+    .redes{
+
+        top:700px;
+
+        padding:0 15px;
+
+    }
+
+
+    .titulo-redes{
+
+        font-size:1.05rem;
+
+        margin-bottom:8px;
+
+    }
+
+
+    .redes-grid{
+
+        gap:8px;
+
+    }
+
+
+    .red-social{
+
+        min-height:70px;
+
+        border-radius:12px;
+
+    }
+
+
+    .red-social-icono{
+
+        width:32px;
+
+        height:32px;
+
+        margin-bottom:4px;
+
+    }
+
+
+    .red-social-info h3{
+
+        font-size:.85rem;
+
+    }
+
+
+    .detalle{
+
+        top:520px;
+
+        font-size:8px;
+
+    }
+
+}
+
+
+/* =====================================
+   TABLETS / PC
+===================================== */
+
+@media(min-width:601px){
+
+    .logo{
+
+        width:185px;
+
+        top:25px;
+
+    }
+
+
+    h1{
+
+        top:280px;
+
+        font-size:2.3rem;
+
+    }
+
+
+    .decoracion{
+
+        top:330px;
+
+    }
+
+
+    .idiomas{
+
+        top:355px;
+
+    }
+
+
+    .btn{
+
+        max-width:360px;
+
+        height:52px;
+
+        font-size:15px;
+
+    }
+
+
+    .redes{
+
+        top:445px;
+
+    }
+
+
+    .titulo-redes{
+
+        font-size:1.4rem;
+
+    }
+
+
+    .red-social{
+
+        min-height:100px;
+
+    }
+
+
+    .red-social-icono{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+
+    .detalle{
+
+        top:580px;
+
+    }
+
+}
