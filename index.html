@@ -1,180 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Pastificio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/indexStylePro.css">
+<title>Al Pastificio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Open Sans',sans-serif;
+    background:#F8F5EF;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:90%;
+    max-width:400px;
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width:180px;
+    margin-bottom:30px;
+
+}
+
+h1{
+
+    font-family:'Playfair Display',serif;
+    color:#214031;
+
+    margin-bottom:15px;
+
+}
+
+p{
+
+    color:#666;
+    margin-bottom:40px;
+
+}
+
+.btn{
+
+    display:block;
+
+    text-decoration:none;
+
+    background:#214031;
+    color:white;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#9A2E2E;
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
+<div class="container">
 
-<header>
+<img src="media/logo.png" class="logo">
 
-    <div class="menu-desplegable">
-        <button class="hamburger">
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-            <span class="hamburger-line"></span>
-        </button>
+<h1>Bienvenido</h1>
 
-        <nav class="menu-navegacion">
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#categorias">Categorías</a></li>
-                <li><a href="#reservas">Reservas</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
+<p>Select your language</p>
 
-    <a href="#" class="logo-link">
-        <img src="media/imagenes/logo en circulo.png" alt="Al Pastificio" class="logo-img">
-    </a>
-
-</header>
-
-<!-- HERO -->
-
-<section id="inicio" class="hero">
-
-    <div class="hero-overlay">
-
-        <h1>AL PASTIFICIO</h1>
-
-        <p>
-            Auténtica cocina italiana preparada con pasión.
-        </p>
-
-        <a href="#categorias" class="btn-principal">
-            Ver Menú
-        </a>
-
-    </div>
-
-</section>
-
-<!-- CATEGORÍAS -->
-
-<section id="categorias" class="seccion-categorias-bg">
-
-    <h2 class="categoria-titulo">
-        Explora Nuestra Carta
-    </h2>
-
-    <div class="categorias">
-
-        <a href="#pastas">
-            <div class="categoria-card pastas">
-                <h3>🍝 Pastas</h3>
-            </div>
-        </a>
-
-        <a href="#pizzas">
-            <div class="categoria-card pizzas">
-                <h3>🍕 Pizzas</h3>
-            </div>
-        </a>
-
-        <a href="#sanduches">
-            <div class="categoria-card sanduches">
-                <h3>🥪 Sándwiches</h3>
-            </div>
-        </a>
-
-        <a href="#ensaladas">
-            <div class="categoria-card ensaladas">
-                <h3>🥗 Ensaladas</h3>
-            </div>
-        </a>
-
-        <a href="#sopas">
-            <div class="categoria-card sopas">
-                <h3>🍲 Sopas</h3>
-            </div>
-        </a>
-
-        <a href="#postres">
-            <div class="categoria-card postres">
-                <h3>🍰 Postres</h3>
-            </div>
-        </a>
-
-        <a href="#bebidas">
-            <div class="categoria-card bebidas">
-                <h3>🍷 Bebidas</h3>
-            </div>
-        </a>
-
-    </div>
-
-</section>
-
-<!-- RESERVAS -->
-
-<section id="reservas" class="reserva">
-
-    <h2>Reserva tu Mesa</h2>
-
-    <p>
-        Vive una experiencia gastronómica italiana auténtica.
-    </p>
-
-    <a href="https://api.whatsapp.com/send?phone=573000000000&text=Hola, deseo realizar una reserva"
-       target="_blank"
-       class="btn-principal">
-       Reservar Ahora
-    </a>
-
-</section>
-
-<!-- NOSOTROS -->
-
-<section id="nosotros" class="nosotros">
-
-    <h2>Nuestra Historia</h2>
-
-    <p>
-        Al Pastificio nace de la pasión por la cocina italiana y el deseo de compartir sabores auténticos en un ambiente familiar y acogedor.
-    </p>
-
-</section>
-
-<!-- CONTACTO -->
-
-<section id="contacto" class="contacto">
-
-    <h2>Contáctanos</h2>
-
-    <p>📍 Dirección del restaurante</p>
-    <p>📞 +57 300 000 0000</p>
-    <p>✉️ contacto@alpastificio.com</p>
-
-</section>
-
-<!-- WHATSAPP -->
-
-<a href="https://api.whatsapp.com/send?phone=573000000000" target="_blank">
-    <div class="contacto-boton"></div>
+<a class="btn" href="menu-es.html">
+🇪🇸 Español
 </a>
 
-<!-- FOOTER -->
+<a class="btn" href="menu-en.html">
+🇺🇸 English
+</a>
 
-<footer>
-
-    <h3>Al Pastificio</h3>
-
-    <p>
-        Tradición italiana • Pasta artesanal • Experiencias memorables
-    </p>
-
-</footer>
+</div>
 
 </body>
 </html>
