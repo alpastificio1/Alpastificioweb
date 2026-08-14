@@ -31,12 +31,7 @@
     --texto:#35291F;
 
 
-    /* RECTÁNGULO SUPERIOR */
-
     --rectangulosuperior:#44352b;
-
-
-    /* RECTÁNGULO INFERIOR */
 
     --rectangulo-inferior:#44352b;
 
@@ -58,8 +53,7 @@
 }
 
 
-html,
-body{
+html{
 
     width:100%;
 
@@ -70,20 +64,22 @@ body{
 
 body{
 
+    width:100%;
+
+    min-height:100%;
+
     font-family:'Open Sans',sans-serif;
+
+    background:var(--azul);
 
     /*
        IMPORTANTE:
-       Permitimos desplazamiento vertical
-       para que las redes puedan verse
-       en celulares pequeños.
+       Permitimos desplazamiento vertical.
     */
 
     overflow-x:hidden;
 
     overflow-y:auto;
-
-    background:var(--azul);
 
 }
 
@@ -99,16 +95,20 @@ body{
     width:100%;
 
     /*
-       Usamos min-height en lugar de
-       height para permitir que la página
-       crezca cuando aparezcan las redes.
+       Esta es la clave del scroll.
+       El contenido tendrá una altura real.
     */
 
-    min-height:100vh;
+    min-height:760px;
+
+    height:100vh;
 
     min-height:100svh;
 
-    overflow:hidden;
+    /*
+       No utilizamos overflow:hidden aquí,
+       porque podría cortar el contenido.
+    */
 
 }
 
@@ -128,7 +128,14 @@ body{
 
     width:100%;
 
+    /*
+       La imagen ocupa toda la parte
+       superior de la página.
+    */
+
     height:80%;
+
+    min-height:500px;
 
     background-image:
 
@@ -144,7 +151,7 @@ body{
 
     background-size:cover;
 
-    background-position:center;
+    background-position:center center;
 
     background-repeat:no-repeat;
 
@@ -193,8 +200,8 @@ body{
     width:100%;
 
     /*
-       Este panel sigue teniendo
-       exactamente el tamaño que tenías.
+       Mantiene el tamaño que
+       ya estabas utilizando.
     */
 
     height:510px;
@@ -308,7 +315,9 @@ body{
 
     z-index:6;
 
-    inset:0;
+    top:0;
+
+    left:0;
 
     width:100%;
 
@@ -472,10 +481,6 @@ h1{
 }
 
 
-/* =====================================
-   LÍNEA DORADA
-===================================== */
-
 .detalle::before{
 
     content:"";
@@ -564,7 +569,7 @@ h1{
 
 
 /* =====================================
-   TARJETAS DE REDES
+   TARJETAS
 ===================================== */
 
 .red-social{
@@ -602,10 +607,6 @@ h1{
 }
 
 
-/* =====================================
-   EFECTO HOVER
-===================================== */
-
 .red-social:hover{
 
     transform:translateY(-4px);
@@ -620,10 +621,6 @@ h1{
 
 }
 
-
-/* =====================================
-   EFECTO AL TOCAR
-===================================== */
 
 .red-social:active{
 
@@ -666,12 +663,6 @@ h1{
 ===================================== */
 
 .red-social-icono img{
-
-    /*
-       Dejamos espacio alrededor
-       del logo para que no se salga
-       del círculo.
-    */
 
     width:70%;
 
@@ -720,6 +711,37 @@ h1{
 ===================================== */
 
 @media(max-width:380px){
+
+    /*
+       Altura real de la página.
+       Esto permite hacer scroll.
+    */
+
+    .home{
+
+        min-height:760px;
+
+        height:760px;
+
+    }
+
+
+    /* =========================
+       FONDO
+    ========================= */
+
+    .fondo{
+
+        height:520px;
+
+        min-height:520px;
+
+        background-size:cover;
+
+        background-position:center center;
+
+    }
+
 
     /* =========================
        LOGO
@@ -789,7 +811,7 @@ h1{
 
 
     /* =========================
-       TEXTO INFERIOR
+       TEXTO
     ========================= */
 
     .detalle{
@@ -806,13 +828,6 @@ h1{
     ========================= */
 
     .redes{
-
-        /*
-           Antes estaba en 700px.
-           Ahora subimos las redes
-           para que queden dentro de
-           la composición.
-        */
 
         top:590px;
 
@@ -863,10 +878,6 @@ h1{
 
         height:70%;
 
-        max-width:70%;
-
-        max-height:70%;
-
     }
 
 
@@ -885,6 +896,37 @@ h1{
 ===================================== */
 
 @media(min-width:381px) and (max-width:600px){
+
+    /*
+       Altura suficiente para que
+       las redes formen parte de la página.
+    */
+
+    .home{
+
+        min-height:760px;
+
+        height:760px;
+
+    }
+
+
+    /* =========================
+       FONDO
+    ========================= */
+
+    .fondo{
+
+        height:540px;
+
+        min-height:540px;
+
+        background-size:cover;
+
+        background-position:center center;
+
+    }
+
 
     /* =========================
        LOGO
@@ -946,7 +988,7 @@ h1{
 
 
     /* =========================
-       TEXTO INFERIOR
+       TEXTO
     ========================= */
 
     .detalle{
@@ -1021,6 +1063,33 @@ h1{
 ===================================== */
 
 @media(min-width:601px){
+
+    /*
+       En PC conservamos el comportamiento
+       de pantalla completa.
+    */
+
+    .home{
+
+        min-height:100vh;
+
+        height:100vh;
+
+    }
+
+
+    /* =========================
+       FONDO
+    ========================= */
+
+    .fondo{
+
+        height:80%;
+
+        min-height:0;
+
+    }
+
 
     /* =========================
        LOGO
@@ -1121,15 +1190,11 @@ h1{
 
         height:70%;
 
-        max-width:70%;
-
-        max-height:70%;
-
     }
 
 
     /* =========================
-       TEXTO INFERIOR
+       TEXTO
     ========================= */
 
     .detalle{
