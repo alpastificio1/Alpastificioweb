@@ -30,7 +30,13 @@
 
     --texto:#35291F;
 
+
+    /* RECTÁNGULO SUPERIOR */
+
     --rectangulosuperior:#44352b;
+
+
+    /* RECTÁNGULO INFERIOR */
 
     --rectangulo-inferior:#44352b;
 
@@ -67,11 +73,15 @@ body{
 
     width:100%;
 
-    min-height:100vh;
+    min-height:100%;
+
+    margin:0;
+
+    padding:0;
 
     font-family:'Open Sans',sans-serif;
 
-    background:var(--azul);
+    background:var(--rectangulo-inferior);
 
     overflow-x:hidden;
 
@@ -90,9 +100,23 @@ body{
 
     width:100%;
 
+    /*
+       La página puede crecer.
+       Esto permite hacer scroll.
+    */
+
     min-height:100vh;
 
-    padding-bottom:0;
+    min-height:100svh;
+
+    /*
+       Altura mínima para que las redes
+       tengan espacio suficiente.
+    */
+
+    padding-bottom:40px;
+
+    background:var(--rectangulo-inferior);
 
 }
 
@@ -101,9 +125,7 @@ body{
    CAPA 1
    IMAGEN DE FONDO
 
-   IMPORTANTE:
-   La imagen es independiente.
-   No depende del contenido.
+   COMPLETAMENTE INDEPENDIENTE
 ===================================== */
 
 .fondo{
@@ -117,9 +139,8 @@ body{
     width:100%;
 
     /*
-       Altura independiente de los elementos.
-       Se modifica únicamente en los
-       diferentes tamaños de pantalla.
+       La imagen tiene su propia altura.
+       NO depende del contenido.
     */
 
     height:620px;
@@ -164,7 +185,7 @@ body{
 
     width:100%;
 
-    height:100px;
+    height:135px;
 
     background:var(--rectangulosuperior);
 
@@ -177,29 +198,34 @@ body{
    CAPA 2
    RECTÁNGULO INFERIOR
 
-   Empieza después de la zona principal
-   y se extiende hasta el final.
+   ESTE ES EL FONDO DE TODA
+   LA PARTE INFERIOR
 ===================================== */
 
 .rectangulo-inferior{
 
     position:absolute;
 
-    top:405px;
+    top:520px;
 
     left:0;
 
     width:100%;
 
     /*
-       No usamos una altura fija.
-       Se extiende hasta el final de
-       .home.
+       MUY IMPORTANTE:
+
+       En lugar de bottom:0,
+       comienza exactamente donde
+       queremos que empiece la zona café.
+
+       Su altura se extiende hasta
+       el final de .home.
     */
 
-    height:calc(100% - 405px);
+    height:calc(100% - 520px);
 
-    min-height:400px;
+    min-height:500px;
 
     background:var(--rectangulo-inferior);
 
@@ -219,7 +245,14 @@ body{
 
     z-index:5;
 
-    top:125px;
+    /*
+       POSICIÓN DEL BLOQUE DE IDIOMAS
+
+       Puedes modificar SOLO este valor
+       para subir o bajar los botones.
+    */
+
+    top:300px;
 
     left:0;
 
@@ -231,7 +264,7 @@ body{
 
     align-items:center;
 
-    gap:8px;
+    gap:10px;
 
 }
 
@@ -246,7 +279,7 @@ body{
 
     max-width:330px;
 
-    height:42px;
+    height:48px;
 
     display:flex;
 
@@ -264,7 +297,7 @@ body{
 
     border:1px solid rgba(183,138,82,.45);
 
-    font-size:13px;
+    font-size:14px;
 
     font-weight:600;
 
@@ -300,7 +333,7 @@ body{
 
 
 /* =====================================
-   CAPA 3
+   CAPA 4
    LOGO + TEXTOS + DECORACIÓN
 ===================================== */
 
@@ -316,7 +349,7 @@ body{
 
     width:100%;
 
-    height:600px;
+    height:620px;
 
     pointer-events:none;
 
@@ -326,21 +359,20 @@ body{
 /* =====================================
    LOGO
 
-   El logo permanece encima del
-   rectángulo superior.
+   ENCIMA DEL RECTÁNGULO SUPERIOR
 ===================================== */
 
 .logo{
 
     position:absolute;
 
-    top:12px;
+    top:5px;
 
     left:50%;
 
     transform:translateX(-50%);
 
-    width:150px;
+    width:200px;
 
     height:auto;
 
@@ -359,7 +391,7 @@ h1{
 
     position:absolute;
 
-    top:92px;
+    top:210px;
 
     left:0;
 
@@ -371,7 +403,7 @@ h1{
 
     color:var(--crema);
 
-    font-size:1.65rem;
+    font-size:2rem;
 
     line-height:1.2;
 
@@ -386,13 +418,16 @@ h1{
 
 /* =====================================
    DECORACIÓN DORADA
+
+   PUEDES MODIFICAR "top"
+   PARA SUBIR / BAJAR
 ===================================== */
 
 .decoracion{
 
     position:absolute;
 
-    top:118px;
+    top:320px;
 
     left:0;
 
@@ -416,7 +451,7 @@ h1{
 
     display:block;
 
-    width:32px;
+    width:38px;
 
     height:1px;
 
@@ -441,8 +476,7 @@ h1{
 /* =====================================
    TEXTO INFERIOR
 
-   BAJADO PARA QUE QUEDE DENTRO
-   DE LA ZONA CAFÉ.
+   AUTÉNTICA COMIDA ITALIANA
 ===================================== */
 
 .detalle{
@@ -451,7 +485,12 @@ h1{
 
     z-index:6;
 
-    top:455px;
+    /*
+       Este valor controla la posición
+       del texto sobre el rectángulo café.
+    */
+
+    top:540px;
 
     left:0;
 
@@ -467,9 +506,9 @@ h1{
 
     color:var(--crema);
 
-    font-size:8px;
+    font-size:10px;
 
-    letter-spacing:1.5px;
+    letter-spacing:1.8px;
 
     text-transform:uppercase;
 
@@ -482,23 +521,27 @@ h1{
 }
 
 
+/* =====================================
+   LÍNEA DORADA
+===================================== */
+
 .detalle::before{
 
     content:"";
 
-    width:30px;
+    width:32px;
 
     height:1px;
 
     background:var(--dorado);
 
-    margin-bottom:6px;
+    margin-bottom:7px;
 
 }
 
 
 /* =====================================
-   CAPA 3
+   CAPA 7
    REDES SOCIALES
 ===================================== */
 
@@ -509,16 +552,17 @@ h1{
     z-index:7;
 
     /*
-       BAJAMOS LAS REDES.
+       Las redes empiezan debajo
+       del texto inferior.
     */
 
-    top:500px;
+    top:600px;
 
     left:0;
 
     width:100%;
 
-    padding:0 12px;
+    padding:0 20px;
 
 }
 
@@ -535,9 +579,9 @@ h1{
 
     text-align:center;
 
-    font-size:1.05rem;
+    font-size:1.25rem;
 
-    margin-bottom:9px;
+    margin-bottom:12px;
 
     text-shadow:
 
@@ -568,7 +612,7 @@ h1{
 
     grid-template-columns:repeat(2,1fr);
 
-    gap:7px;
+    gap:12px;
 
 }
 
@@ -587,11 +631,11 @@ h1{
 
     justify-content:center;
 
-    min-height:64px;
+    min-height:85px;
 
     background:var(--papel);
 
-    border-radius:12px;
+    border-radius:15px;
 
     overflow:hidden;
 
@@ -640,9 +684,9 @@ h1{
 
 .red-social-icono{
 
-    width:30px;
+    width:42px;
 
-    height:30px;
+    height:42px;
 
     border-radius:50%;
 
@@ -656,7 +700,7 @@ h1{
 
     overflow:hidden;
 
-    margin-bottom:3px;
+    margin-bottom:7px;
 
     flex-shrink:0;
 
@@ -699,16 +743,15 @@ h1{
 
     color:var(--verde-olivo);
 
-    font-size:.75rem;
+    font-size:1rem;
 
-    letter-spacing:.2px;
+    letter-spacing:.3px;
 
 }
 
 
 /* =====================================
    CELULARES PEQUEÑOS
-   HASTA 380px
 ===================================== */
 
 @media(max-width:380px){
@@ -717,25 +760,19 @@ h1{
 
         min-height:700px;
 
+        padding-bottom:30px;
+
     }
 
 
-    /* ==============================
-       FONDO
-    ============================== */
-
     .fondo{
 
-        height:610px;
+        height:600px;
 
         background-position:center center;
 
     }
 
-
-    /* ==============================
-       RECTÁNGULO SUPERIOR
-    ============================== */
 
     .rectangulo-superior{
 
@@ -744,65 +781,53 @@ h1{
     }
 
 
-    /* ==============================
-       RECTÁNGULO INFERIOR
-    ============================== */
-
     .rectangulo-inferior{
 
-        top:405px;
+        top:500px;
 
-        height:calc(100% - 405px);
+        height:calc(100% - 500px);
 
-        min-height:295px;
+        min-height:500px;
 
     }
 
-
-    /* ==============================
-       LOGO
-    ============================== */
 
     .logo{
 
         width:145px;
 
-        top:12px;
+        top:18px;
 
     }
 
-
-    /* ==============================
-       BIENVENIDO
-    ============================== */
 
     h1{
 
-        top:92px;
+        top:220px;
 
-        font-size:1.55rem;
+        font-size:1.7rem;
 
     }
 
-
-    /* ==============================
-       DECORACIÓN
-    ============================== */
 
     .decoracion{
 
-        top:118px;
+        top:285px;
 
     }
 
 
-    /* ==============================
-       BOTONES
-    ============================== */
+    .decoracion::before,
+    .decoracion::after{
+
+        width:32px;
+
+    }
+
 
     .idiomas{
 
-        top:125px;
+        top:285px;
 
     }
 
@@ -811,216 +836,36 @@ h1{
 
         max-width:300px;
 
-        height:42px;
+        height:45px;
 
-        font-size:12px;
+        font-size:13px;
 
     }
 
 
-    /* ==============================
-       TEXTO INFERIOR
-    ============================== */
+    .contenido{
+
+        height:600px;
+
+    }
+
 
     .detalle{
 
-        top:450px;
-
-        font-size:7px;
-
-        letter-spacing:1.3px;
-
-    }
-
-
-    /* ==============================
-       REDES
-    ============================== */
-
-    .redes{
-
-        top:495px;
-
-        padding:0 12px;
-
-    }
-
-
-    .titulo-redes{
-
-        font-size:1rem;
-
-        margin-bottom:8px;
-
-    }
-
-
-    .redes-grid{
-
-        gap:7px;
-
-    }
-
-
-    .red-social{
-
-        min-height:63px;
-
-        border-radius:11px;
-
-    }
-
-
-    .red-social-icono{
-
-        width:29px;
-
-        height:29px;
-
-        margin-bottom:3px;
-
-    }
-
-
-    .red-social-info h3{
-
-        font-size:.73rem;
-
-    }
-
-}
-
-
-/* =====================================
-   CELULARES NORMALES
-   381px - 600px
-===================================== */
-
-@media(min-width:381px) and (max-width:600px){
-
-    .home{
-
-        min-height:760px;
-
-    }
-
-
-    /* ==============================
-       FONDO
-    ============================== */
-
-    .fondo{
-
-        height:650px;
-
-        background-position:center center;
-
-    }
-
-
-    /* ==============================
-       RECTÁNGULO SUPERIOR
-    ============================== */
-
-    .rectangulo-superior{
-
-        height:110px;
-
-    }
-
-
-    /* ==============================
-       RECTÁNGULO INFERIOR
-    ============================== */
-
-    .rectangulo-inferior{
-
-        top:420px;
-
-        height:calc(100% - 420px);
-
-        min-height:340px;
-
-    }
-
-
-    /* ==============================
-       LOGO
-    ============================== */
-
-    .logo{
-
-        width:155px;
-
-        top:12px;
-
-    }
-
-
-    /* ==============================
-       BIENVENIDO
-    ============================== */
-
-    h1{
-
-        top:100px;
-
-        font-size:1.7rem;
-
-    }
-
-
-    /* ==============================
-       DECORACIÓN
-    ============================== */
-
-    .decoracion{
-
-        top:127px;
-
-    }
-
-
-    /* ==============================
-       BOTONES
-    ============================== */
-
-    .idiomas{
-
-        top:135px;
-
-    }
-
-
-    .btn{
-
-        height:44px;
-
-        max-width:330px;
-
-    }
-
-
-    /* ==============================
-       TEXTO INFERIOR
-    ============================== */
-
-    .detalle{
-
-        top:465px;
+        top:500px;
 
         font-size:8px;
 
     }
 
 
-    /* ==============================
+    /* =============================
        REDES
-    ============================== */
+    ============================= */
 
     .redes{
 
-        top:515px;
+        top:560px;
 
         padding:0 15px;
 
@@ -1029,16 +874,25 @@ h1{
 
     .titulo-redes{
 
-        font-size:1.1rem;
+        font-size:1.05rem;
 
-        margin-bottom:9px;
+        margin-bottom:8px;
+
+    }
+
+
+    .redes-grid{
+
+        gap:8px;
 
     }
 
 
     .red-social{
 
-        min-height:68px;
+        min-height:70px;
+
+        border-radius:12px;
 
     }
 
@@ -1049,12 +903,14 @@ h1{
 
         height:32px;
 
+        margin-bottom:4px;
+
     }
 
 
     .red-social-info h3{
 
-        font-size:.8rem;
+        font-size:.85rem;
 
     }
 
@@ -1062,33 +918,28 @@ h1{
 
 
 /* =====================================
-   TABLETS
-   601px - 900px
+   CELULARES NORMALES
 ===================================== */
 
-@media(min-width:601px) and (max-width:900px){
+@media(min-width:381px) and (max-width:600px){
 
     .home{
 
-        min-height:850px;
+        min-height:760px;
+
+        padding-bottom:35px;
 
     }
 
-
-    /* ==============================
-       FONDO
-    ============================== */
 
     .fondo{
 
-        height:700px;
+        height:650px;
+
+        background-position:center center;
 
     }
 
-
-    /* ==============================
-       RECTÁNGULO SUPERIOR
-    ============================== */
 
     .rectangulo-superior{
 
@@ -1097,153 +948,96 @@ h1{
     }
 
 
-    /* ==============================
-       RECTÁNGULO INFERIOR
-    ============================== */
-
     .rectangulo-inferior{
 
-        top:450px;
+        top:520px;
 
-        height:calc(100% - 450px);
+        height:calc(100% - 520px);
 
-        min-height:400px;
+        min-height:500px;
 
     }
 
-
-    /* ==============================
-       LOGO
-    ============================== */
 
     .logo{
 
-        width:185px;
+        width:170px;
 
-        top:20px;
+        top:10px;
 
     }
 
-
-    /* ==============================
-       BIENVENIDO
-    ============================== */
 
     h1{
 
-        top:175px;
+        top:215px;
 
-        font-size:2.1rem;
+        font-size:1.9rem;
 
     }
 
-
-    /* ==============================
-       DECORACIÓN
-    ============================== */
 
     .decoracion{
 
-        top:220px;
+        top:300px;
 
     }
 
 
-    /* ==============================
-       BOTONES
-    ============================== */
-
     .idiomas{
 
-        top:245px;
+        top:290px;
 
     }
 
 
     .btn{
 
-        max-width:360px;
-
-        height:48px;
-
-        font-size:14px;
+        height:47px;
 
     }
 
 
-    /* ==============================
-       TEXTO
-    ============================== */
+    .contenido{
+
+        height:650px;
+
+    }
+
 
     .detalle{
 
-        top:500px;
-
-        font-size:9px;
+        top:540px;
 
     }
 
-
-    /* ==============================
-       REDES
-    ============================== */
 
     .redes{
 
-        top:550px;
+        top:600px;
+
+        padding:0 20px;
 
     }
 
-
-    .titulo-redes{
-
-        font-size:1.25rem;
-
-    }
-
-
-    .red-social{
-
-        min-height:85px;
-
-    }
-
-
-    .red-social-icono{
-
-        width:40px;
-
-        height:40px;
-
-    }
-
-
-    .red-social-info h3{
-
-        font-size:.95rem;
-
-    }
 
 }
 
 
 /* =====================================
-   PC
-   MÁS DE 900px
+   TABLETS / PC
 ===================================== */
 
-@media(min-width:901px){
+@media(min-width:601px){
 
     .home{
 
-        min-height:850px;
+        min-height:800px;
+
+        padding-bottom:40px;
 
     }
 
-
-    /* ==============================
-       FONDO
-    ============================== */
 
     .fondo{
 
@@ -1252,10 +1046,6 @@ h1{
     }
 
 
-    /* ==============================
-       RECTÁNGULO SUPERIOR
-    ============================== */
-
     .rectangulo-superior{
 
         height:135px;
@@ -1263,65 +1053,45 @@ h1{
     }
 
 
-    /* ==============================
-       RECTÁNGULO INFERIOR
-    ============================== */
-
     .rectangulo-inferior{
 
-        top:450px;
+        top:520px;
 
-        height:calc(100% - 450px);
+        height:calc(100% - 520px);
 
-        min-height:400px;
+        min-height:500px;
 
     }
 
-
-    /* ==============================
-       LOGO
-    ============================== */
 
     .logo{
 
         width:185px;
 
-        top:20px;
+        top:25px;
 
     }
 
 
-    /* ==============================
-       BIENVENIDO
-    ============================== */
-
     h1{
 
-        top:180px;
+        top:280px;
 
         font-size:2.3rem;
 
     }
 
 
-    /* ==============================
-       DECORACIÓN
-    ============================== */
-
     .decoracion{
 
-        top:225px;
+        top:330px;
 
     }
 
 
-    /* ==============================
-       BOTONES
-    ============================== */
-
     .idiomas{
 
-        top:250px;
+        top:355px;
 
     }
 
@@ -1337,26 +1107,9 @@ h1{
     }
 
 
-    /* ==============================
-       TEXTO
-    ============================== */
-
-    .detalle{
-
-        top:500px;
-
-        font-size:10px;
-
-    }
-
-
-    /* ==============================
-       REDES
-    ============================== */
-
     .redes{
 
-        top:550px;
+        top:625px;
 
     }
 
@@ -1364,15 +1117,6 @@ h1{
     .titulo-redes{
 
         font-size:1.4rem;
-
-    }
-
-
-    .redes-grid{
-
-        max-width:420px;
-
-        gap:12px;
 
     }
 
@@ -1390,37 +1134,13 @@ h1{
 
         height:48px;
 
-        margin-bottom:7px;
-
     }
 
 
-    .red-social-info h3{
+    .detalle{
 
-        font-size:1rem;
+        top:580px;
 
     }
 
-}/* =====================================
-   AJUSTE FINAL
-   BAJAR BIENVENIDO Y BOTONES
-===================================== */
-
-/* Bienvenido */
-h1{
-    transform:translateY(70px);
-}
-
-
-/* Botones de idioma */
-.idiomas{
-    transform:translateY(80px);
-}
-/* =====================================
-   AJUSTE DE LA DECORACIÓN
-   BAJAR LÍNEA DORADA
-===================================== */
-
-.decoracion{
-    transform:translateY(20px);
 }
