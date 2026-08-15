@@ -100,19 +100,9 @@ body{
 
     width:100%;
 
-    /*
-       La página puede crecer.
-       Esto permite hacer scroll.
-    */
-
     min-height:100vh;
 
     min-height:100svh;
-
-    /*
-       Altura mínima para que las redes
-       tengan espacio suficiente.
-    */
 
     padding-bottom:40px;
 
@@ -137,11 +127,6 @@ body{
     left:0;
 
     width:100%;
-
-    /*
-       La imagen tiene su propia altura.
-       NO depende del contenido.
-    */
 
     height:620px;
 
@@ -197,9 +182,6 @@ body{
 /* =====================================
    CAPA 2
    RECTÁNGULO INFERIOR
-
-   ESTE ES EL FONDO DE TODA
-   LA PARTE INFERIOR
 ===================================== */
 
 .rectangulo-inferior{
@@ -211,17 +193,6 @@ body{
     left:0;
 
     width:100%;
-
-    /*
-       MUY IMPORTANTE:
-
-       En lugar de bottom:0,
-       comienza exactamente donde
-       queremos que empiece la zona café.
-
-       Su altura se extiende hasta
-       el final de .home.
-    */
 
     height:calc(100% - 520px);
 
@@ -244,13 +215,6 @@ body{
     position:absolute;
 
     z-index:5;
-
-    /*
-       POSICIÓN DEL BLOQUE DE IDIOMAS
-
-       Puedes modificar SOLO este valor
-       para subir o bajar los botones.
-    */
 
     top:300px;
 
@@ -358,15 +322,13 @@ body{
 
 /* =====================================
    LOGO
-
-   ENCIMA DEL RECTÁNGULO SUPERIOR
 ===================================== */
 
 .logo{
 
     position:absolute;
 
-    top:5px;
+    top:0;
 
     left:50%;
 
@@ -418,16 +380,14 @@ h1{
 
 /* =====================================
    DECORACIÓN DORADA
-
-   PUEDES MODIFICAR "top"
-   PARA SUBIR / BAJAR
+   DE "BIENVENIDO"
 ===================================== */
 
 .decoracion{
 
     position:absolute;
 
-    top:320px;
+    top:270px;
 
     left:0;
 
@@ -475,7 +435,6 @@ h1{
 
 /* =====================================
    TEXTO INFERIOR
-
    AUTÉNTICA COMIDA ITALIANA
 ===================================== */
 
@@ -485,12 +444,7 @@ h1{
 
     z-index:6;
 
-    /*
-       Este valor controla la posición
-       del texto sobre el rectángulo café.
-    */
-
-    top:540px;
+    top:565px;
 
     left:0;
 
@@ -522,7 +476,7 @@ h1{
 
 
 /* =====================================
-   LÍNEA DORADA
+   LÍNEA DORADA DEL TEXTO INFERIOR
 ===================================== */
 
 .detalle::before{
@@ -550,11 +504,6 @@ h1{
     position:absolute;
 
     z-index:7;
-
-    /*
-       Las redes empiezan debajo
-       del texto inferior.
-    */
 
     top:600px;
 
@@ -792,14 +741,22 @@ h1{
     }
 
 
+    /* =============================
+       LOGO
+    ============================= */
+
     .logo{
 
         width:145px;
 
-        top:18px;
+        top:10px;
 
     }
 
+
+    /* =============================
+       BIENVENIDO
+    ============================= */
 
     h1{
 
@@ -810,9 +767,13 @@ h1{
     }
 
 
+    /* =============================
+       DECORACIÓN BIENVENIDO
+    ============================= */
+
     .decoracion{
 
-        top:285px;
+        top:220px;
 
     }
 
@@ -824,6 +785,10 @@ h1{
 
     }
 
+
+    /* =============================
+       BOTONES
+    ============================= */
 
     .idiomas{
 
@@ -850,9 +815,13 @@ h1{
     }
 
 
+    /* =============================
+       TEXTO INFERIOR
+    ============================= */
+
     .detalle{
 
-        top:500px;
+        top:520px;
 
         font-size:8px;
 
@@ -865,7 +834,7 @@ h1{
 
     .redes{
 
-        top:560px;
+        top:570px;
 
         padding:0 15px;
 
@@ -959,14 +928,22 @@ h1{
     }
 
 
+    /* =============================
+       LOGO
+    ============================= */
+
     .logo{
 
         width:170px;
 
-        top:10px;
+        top:5px;
 
     }
 
+
+    /* =============================
+       BIENVENIDO
+    ============================= */
 
     h1{
 
@@ -977,12 +954,20 @@ h1{
     }
 
 
+    /* =============================
+       DECORACIÓN BIENVENIDO
+    ============================= */
+
     .decoracion{
 
-        top:300px;
+        top:255px;
 
     }
 
+
+    /* =============================
+       BOTONES
+    ============================= */
 
     .idiomas{
 
@@ -1005,21 +990,28 @@ h1{
     }
 
 
+    /* =============================
+       TEXTO INFERIOR
+    ============================= */
+
     .detalle{
 
-        top:540px;
+        top:555px;
 
     }
 
 
+    /* =============================
+       REDES
+    ============================= */
+
     .redes{
 
-        top:600px;
+        top:615px;
 
         padding:0 20px;
 
     }
-
 
 }
 
@@ -1064,14 +1056,22 @@ h1{
     }
 
 
+    /* =============================
+       LOGO
+    ============================= */
+
     .logo{
 
         width:185px;
 
-        top:25px;
+        top:15px;
 
     }
 
+
+    /* =============================
+       BIENVENIDO
+    ============================= */
 
     h1{
 
@@ -1082,12 +1082,28 @@ h1{
     }
 
 
+    /* =============================
+       DECORACIÓN BIENVENIDO
+===================================== */
+
     .decoracion{
 
         top:330px;
 
     }
 
+
+    .decoracion::before,
+    .decoracion::after{
+
+        width:38px;
+
+    }
+
+
+    /* =============================
+       BOTONES
+    ============================= */
 
     .idiomas{
 
@@ -1106,6 +1122,10 @@ h1{
 
     }
 
+
+    /* =============================
+       REDES
+    ============================= */
 
     .redes{
 
@@ -1137,9 +1157,13 @@ h1{
     }
 
 
+    /* =============================
+       TEXTO INFERIOR
+===================================== */
+
     .detalle{
 
-        top:580px;
+        top:600px;
 
     }
 
