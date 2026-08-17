@@ -1,21 +1,12 @@
-/*======================================
-AL PASTIFICIO
-CATEGORÍAS DEL MENÚ
-======================================*/
+/* ======================================
+   AL PASTIFICIO
+   CATEGORÍAS DEL MENÚ
+====================================== */
 
-/*==============================
-RESET
-==============================*/
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
+/* ===========================
+   VARIABLES
+=========================== */
 
 :root{
 
@@ -36,9 +27,30 @@ html{
 
 }
 
-/*==============================
-BODY
-==============================*/
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ===========================
+   BODY
+=========================== */
 
 body{
 
@@ -56,20 +68,23 @@ body{
 
 }
 
-/*==============================
-CONTENEDOR
-==============================*/
+
+/* ===========================
+   CONTENEDOR
+=========================== */
 
 .container{
 
     width:100%;
+
     max-width:430px;
 
 }
 
-/*==============================
-HEADER
-==============================*/
+
+/* ===========================
+   HEADER
+=========================== */
 
 .header{
 
@@ -93,9 +108,10 @@ HEADER
 
 }
 
-/*==============================
-LOGO
-==============================*/
+
+/* ===========================
+   LOGO
+=========================== */
 
 .logo{
 
@@ -109,9 +125,10 @@ LOGO
 
 }
 
-/*==============================
-BOTON VOLVER
-==============================*/
+
+/* ===========================
+   BOTÓN VOLVER
+=========================== */
 
 .back{
 
@@ -135,15 +152,17 @@ BOTON VOLVER
 
 }
 
+
 .back:hover{
 
     background:var(--verde-hover);
 
 }
 
-/*==============================
-HERO CATEGORIA
-==============================*/
+
+/* ===========================
+   HERO DE CATEGORÍA
+=========================== */
 
 .category-hero{
 
@@ -163,9 +182,10 @@ HERO CATEGORIA
 
 }
 
-/*==============================
-IMAGEN
-==============================*/
+
+/* ===========================
+   IMAGEN DEL HERO
+=========================== */
 
 .category-image{
 
@@ -175,9 +195,12 @@ IMAGEN
 
     object-fit:cover;
 
+    object-position:center;
+
     transition:.5s;
 
 }
+
 
 .category-hero:hover .category-image{
 
@@ -185,9 +208,10 @@ IMAGEN
 
 }
 
-/*==============================
-OVERLAY
-==============================*/
+
+/* ===========================
+   OVERLAY
+=========================== */
 
 .category-overlay{
 
@@ -211,9 +235,10 @@ OVERLAY
 
 }
 
-/*==============================
-TITULO
-==============================*/
+
+/* ===========================
+   TÍTULO
+=========================== */
 
 .category-overlay h1{
 
@@ -231,9 +256,10 @@ TITULO
 
 }
 
-/*==============================
-DESCRIPCION
-==============================*/
+
+/* ===========================
+   DESCRIPCIÓN
+=========================== */
 
 .category-overlay p{
 
@@ -249,9 +275,10 @@ DESCRIPCION
 
 }
 
-/*==============================
-PRODUCTOS
-==============================*/
+
+/* ===========================
+   PRODUCTOS
+=========================== */
 
 .products{
 
@@ -263,9 +290,10 @@ PRODUCTOS
 
 }
 
-/*==============================
-TARJETA PRODUCTO
-==============================*/
+
+/* ===========================
+   TARJETA DEL PRODUCTO
+=========================== */
 
 .product{
 
@@ -273,7 +301,7 @@ TARJETA PRODUCTO
 
     border-radius:18px;
 
-    padding:22px;
+    overflow:hidden;
 
     border-left:6px solid var(--ocre);
 
@@ -283,6 +311,7 @@ TARJETA PRODUCTO
 
 }
 
+
 .product:hover{
 
     transform:translateY(-3px);
@@ -291,9 +320,451 @@ TARJETA PRODUCTO
 
 }
 
-/*==============================
-ENCABEZADO PRODUCTO
-==============================*/
+
+/* ===========================
+   IMAGEN DEL PRODUCTO
+=========================== */
+
+.product-image{
+
+    display:block;
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    transition:transform .3s ease;
+
+}
+
+
+/* ======================================
+   CONTROLES INDIVIDUALES DE IMAGEN
+====================================== */
+
+/*
+   Cada producto puede controlar:
+
+   1. POSICIÓN HORIZONTAL
+   2. POSICIÓN VERTICAL
+   3. ZOOM
+
+
+   FORMATO:
+
+   object-position: HORIZONTAL VERTICAL;
+
+
+   HORIZONTAL:
+
+   0%   = izquierda
+   50%  = centro
+   100% = derecha
+
+
+   VERTICAL:
+
+   0%   = arriba
+   50%  = centro
+   100% = abajo
+
+
+   ZOOM:
+
+   transform:scale(1);
+
+   = tamaño normal
+
+
+   transform:scale(1.10);
+
+   = 10% de zoom
+
+
+   transform:scale(1.25);
+
+   = 25% de zoom
+
+
+   transform:scale(1.50);
+
+   = 50% de zoom
+
+
+   transform:scale(2);
+
+   = 100% de zoom
+
+
+   IMPORTANTE:
+
+   La imagen siempre permanece dentro
+   del recuadro de la tarjeta.
+*/
+
+
+/* ======================================
+   ENTRADAS
+====================================== */
+
+
+/* ===========================
+   QUESO BURRATA
+=========================== */
+
+.product-burrata .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   BRUSCHETAS DE MOZZARELLA
+=========================== */
+
+.product-bruschetas-mozzarella .product-image{
+
+    object-position:50% 40%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   ALBÓNDIGAS NAPOLITANAS
+=========================== */
+
+.product-albondigas-napolitanas .product-image{
+
+    object-position:50% 40%;
+
+    transform:scale(1.5);
+
+}
+
+
+/* ===========================
+   CHAMPIÑONES CON QUESO AZUL
+=========================== */
+
+.product-champinones-queso-azul .product-image{
+
+    object-position:50% 45%;
+
+    transform:scale(1.1);
+
+}
+
+
+/* ===========================
+   CHAMPIÑONES AL AJILLO
+=========================== */
+
+.product-champinones-al-ajillo .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   BERENJENAS NAPOLITANAS
+=========================== */
+
+.product-berenjenas-napolitanas .product-image{
+
+    object-position:50% 25%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   SOPA DE TOMATE
+=========================== */
+
+.product-sopa-tomate .product-image{
+
+    object-position:50% 60%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   CREMA DE CHAMPIÑONES
+=========================== */
+
+.product-crema-champinones .product-image{
+
+    object-position:50% 40%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   SOPA MINESTRONE
+=========================== */
+
+.product-sopa-minestrone .product-image{
+
+    object-position:40% 40%;
+
+    transform:scale(1);
+
+}
+
+
+/* ======================================
+   BEBIDAS
+====================================== */
+
+
+/* ===========================
+   JUGO DE MANGO
+=========================== */
+
+.product-jugo-mango .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   JUGO DE MORA
+=========================== */
+
+.product-jugo-mora .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   JUGO DE FRESA
+=========================== */
+
+.product-jugo-fresa .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   JUGO DE MARACUYÁ
+=========================== */
+
+.product-jugo-maracuya .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   LIMONADA NATURAL
+=========================== */
+
+.product-limonada-natural .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   LIMONADA DE HIERBABUENA
+=========================== */
+
+.product-limonada-hierbabuena .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   LIMONADA DE COCO
+=========================== */
+
+.product-limonada-coco .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   SODAS SABORIZADAS
+=========================== */
+
+.product-sodas-saborizadas .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   GASEOSAS
+=========================== */
+
+.product-gaseosas .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ===========================
+   BOTELLA DE AGUA
+=========================== */
+
+.product-botella-agua .product-image{
+
+    object-position:50% 50%;
+
+    transform:scale(1);
+
+}
+
+
+/* ======================================
+   BOTONES DE OPCIONES
+====================================== */
+
+/*
+   Estos botones se utilizan únicamente
+   cuando un producto tiene diferentes
+   opciones que cambian su fotografía.
+
+   Ejemplo:
+
+   Agua / Leche
+
+   Con Gas / Sin Gas
+
+   Coca-Cola / Quatro / Soda / Canada Dry
+*/
+
+
+.product-options{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-bottom:14px;
+
+}
+
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+.option-button{
+
+    border:1px solid var(--ocre);
+
+    background:transparent;
+
+    color:var(--verde);
+
+    padding:7px 13px;
+
+    border-radius:20px;
+
+    font-family:'Open Sans',sans-serif;
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+
+/* ===========================
+   BOTÓN HOVER
+=========================== */
+
+.option-button:hover{
+
+    background:var(--ocre);
+
+    color:white;
+
+}
+
+
+/* ===========================
+   BOTÓN ACTIVO
+=========================== */
+
+.option-button.active{
+
+    background:var(--ocre);
+
+    color:white;
+
+}
+
+
+/* ===========================
+   INFORMACIÓN DEL PRODUCTO
+=========================== */
+
+.product-info{
+
+    padding:18px 22px 22px 22px;
+
+}
+
+
+/* ===========================
+   ENCABEZADO DEL PRODUCTO
+=========================== */
 
 .product-header{
 
@@ -309,6 +780,7 @@ ENCABEZADO PRODUCTO
 
 }
 
+
 .product-header h3{
 
     font-size:1.05rem;
@@ -319,9 +791,10 @@ ENCABEZADO PRODUCTO
 
 }
 
-/*==============================
-PRECIO
-==============================*/
+
+/* ===========================
+   PRECIO
+=========================== */
 
 .price{
 
@@ -333,9 +806,10 @@ PRECIO
 
 }
 
-/*==============================
-DESCRIPCION PRODUCTO
-==============================*/
+
+/* ===========================
+   DESCRIPCIÓN DEL PRODUCTO
+=========================== */
 
 .product p{
 
@@ -347,9 +821,10 @@ DESCRIPCION PRODUCTO
 
 }
 
-/*==============================
-FOOTER
-==============================*/
+
+/* ===========================
+   FOOTER
+=========================== */
 
 .footer{
 
@@ -365,6 +840,7 @@ FOOTER
 
 }
 
+
 .footer-logo{
 
     width:90px;
@@ -373,9 +849,10 @@ FOOTER
 
 }
 
-/*==============================
-RESPONSIVE
-==============================*/
+
+/* ===========================
+   CELULARES PEQUEÑOS
+=========================== */
 
 @media(max-width:480px){
 
@@ -385,11 +862,13 @@ RESPONSIVE
 
     }
 
+
     .header{
 
         padding:32px 20px;
 
     }
+
 
     .logo{
 
@@ -397,11 +876,13 @@ RESPONSIVE
 
     }
 
+
     .category-hero{
 
         height:260px;
 
     }
+
 
     .category-overlay{
 
@@ -409,11 +890,13 @@ RESPONSIVE
 
     }
 
+
     .category-overlay h1{
 
         font-size:2rem;
 
     }
+
 
     .category-overlay p{
 
@@ -421,9 +904,46 @@ RESPONSIVE
 
     }
 
-    .product{
 
-        padding:18px;
+    .product-info{
+
+        padding:16px 18px 20px 18px;
+
+    }
+
+
+    .product-image{
+
+        height:150px;
+
+    }
+
+
+    .product-header h3{
+
+        font-size:1rem;
+
+    }
+
+
+    /* ===========================
+       BOTONES EN CELULAR
+    =========================== */
+
+    .product-options{
+
+        gap:6px;
+
+        margin-bottom:12px;
+
+    }
+
+
+    .option-button{
+
+        padding:6px 11px;
+
+        font-size:.78rem;
 
     }
 

@@ -17,8 +17,9 @@
 
 }
 
+
 /* ===========================
-RESET
+   RESET
 =========================== */
 
 *{
@@ -29,11 +30,13 @@ RESET
 
 }
 
+
 html{
 
     scroll-behavior:smooth;
 
 }
+
 
 body{
 
@@ -45,8 +48,9 @@ body{
 
 }
 
+
 /* ===========================
-CONTENEDOR
+   CONTENEDOR
 =========================== */
 
 .menu-container{
@@ -60,8 +64,9 @@ CONTENEDOR
 
 }
 
+
 /* ===========================
-HEADER
+   HEADER
 =========================== */
 
 .header{
@@ -80,8 +85,9 @@ HEADER
 
 }
 
+
 /* ===========================
-LOGO
+   LOGO
 =========================== */
 
 .logo{
@@ -94,8 +100,9 @@ LOGO
 
 }
 
+
 /* ===========================
-TITULO
+   TITULO
 =========================== */
 
 .header h1{
@@ -110,6 +117,7 @@ TITULO
 
 }
 
+
 .header p{
 
     color:#D7C7A8;
@@ -122,8 +130,9 @@ TITULO
 
 }
 
+
 /* ===========================
-BOTON IDIOMA
+   BOTON IDIOMA
 =========================== */
 
 .language{
@@ -146,14 +155,16 @@ BOTON IDIOMA
 
 }
 
+
 .language:hover{
 
     background:var(--verde-hover);
 
 }
 
+
 /* ===========================
-CATEGORIAS
+   CATEGORIAS
 =========================== */
 
 .categories{
@@ -166,8 +177,9 @@ CATEGORIAS
 
 }
 
+
 /* ===========================
-CARD
+   CARD
 =========================== */
 
 .card{
@@ -194,6 +206,7 @@ CARD
 
 }
 
+
 .card:hover{
 
     transform:translateY(-5px);
@@ -202,8 +215,9 @@ CARD
 
 }
 
+
 /* ===========================
-IMAGEN
+   IMAGEN
 =========================== */
 
 .card img{
@@ -220,8 +234,178 @@ IMAGEN
 
 }
 
+
+/* ======================================
+   POSICIÓN INDIVIDUAL DE CADA IMAGEN
+====================================== */
+
+/*
+   IMPORTANTE:
+
+   El primer valor controla la posición
+   HORIZONTAL.
+
+   El segundo valor controla la posición
+   VERTICAL.
+
+   Ejemplo:
+
+   center 30%
+   = centrada horizontalmente y más arriba.
+
+   center 50%
+   = centrada.
+
+   center 70%
+   = más abajo.
+*/
+
+
 /* ===========================
-INFO
+   APERITIVOS
+=========================== */
+
+.card-appetizers img{
+
+    object-position:center 55%;
+
+}
+
+
+/* ===========================
+   BEBIDAS
+=========================== */
+
+.card-drinks img{
+
+    object-position:center 35%;
+
+}
+
+
+/* ===========================
+   CAFÉ
+=========================== */
+
+.card-coffee img{
+
+    object-position:center 35%;
+
+}
+
+
+/* ===========================
+   BEBIDAS ALCOHÓLICAS
+=========================== */
+
+.card-alcohol img{
+
+    object-position:center 65%;
+
+}
+
+
+/* ===========================
+   CÓCTELES
+=========================== */
+
+.card-cocktails img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   CARNES Y PASTA
+=========================== */
+
+.card-meat-pasta img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   PASTA
+=========================== */
+
+.card-pasta img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   PIZZAS
+=========================== */
+
+.card-pizza img{
+
+    object-position:center 40%;
+
+}
+
+
+/* ===========================
+   ESPECIALIDADES AL HORNO
+=========================== */
+
+.card-oven img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   ENSALADAS
+=========================== */
+
+.card-salads img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   PANINI
+=========================== */
+
+.card-panini img{
+
+    object-position:center 63%;
+
+}
+
+
+/* ===========================
+   MENÚ INFANTIL
+=========================== */
+
+.card-kids img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   POSTRES
+=========================== */
+
+.card-desserts img{
+
+    object-position:center 50%;
+
+}
+
+
+/* ===========================
+   INFO
 =========================== */
 
 .card-info{
@@ -231,6 +415,7 @@ INFO
     text-align:center;
 
 }
+
 
 .card-info h2{
 
@@ -246,6 +431,7 @@ INFO
 
 }
 
+
 .card-info p{
 
     color:#6E6255;
@@ -256,8 +442,9 @@ INFO
 
 }
 
+
 /* ===========================
-FOOTER
+   FOOTER
 =========================== */
 
 .footer{
@@ -274,6 +461,7 @@ FOOTER
 
 }
 
+
 .footer-logo{
 
     width:90px;
@@ -282,8 +470,9 @@ FOOTER
 
 }
 
+
 /* ===========================
-CELULARES PEQUEÑOS
+   CELULARES PEQUEÑOS
 =========================== */
 
 @media (max-width:480px){
@@ -294,11 +483,13 @@ CELULARES PEQUEÑOS
 
     }
 
+
     .header{
 
         padding:28px 18px;
 
     }
+
 
     .logo{
 
@@ -306,17 +497,20 @@ CELULARES PEQUEÑOS
 
     }
 
+
     .header h1{
 
         font-size:1.9rem;
 
     }
 
+
     .card-info{
 
         padding:18px;
 
     }
+
 
     .card-info h2{
 
