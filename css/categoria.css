@@ -540,7 +540,7 @@ body{
 
 .product-jugo-mango .product-image{
 
-    object-position:50% 50%;
+    object-position:30% 30%;
 
     transform:scale(1);
 
@@ -946,5 +946,79 @@ body{
         font-size:.78rem;
 
     }
+    
+/* ======================================
+   TAMAÑO ESPECIAL PARA BEBIDAS
+====================================== */
+
+/*
+   Las categorías de bebidas utilizan
+   fotografías más verticales.
+
+   Las demás categorías mantienen
+   su tamaño normal de 180px.
+*/
+
+
+/* ===========================
+   BEBIDAS
+=========================== */
+
+.categoria-bebidas .product-image{
+
+    height:330px;
+
+}
+
+
+/* ===========================
+   BEBIDAS ALCOHÓLICAS
+=========================== */
+
+.categoria-bebidas-alcoholicas .product-image{
+
+    height:330px;
+
+}
+
+
+/* ===========================
+   CÓCTELES
+=========================== */
+
+.categoria-cocteles .product-image{
+
+    height:330px;
+
+}
+
+
+/* ======================================
+   CELULARES
+====================================== */
+
+@media(max-width:480px){
+
+    .categoria-bebidas .product-image{
+
+        height:280px;
+
+    }
+
+
+    .categoria-bebidas-alcoholicas .product-image{
+
+        height:280px;
+
+    }
+
+
+    .categoria-cocteles .product-image{
+
+        height:280px;
+
+    }
+
+}
 
 }

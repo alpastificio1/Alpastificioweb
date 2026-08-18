@@ -19,7 +19,7 @@
 </head>
 
 
-<body>
+<body class="categoria-bebidas">
 
 
 <div class="container">
@@ -82,7 +82,6 @@
     ================================== -->
 
     <section class="products">
-
 
 
         <!-- =================================
@@ -695,28 +694,38 @@
 
 <script>
 
-function cambiarImagen(imagenId, nuevaImagen, boton){
+function cambiarImagen(imagenId, nuevaImagen, boton) {
 
     const imagen = document.getElementById(imagenId);
 
-    imagen.src = nuevaImagen;
+    if (imagen) {
+        imagen.src = nuevaImagen;
+    }
 
 
-    /* Quitar estado activo de los botones
-       de la misma tarjeta */
+    /* =================================
+       QUITAR ESTADO ACTIVO
+       DE LOS BOTONES DE LA TARJETA
+    ================================== */
 
     const tarjeta = boton.closest('.product');
 
-    const botones = tarjeta.querySelectorAll('.option-button');
+    if (tarjeta) {
 
-    botones.forEach(function(btn){
+        const botones = tarjeta.querySelectorAll('.option-button');
 
-        btn.classList.remove('active');
+        botones.forEach(function(btn) {
 
-    });
+            btn.classList.remove('active');
+
+        });
+
+    }
 
 
-    /* Activar el botón seleccionado */
+    /* =================================
+       ACTIVAR BOTÓN SELECCIONADO
+    ================================== */
 
     boton.classList.add('active');
 
