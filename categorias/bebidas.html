@@ -399,7 +399,7 @@
         <div class="product product-limonada-hierbabuena">
 
             <img
-                src="../media/fotos platos/limonada-hierbabuena.jpeg"
+                src="../media/fotos platos/limonada-hierba-buena.jpeg"
                 alt="Limonada de Hierbabuena"
                 class="product-image"
             >
@@ -435,7 +435,7 @@
         <div class="product product-limonada-coco">
 
             <img
-                src="../media/fotos platos/limonada-coco.jpeg"
+                src="../media/fotos platos/limonada-de-coco.jpeg"
                 alt="Limonada de Coco"
                 class="product-image"
             >
@@ -466,14 +466,17 @@
 
         <!-- =================================
              SODAS SABORIZADAS
+             OPCIONES: FRUTOS ROJOS / TAMARINDO /
+                       MARACUYÁ / LULO
         ================================== -->
 
         <div class="product product-sodas-saborizadas">
 
             <img
-                src="../media/fotos platos/sodas-saborizadas.jpeg"
+                src="../media/fotos platos/soda-saborizada-frutos-rojos.jpeg"
                 alt="Sodas Saborizadas"
                 class="product-image"
+                id="imagen-sodas-saborizadas"
             >
 
             <div class="product-info">
@@ -489,6 +492,60 @@
                     </span>
 
                 </div>
+
+
+                <div class="product-options">
+
+                    <button
+                        type="button"
+                        class="option-button active"
+                        onclick="cambiarImagen(
+                            'imagen-sodas-saborizadas',
+                            '../media/fotos platos/soda-saborizada-frutos-rojos.jpeg',
+                            this
+                        )"
+                    >
+                        Frutos Rojos
+                    </button>
+
+                    <button
+                        type="button"
+                        class="option-button"
+                        onclick="cambiarImagen(
+                            'imagen-sodas-saborizadas',
+                            '../media/fotos platos/soda-saborizada-tamarindo.jpeg',
+                            this
+                        )"
+                    >
+                        Tamarindo
+                    </button>
+
+                    <button
+                        type="button"
+                        class="option-button"
+                        onclick="cambiarImagen(
+                            'imagen-sodas-saborizadas',
+                            '../media/fotos platos/soda-saborizada-maracuya.jpeg',
+                            this
+                        )"
+                    >
+                        Maracuyá
+                    </button>
+
+                    <button
+                        type="button"
+                        class="option-button"
+                        onclick="cambiarImagen(
+                            'imagen-sodas-saborizadas',
+                            '../media/fotos platos/soda-saborizada-lulo.jpeg',
+                            this
+                        )"
+                    >
+                        Lulo
+                    </button>
+
+                </div>
+
 
                 <p>
                     Descripción del producto.

@@ -1,4 +1,4 @@
-/* ======================================
+  /* ======================================
    AL PASTIFICIO
    CATEGORÍAS DEL MENÚ
 ====================================== */
@@ -321,9 +321,9 @@ body{
 }
 
 
-/* ===========================
-   IMAGEN DEL PRODUCTO
-=========================== */
+/* ======================================
+   IMAGEN NORMAL DEL PRODUCTO
+====================================== */
 
 .product-image{
 
@@ -345,66 +345,6 @@ body{
 /* ======================================
    CONTROLES INDIVIDUALES DE IMAGEN
 ====================================== */
-
-/*
-   Cada producto puede controlar:
-
-   1. POSICIÓN HORIZONTAL
-   2. POSICIÓN VERTICAL
-   3. ZOOM
-
-
-   FORMATO:
-
-   object-position: HORIZONTAL VERTICAL;
-
-
-   HORIZONTAL:
-
-   0%   = izquierda
-   50%  = centro
-   100% = derecha
-
-
-   VERTICAL:
-
-   0%   = arriba
-   50%  = centro
-   100% = abajo
-
-
-   ZOOM:
-
-   transform:scale(1);
-
-   = tamaño normal
-
-
-   transform:scale(1.10);
-
-   = 10% de zoom
-
-
-   transform:scale(1.25);
-
-   = 25% de zoom
-
-
-   transform:scale(1.50);
-
-   = 50% de zoom
-
-
-   transform:scale(2);
-
-   = 100% de zoom
-
-
-   IMPORTANTE:
-
-   La imagen siempre permanece dentro
-   del recuadro de la tarjeta.
-*/
 
 
 /* ======================================
@@ -534,13 +474,89 @@ body{
 ====================================== */
 
 
+/*
+   Las categorías de bebidas utilizan
+   una zona de imagen más alta.
+
+   La imagen llena completamente
+   la zona utilizando "cover".
+
+   Esto evita espacios laterales.
+
+   La fotografía se recorta para
+   conseguir el efecto vertical.
+*/
+
+
+/* ===========================
+   BEBIDAS
+=========================== */
+
+.categoria-bebidas .product-image{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
+
+}
+
+
+/* ===========================
+   BEBIDAS ALCOHÓLICAS
+=========================== */
+
+.categoria-bebidas-alcoholicas .product-image{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
+
+}
+
+
+/* ===========================
+   CÓCTELES
+=========================== */
+
+.categoria-cocteles .product-image{
+
+    width:100%;
+
+    height:300px;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    display:block;
+
+}
+
+
+/* ======================================
+   PRODUCTOS DE BEBIDAS
+====================================== */
+
+
 /* ===========================
    JUGO DE MANGO
 =========================== */
 
 .product-jugo-mango .product-image{
 
-    object-position:30% 30%;
+    object-position:50% 48%;
 
     transform:scale(1);
 
@@ -592,7 +608,7 @@ body{
 
 .product-limonada-natural .product-image{
 
-    object-position:50% 50%;
+    object-position:50% 60%;
 
     transform:scale(1);
 
@@ -605,7 +621,7 @@ body{
 
 .product-limonada-hierbabuena .product-image{
 
-    object-position:50% 50%;
+    object-position:50% 62%;
 
     transform:scale(1);
 
@@ -618,7 +634,7 @@ body{
 
 .product-limonada-coco .product-image{
 
-    object-position:50% 50%;
+    object-position:50% 30%;
 
     transform:scale(1);
 
@@ -631,7 +647,7 @@ body{
 
 .product-sodas-saborizadas .product-image{
 
-    object-position:50% 50%;
+    object-position:50% 30%;
 
     transform:scale(1);
 
@@ -667,21 +683,6 @@ body{
 /* ======================================
    BOTONES DE OPCIONES
 ====================================== */
-
-/*
-   Estos botones se utilizan únicamente
-   cuando un producto tiene diferentes
-   opciones que cambian su fotografía.
-
-   Ejemplo:
-
-   Agua / Leche
-
-   Con Gas / Sin Gas
-
-   Coca-Cola / Quatro / Soda / Canada Dry
-*/
-
 
 .product-options{
 
@@ -850,9 +851,9 @@ body{
 }
 
 
-/* ===========================
+/* ======================================
    CELULARES PEQUEÑOS
-=========================== */
+====================================== */
 
 @media(max-width:480px){
 
@@ -912,6 +913,10 @@ body{
     }
 
 
+    /* ===========================
+       IMÁGENES NORMALES
+    =========================== */
+
     .product-image{
 
         height:150px;
@@ -946,79 +951,24 @@ body{
         font-size:.78rem;
 
     }
-    
-/* ======================================
-   TAMAÑO ESPECIAL PARA BEBIDAS
-====================================== */
-
-/*
-   Las categorías de bebidas utilizan
-   fotografías más verticales.
-
-   Las demás categorías mantienen
-   su tamaño normal de 180px.
-*/
 
 
-/* ===========================
-   BEBIDAS
-=========================== */
+    /* ======================================
+       BEBIDAS EN CELULAR
+    ====================================== */
 
-.categoria-bebidas .product-image{
-
-    height:330px;
-
-}
-
-
-/* ===========================
-   BEBIDAS ALCOHÓLICAS
-=========================== */
-
-.categoria-bebidas-alcoholicas .product-image{
-
-    height:330px;
-
-}
-
-
-/* ===========================
-   CÓCTELES
-=========================== */
-
-.categoria-cocteles .product-image{
-
-    height:330px;
-
-}
-
-
-/* ======================================
-   CELULARES
-====================================== */
-
-@media(max-width:480px){
-
-    .categoria-bebidas .product-image{
-
-        height:280px;
-
-    }
-
-
-    .categoria-bebidas-alcoholicas .product-image{
-
-        height:280px;
-
-    }
-
-
+    .categoria-bebidas .product-image,
+    .categoria-bebidas-alcoholicas .product-image,
     .categoria-cocteles .product-image{
 
-        height:280px;
+        width:100%;
+
+        height:260px;
+
+        object-fit:cover;
+
+        object-position:center;
 
     }
-
-}
 
 }
