@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
 
 <head>
 
@@ -7,159 +8,282 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Al Pastificio | Appetizers</title>
+    <title>Al Pastificio | Menú Infantil</title>
 
     <link rel="stylesheet" href="../css/categoria.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
 
 </head>
 
-<body>
+
+<body class="categoria-infantil">
 
 <div class="container">
 
-    <!-- HEADER -->
 
-    <body>
+    <!-- ================================
+         HEADER
+    ================================= -->
 
-<header class="header">
+    <header class="header">
 
-    <img src="../media/logo.png" class="logo" alt="Al Pastificio">
+        <img
+            src="../media/logo web.png"
+            class="logo"
+            alt="Al Pastificio"
+        >
 
-    <a href="../menu-es.html" class="back">
-        ← Back to Menu
-    </a>
+        <a
+            href="../menu-es.html"
+            class="back"
+        >
+            ← Volver al menú
+        </a>
 
-</header>
+    </header>
 
-<div class="container">
 
-    <!-- Hero -->
-    <!-- Productos -->
-    <!-- Footer -->
 
-</div>
-
-</body>
-    <!-- HERO -->
+    <!-- ================================
+         HERO
+    ================================= -->
 
     <section class="category-hero">
 
-        <img src="../media/categorias/entradas.jpeg"
-             alt="Appetizers"
-             class="category-image">
+        <img
+            src="../media/categorias/infantil.jpeg"
+            alt="Menú Infantil"
+            class="category-image"
+        >
 
         <div class="category-overlay">
 
-            <h1>APPETIZERS</h1>
+            <h1>MENÚ INFANTIL</h1>
 
             <p>
-                Start your Italian experience with our homemade appetizers,
-                prepared with fresh ingredients and authentic Italian flavors.
+                Una deliciosa opción para los más pequeños.
             </p>
 
         </div>
 
     </section>
 
-    <!-- PRODUCTS -->
+
+
+    <!-- ================================
+         PRODUCTO
+    ================================= -->
 
     <section class="products">
 
-        <div class="product">
+        <div class="product product-menu-infantil">
 
-            <div class="product-header">
 
-                <h3>Product Name</h3>
+            <!-- FOTO REPRESENTATIVA -->
 
-                <span class="price">$0.00</span>
+            <img
+                src="../media/fotos platos/menu-infantil.jpeg"
+                alt="Menú Infantil"
+                class="product-image"
+            >
+
+
+            <div class="product-info">
+
+
+                <!-- NOMBRE Y PRECIO -->
+
+                <div class="product-header">
+
+                    <h3>
+                        Menú Infantil
+                    </h3>
+
+                    <span class="price">
+                        $0.00
+                    </span>
+
+                </div>
+
+
+
+                <!-- =========================
+                     PROTEÍNA
+                ========================== -->
+
+                <p class="option-title">
+                    <strong>Elige tu proteína</strong>
+                </p>
+
+                <div class="product-options">
+
+                    <button
+                        type="button"
+                        class="option-button active"
+                        onclick="seleccionarOpcion(this)"
+                    >
+                        Cubos de Pollo
+                    </button>
+
+                    <button
+                        type="button"
+                        class="option-button"
+                        onclick="seleccionarOpcion(this)"
+                    >
+                        Cubos de Solomito
+                    </button>
+
+                </div>
+
+
+
+                <!-- =========================
+                     ACOMPAÑAMIENTO
+                ========================== -->
+
+                <p class="option-title">
+                    <strong>Elige tu acompañamiento</strong>
+                </p>
+
+                <div class="product-options">
+
+                    <button
+                        type="button"
+                        class="option-button active"
+                        onclick="seleccionarOpcion(this)"
+                    >
+                        Papas Fritas
+                    </button>
+
+                    <button
+                        type="button"
+                        class="option-button"
+                        onclick="seleccionarOpcion(this)"
+                    >
+                        Pasta Alfredo
+                    </button>
+
+                </div>
+
+
+
+                <!-- =========================
+                     BEBIDA
+                ========================== -->
+
+                <p class="option-title">
+                    <strong>Elige tu bebida</strong>
+                </p>
+
+                <div class="product-options">
+
+                    <button
+                        type="button"
+                        class="option-button active"
+                        onclick="seleccionarOpcion(this)"
+                    >
+                        Jugo
+                    </button>
+
+                    <button
+                        type="button"
+                        class="option-button"
+                        onclick="seleccionarOpcion(this)"
+                    >
+                        Gaseosa
+                    </button>
+
+                </div>
+
+
+
+                <!-- =========================
+                     DESCRIPCIÓN
+                ========================== -->
+
+                <p class="product-description">
+
+                    Combina las opciones a tu gusto:
+                    cubos de pollo o solomito, papas fritas
+                    o pasta Alfredo y jugo o gaseosa.
+
+                </p>
+
+
+
+                <!-- =========================
+                     HELADO
+                ========================== -->
+
+                <p class="helado-incluido">
+
+                    🍦 Helado incluido.
+
+                </p>
+
 
             </div>
-
-            <p>
-                Product description.
-            </p>
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-header">
-
-                <h3>Product Name</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-            <p>
-                Product description.
-            </p>
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-header">
-
-                <h3>Product Name</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-            <p>
-                Product description.
-            </p>
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-header">
-
-                <h3>Product Name</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-            <p>
-                Product description.
-            </p>
-
-        </div>
-
-        <div class="product">
-
-            <div class="product-header">
-
-                <h3>Product Name</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-            <p>
-                Product description.
-            </p>
 
         </div>
 
     </section>
 
-    <!-- FOOTER -->
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
 
     <footer class="footer">
 
-        <img src="../media/logo.png" class="footer-logo" alt="Al Pastificio">
+        <img
+            src="../media/logo.png"
+            class="footer-logo"
+            alt="Al Pastificio"
+        >
 
-        <p>© 2026 Al Pastificio</p>
+        <p>
+            © 2026 Al Pastificio
+        </p>
 
     </footer>
 
+
 </div>
+
+
+
+<!-- ================================
+     JAVASCRIPT
+================================= -->
+
+<script>
+
+function seleccionarOpcion(boton) {
+
+    const grupo = boton.closest('.product-options');
+
+    if (!grupo) return;
+
+    const botones =
+        grupo.querySelectorAll('.option-button');
+
+    botones.forEach(function(btn) {
+
+        btn.classList.remove('active');
+
+    });
+
+    boton.classList.add('active');
+
+}
+
+</script>
+
 
 </body>
 

@@ -1,743 +1,822 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Al Pastificio | Bebidas</title>
+<title>Al Pastificio | Bebidas</title>
 
-    <link rel="stylesheet" href="../css/categoria.css">
+<link rel="stylesheet" href="../css/categoria.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet"
-    >
+<link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+>
 
 </head>
 
-
 <body class="categoria-bebidas">
-
 
 <div class="container">
 
 
-    <!-- =================================
-         HEADER
-    ================================== -->
+<!-- =================================
+     HEADER
+================================== -->
 
-    <header class="header">
+<header class="header">
 
-        <img
-            src="../media/logo web.png"
-            class="logo"
-            alt="Al Pastificio"
-        >
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
 
-        <a
-            href="../menu-es.html"
-            class="back"
-        >
-            ← Volver al menú
-        </a>
+    <a
+        href="../menu-es.html"
+        class="back"
+    >
+        ← Volver al menú
+    </a>
 
-    </header>
+</header>
 
 
 
-    <!-- =================================
-         HERO
-    ================================== -->
+<!-- =================================
+     HERO
+================================== -->
 
-    <section class="category-hero">
+<section class="category-hero">
 
-        <img
-            src="../media/categorias/bebidas.jpeg"
-            alt="Bebidas"
-            class="category-image"
-        >
+    <img
+        src="../media/categorias/bebidas.jpeg"
+        alt="Bebidas"
+        class="category-image"
+    >
 
-        <div class="category-overlay">
+    <div class="category-overlay">
 
-            <h1>
-                BEBIDAS
-            </h1>
-
-            <p>
-                Jugos, limonadas y refrescantes bebidas preparadas
-                para acompañar tu experiencia en Al Pastificio.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =================================
-         PRODUCTOS
-    ================================== -->
-
-    <section class="products">
-
-
-        <!-- =================================
-             JUGO DE MANGO
-             OPCIONES: AGUA / LECHE
-        ================================== -->
-
-        <div class="product product-jugo-mango">
-
-            <img
-                src="../media/fotos platos/jugo-mango-en-agua.jpeg"
-                alt="Jugo de Mango"
-                class="product-image"
-                id="imagen-jugo-mango"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Jugo de Mango
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-mango',
-                            '../media/fotos platos/jugo-mango-en-agua.jpeg',
-                            this
-                        )"
-                    >
-                        Agua
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-mango',
-                            '../media/fotos platos/jugo-mango-en-leche.jpeg',
-                            this
-                        )"
-                    >
-                        Leche
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             JUGO DE MORA
-             OPCIONES: AGUA / LECHE
-        ================================== -->
-
-        <div class="product product-jugo-mora">
-
-            <img
-                src="../media/fotos platos/jugo-mora-en-agua.jpeg"
-                alt="Jugo de Mora"
-                class="product-image"
-                id="imagen-jugo-mora"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Jugo de Mora
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-mora',
-                            '../media/fotos platos/jugo-mora-en-agua.jpeg',
-                            this
-                        )"
-                    >
-                        Agua
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-mora',
-                            '../media/fotos platos/jugo-mora-en-leche.jpeg',
-                            this
-                        )"
-                    >
-                        Leche
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             JUGO DE FRESA
-             OPCIONES: AGUA / LECHE
-        ================================== -->
-
-        <div class="product product-jugo-fresa">
-
-            <img
-                src="../media/fotos platos/jugo-fresa-en-agua.jpeg"
-                alt="Jugo de Fresa"
-                class="product-image"
-                id="imagen-jugo-fresa"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Jugo de Fresa
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-fresa',
-                            '../media/fotos platos/jugo-fresa-en-agua.jpeg',
-                            this
-                        )"
-                    >
-                        Agua
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-fresa',
-                            '../media/fotos platos/jugo-fresa-en-leche.jpeg',
-                            this
-                        )"
-                    >
-                        Leche
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             JUGO DE MARACUYÁ
-             OPCIONES: AGUA / LECHE
-        ================================== -->
-
-        <div class="product product-jugo-maracuya">
-
-            <img
-                src="../media/fotos platos/jugo-maracuya-en-agua.jpeg"
-                alt="Jugo de Maracuyá"
-                class="product-image"
-                id="imagen-jugo-maracuya"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Jugo de Maracuyá
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-maracuya',
-                            '../media/fotos platos/jugo-maracuya-en-agua.jpeg',
-                            this
-                        )"
-                    >
-                        Agua
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-jugo-maracuya',
-                            '../media/fotos platos/jugo-maracuya-en-leche.jpeg',
-                            this
-                        )"
-                    >
-                        Leche
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             LIMONADA NATURAL
-        ================================== -->
-
-        <div class="product product-limonada-natural">
-
-            <img
-                src="../media/fotos platos/limonada-natural.jpeg"
-                alt="Limonada Natural"
-                class="product-image"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Limonada Natural
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             LIMONADA DE HIERBABUENA
-        ================================== -->
-
-        <div class="product product-limonada-hierbabuena">
-
-            <img
-                src="../media/fotos platos/limonada-hierba-buena.jpeg"
-                alt="Limonada de Hierbabuena"
-                class="product-image"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Limonada de Hierbabuena
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             LIMONADA DE COCO
-        ================================== -->
-
-        <div class="product product-limonada-coco">
-
-            <img
-                src="../media/fotos platos/limonada-de-coco.jpeg"
-                alt="Limonada de Coco"
-                class="product-image"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Limonada de Coco
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             SODAS SABORIZADAS
-             OPCIONES: FRUTOS ROJOS / TAMARINDO /
-                       MARACUYÁ / LULO
-        ================================== -->
-
-        <div class="product product-sodas-saborizadas">
-
-            <img
-                src="../media/fotos platos/soda-saborizada-frutos-rojos.jpeg"
-                alt="Sodas Saborizadas"
-                class="product-image"
-                id="imagen-sodas-saborizadas"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Sodas Saborizadas
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-sodas-saborizadas',
-                            '../media/fotos platos/soda-saborizada-frutos-rojos.jpeg',
-                            this
-                        )"
-                    >
-                        Frutos Rojos
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-sodas-saborizadas',
-                            '../media/fotos platos/soda-saborizada-tamarindo.jpeg',
-                            this
-                        )"
-                    >
-                        Tamarindo
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-sodas-saborizadas',
-                            '../media/fotos platos/soda-saborizada-maracuya.jpeg',
-                            this
-                        )"
-                    >
-                        Maracuyá
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-sodas-saborizadas',
-                            '../media/fotos platos/soda-saborizada-lulo.jpeg',
-                            this
-                        )"
-                    >
-                        Lulo
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             GASEOSAS
-             OPCIONES: COCA-COLA / QUATRO /
-                       SODA / CANADA DRY
-        ================================== -->
-
-        <div class="product product-gaseosas">
-
-            <img
-                src="../media/fotos platos/coca-cola.jpeg"
-                alt="Gaseosas"
-                class="product-image"
-                id="imagen-gaseosas"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Gaseosas
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-gaseosas',
-                            '../media/fotos platos/coca-cola.jpeg',
-                            this
-                        )"
-                    >
-                        Coca-Cola
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-gaseosas',
-                            '../media/fotos platos/quatro.jpeg',
-                            this
-                        )"
-                    >
-                        Quatro
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-gaseosas',
-                            '../media/fotos platos/soda.jpeg',
-                            this
-                        )"
-                    >
-                        Soda
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-gaseosas',
-                            '../media/fotos platos/canada-dry.jpeg',
-                            this
-                        )"
-                    >
-                        Canada Dry
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- =================================
-             BOTELLA DE AGUA
-             OPCIONES: CON GAS / SIN GAS
-        ================================== -->
-
-        <div class="product product-botella-agua">
-
-            <img
-                src="../media/fotos platos/agua-con-gas.jpeg"
-                alt="Botella de Agua"
-                class="product-image"
-                id="imagen-botella-agua"
-            >
-
-            <div class="product-info">
-
-                <div class="product-header">
-
-                    <h3>
-                        Botella de Agua
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
-                </div>
-
-
-                <div class="product-options">
-
-                    <button
-                        type="button"
-                        class="option-button active"
-                        onclick="cambiarImagen(
-                            'imagen-botella-agua',
-                            '../media/fotos platos/agua-con-gas.jpeg',
-                            this
-                        )"
-                    >
-                        Con Gas
-                    </button>
-
-                    <button
-                        type="button"
-                        class="option-button"
-                        onclick="cambiarImagen(
-                            'imagen-botella-agua',
-                            '../media/fotos platos/agua-sin-gas.jpeg',
-                            this
-                        )"
-                    >
-                        Sin Gas
-                    </button>
-
-                </div>
-
-
-                <p>
-                    Descripción del producto.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </section>
-
-
-
-    <!-- =================================
-         FOOTER
-    ================================== -->
-
-    <footer class="footer">
-
-        <img
-            src="../media/logo.png"
-            class="footer-logo"
-            alt="Al Pastificio"
-        >
+        <h1>BEBIDAS</h1>
 
         <p>
-            © 2026 Al Pastificio
+            Jugos, limonadas y refrescantes bebidas preparadas
+            para acompañar tu experiencia en Al Pastificio.
         </p>
 
-    </footer>
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     PRODUCTOS
+================================== -->
+
+<section class="products">
+
+
+<!-- =================================
+     SODAS SABORIZADAS
+     FRUTOS ROJOS / TAMARINDO /
+     MARACUYÁ / LULO
+================================== -->
+
+<div class="product product-sodas-saborizadas">
+
+    <img
+        src="../media/fotos platos/soda-saborizada-frutos-rojos.jpeg"
+        alt="Soda Saborizada"
+        class="product-image"
+        id="imagen-sodas-saborizadas"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Sodas Saborizadas</h3>
+
+            <span class="price">$16.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- FRUTOS ROJOS -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-frutos-rojos.jpeg',
+                    '$16.000',
+                    'Refrescante soda, combinada con una selección de sabores frutales para un equilibrio entre frescura, dulzor y acidez. Disponible en tamarindo, frutos rojos, lulo y maracuyá.',
+                    this
+                )"
+            >
+                Frutos Rojos
+            </button>
+
+
+            <!-- TAMARINDO -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-tamarindo.jpeg',
+                    '$16.000',
+                    'Refrescante soda, combinada con una selección de sabores frutales para un equilibrio entre frescura, dulzor y acidez. Disponible en tamarindo, frutos rojos, lulo y maracuyá.',
+                    this
+                )"
+            >
+                Tamarindo
+            </button>
+
+
+            <!-- MARACUYÁ -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-maracuya.jpeg',
+                    '$16.000',
+                    'Refrescante soda, combinada con una selección de sabores frutales para un equilibrio entre frescura, dulzor y acidez. Disponible en tamarindo, frutos rojos, lulo y maracuyá.',
+                    this
+                )"
+            >
+                Maracuyá
+            </button>
+
+
+            <!-- LULO -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-lulo.jpeg',
+                    '$16.000',
+                    'Refrescante soda, combinada con una selección de sabores frutales para un equilibrio entre frescura, dulzor y acidez. Disponible en tamarindo, frutos rojos, lulo y maracuyá.',
+                    this
+                )"
+            >
+                Lulo
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Refrescante soda, combinada con una selección de sabores
+            frutales para un equilibrio entre frescura, dulzor y acidez.
+            Disponible en tamarindo, frutos rojos, lulo y maracuyá.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     LIMONADA DE COCO
+================================== -->
+
+<div class="product product-limonada-coco">
+
+    <img
+        src="../media/fotos platos/limonada-de-coco.jpeg"
+        alt="Limonada de Coco"
+        class="product-image"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Limonada de Coco</h3>
+
+            <span class="price">$15.000</span>
+
+        </div>
+
+        <p class="product-description">
+
+            Una refrescante combinación de limón y coco, donde la acidez
+            cítrica se encuentra con la suavidad y cremosidad del coco.
+            Una bebida tropical, equilibrada y delicadamente dulce.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     LIMONADA NATURAL
+================================== -->
+
+<div class="product product-limonada-natural">
+
+    <img
+        src="../media/fotos platos/limonada-natural.jpeg"
+        alt="Limonada Natural"
+        class="product-image"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Limonada Natural</h3>
+
+            <span class="price">$9.000</span>
+
+        </div>
+
+        <p class="product-description">
+
+            Clásica y refrescante limonada preparada con limón natural,
+            cítrico y vibrante. Una bebida ligera y equilibrada, ideal
+            para acompañar cualquier preparación.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     LIMONADA DE HIERBABUENA
+================================== -->
+
+<div class="product product-limonada-hierbabuena">
+
+    <img
+        src="../media/fotos platos/limonada-hierba-buena.jpeg"
+        alt="Limonada de Hierbabuena"
+        class="product-image"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Limonada de Hierbabuena</h3>
+
+            <span class="price">$12.000</span>
+
+        </div>
+
+        <p class="product-description">
+
+            Limonada natural de carácter fresco y aromático, con hojas
+            frescas de hierbabuena. Su equilibrio entre acidez y frescura
+            la convierte en una opción ligera y revitalizante.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     JUGO DE MANGO
+     AGUA / LECHE
+================================== -->
+
+<div class="product product-jugo-mango">
+
+    <img
+        src="../media/fotos platos/jugo-mango-en-agua.jpeg"
+        alt="Jugo de Mango"
+        class="product-image"
+        id="imagen-jugo-mango"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Jugo de Mango</h3>
+
+            <span class="price">$10.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- AGUA -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mango',
+                    '../media/fotos platos/jugo-mango-en-agua.jpeg',
+                    '$10.000',
+                    'Jugo preparado con pulpa de mango, de textura ligera y sabor naturalmente dulce. Sus notas tropicales y su frescura hacen de esta bebida una opción sencilla y refrescante.',
+                    this
+                )"
+            >
+                Agua
+            </button>
+
+
+            <!-- LECHE -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mango',
+                    '../media/fotos platos/jugo-mango-en-leche.jpeg',
+                    '$12.000',
+                    'Pulpa de mango fresco combinado con leche para crear una bebida de textura cremosa y aterciopelada. Su dulzor tropical se integra con la suavidad de la leche en una preparación equilibrada y reconfortante.',
+                    this
+                )"
+            >
+                Leche
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Jugo preparado con pulpa de mango, de textura ligera y sabor
+            naturalmente dulce. Sus notas tropicales y su frescura hacen
+            de esta bebida una opción sencilla y refrescante.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     JUGO DE MORA
+     AGUA / LECHE
+================================== -->
+
+<div class="product product-jugo-mora">
+
+    <img
+        src="../media/fotos platos/jugo-mora-en-agua.jpeg"
+        alt="Jugo de Mora"
+        class="product-image"
+        id="imagen-jugo-mora"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Jugo de Mora</h3>
+
+            <span class="price">$10.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- AGUA -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mora',
+                    '../media/fotos platos/jugo-mora-en-agua.jpeg',
+                    '$10.000',
+                    'Jugo de mora preparado en agua, con un delicado equilibrio entre dulzor y acidez. Su perfil frutal y refrescante ofrece una bebida ligera, aromática y llena de carácter.',
+                    this
+                )"
+            >
+                Agua
+            </button>
+
+
+            <!-- LECHE -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mora',
+                    '../media/fotos platos/jugo-mora-en-leche.jpeg',
+                    '$12.000',
+                    'Pulpa de mora y leche se combinan en una bebida cremosa, de intenso carácter frutal y delicadas notas entre dulces y ácidas. Una preparación suave y refrescante, con una textura envolvente.',
+                    this
+                )"
+            >
+                Leche
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Jugo de mora preparado en agua, con un delicado equilibrio
+            entre dulzor y acidez. Su perfil frutal y refrescante ofrece
+            una bebida ligera, aromática y llena de carácter.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     JUGO DE FRESA
+     AGUA / LECHE
+================================== -->
+
+<div class="product product-jugo-fresa">
+
+    <img
+        src="../media/fotos platos/jugo-fresa-en-agua.jpeg"
+        alt="Jugo de Fresa"
+        class="product-image"
+        id="imagen-jugo-fresa"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Jugo de Fresa</h3>
+
+            <span class="price">$10.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- AGUA -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-fresa',
+                    '../media/fotos platos/jugo-fresa-en-agua.jpeg',
+                    '$10.000',
+                    'Pulpa de fresa transformada en un jugo fresco y ligero, con delicadas notas dulces y un agradable carácter frutal. Una opción refrescante que resalta la expresión natural de la fruta.',
+                    this
+                )"
+            >
+                Agua
+            </button>
+
+
+            <!-- LECHE -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-fresa',
+                    '../media/fotos platos/jugo-fresa-en-leche.jpeg',
+                    '$12.000',
+                    'Pulpa de fresa mezclada con leche hasta alcanzar una textura cremosa y sedosa. Su delicado dulzor y sus notas frutales dan lugar a una bebida suave, equilibrada y agradablemente aromática.',
+                    this
+                )"
+            >
+                Leche
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Pulpa de fresa transformada en un jugo fresco y ligero, con
+            delicadas notas dulces y un agradable carácter frutal. Una
+            opción refrescante que resalta la expresión natural de la fruta.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     JUGO DE MARACUYÁ
+     AGUA / LECHE
+================================== -->
+
+<div class="product product-jugo-maracuya">
+
+    <img
+        src="../media/fotos platos/jugo-maracuya-en-agua.jpeg"
+        alt="Jugo de Maracuyá"
+        class="product-image"
+        id="imagen-jugo-maracuya"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Jugo de Maracuyá</h3>
+
+            <span class="price">$10.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- AGUA -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-maracuya',
+                    '../media/fotos platos/jugo-maracuya-en-agua.jpeg',
+                    '$10.000',
+                    'Jugo de maracuyá preparado en agua, con una expresión fresca y aromática. Su característica acidez tropical aporta un sabor vibrante y refrescante en cada sorbo.',
+                    this
+                )"
+            >
+                Agua
+            </button>
+
+
+            <!-- LECHE -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-maracuya',
+                    '../media/fotos platos/jugo-maracuya-en-leche.jpeg',
+                    '$12.000',
+                    'La intensidad aromática del maracuyá se encuentra con la suavidad de la leche en una combinación cremosa y de carácter tropical. Una mezcla equilibrada entre acidez, dulzor y textura sedosa.',
+                    this
+                )"
+            >
+                Leche
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Jugo de maracuyá preparado en agua, con una expresión fresca
+            y aromática. Su característica acidez tropical aporta un sabor
+            vibrante y refrescante en cada sorbo.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     GASEOSAS
+     COCA-COLA / QUATRO /
+     SODA / CANADA DRY
+================================== -->
+
+<div class="product product-gaseosas">
+
+    <img
+        src="../media/fotos platos/coca-cola.jpeg"
+        alt="Gaseosas"
+        class="product-image"
+        id="imagen-gaseosas"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Gaseosas</h3>
+
+            <span class="price">$8.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- COCA-COLA -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/coca-cola.jpeg',
+                    '$8.000',
+                    'Selección de bebidas gaseosas de Coca-Cola, con opciones para todos los gustos: Quatro, soda, Coca-Cola Zero, Coca-Cola y Canada Dry.',
+                    this
+                )"
+            >
+                Coca-Cola
+            </button>
+
+
+            <!-- QUATRO -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/quatro.jpeg',
+                    '$8.000',
+                    'Selección de bebidas gaseosas de Coca-Cola, con opciones para todos los gustos: Quatro, soda, Coca-Cola Zero, Coca-Cola y Canada Dry.',
+                    this
+                )"
+            >
+                Quatro
+            </button>
+
+
+            <!-- SODA -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/soda.jpeg',
+                    '$8.000',
+                    'Selección de bebidas gaseosas de Coca-Cola, con opciones para todos los gustos: Quatro, soda, Coca-Cola Zero, Coca-Cola y Canada Dry.',
+                    this
+                )"
+            >
+                Soda
+            </button>
+
+
+            <!-- CANADA DRY -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/canada-dry.jpeg',
+                    '$8.000',
+                    'Selección de bebidas gaseosas de Coca-Cola, con opciones para todos los gustos: Quatro, soda, Coca-Cola Zero, Coca-Cola y Canada Dry.',
+                    this
+                )"
+            >
+                Canada Dry
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Selección de bebidas gaseosas de Coca-Cola, con opciones para
+            todos los gustos: Quatro, soda, Coca-Cola Zero, Coca-Cola y Canada Dry.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =================================
+     BOTELLA DE AGUA
+     CON GAS / SIN GAS
+================================== -->
+
+<div class="product product-botella-agua">
+
+    <img
+        src="../media/fotos platos/agua-con-gas.jpeg"
+        alt="Botella de Agua"
+        class="product-image"
+        id="imagen-botella-agua"
+    >
+
+    <div class="product-info">
+
+        <div class="product-header">
+
+            <h3>Botella de Agua</h3>
+
+            <span class="price">$9.000</span>
+
+        </div>
+
+
+        <div class="product-options">
+
+            <!-- CON GAS -->
+
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-botella-agua',
+                    '../media/fotos platos/agua-con-gas.jpeg',
+                    '$9.000',
+                    'Agua mineralizada con delicadas burbujas, de perfil limpio y refrescante. Una opción ligera y elegante para acompañar la experiencia gastronómica.',
+                    this
+                )"
+            >
+                Con Gas
+            </button>
+
+
+            <!-- SIN GAS -->
+
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-botella-agua',
+                    '../media/fotos platos/agua-sin-gas.jpeg',
+                    '$8.000',
+                    'Agua de sabor limpio y refrescante, ideal para acompañar los platos y disfrutar de una experiencia gastronómica equilibrada.',
+                    this
+                )"
+            >
+                Sin Gas
+            </button>
+
+        </div>
+
+
+        <p class="product-description">
+
+            Agua mineralizada con delicadas burbujas, de perfil limpio
+            y refrescante. Una opción ligera y elegante para acompañar
+            la experiencia gastronómica.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+</section>
+
+
+
+<!-- =================================
+     FOOTER
+================================== -->
+
+<footer class="footer">
+
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+
+    <p>
+        © 2026 Al Pastificio
+    </p>
+
+</footer>
 
 
 </div>
@@ -746,30 +825,95 @@
 
 <!-- =================================
      JAVASCRIPT
-     CAMBIO DE IMÁGENES
+     CAMBIO DE IMAGEN,
+     PRECIO Y DESCRIPCIÓN
 ================================== -->
 
 <script>
 
-function cambiarImagen(imagenId, nuevaImagen, boton) {
+function cambiarImagen(
+    imagenId,
+    nuevaImagen,
+    nuevoPrecio,
+    nuevaDescripcion,
+    boton
+) {
 
-    const imagen = document.getElementById(imagenId);
+
+    /* ==============================
+       BUSCAR LA IMAGEN
+    ============================== */
+
+    const imagen =
+        document.getElementById(imagenId);
+
+
+    /* ==============================
+       CAMBIAR LA IMAGEN
+    ============================== */
 
     if (imagen) {
+
         imagen.src = nuevaImagen;
+
     }
 
 
-    /* =================================
-       QUITAR ESTADO ACTIVO
-       DE LOS BOTONES DE LA TARJETA
-    ================================== */
+    /* ==============================
+       BUSCAR LA TARJETA
+    ============================== */
 
-    const tarjeta = boton.closest('.product');
+    const tarjeta =
+        boton.closest('.product');
+
 
     if (tarjeta) {
 
-        const botones = tarjeta.querySelectorAll('.option-button');
+
+        /* ==============================
+           CAMBIAR PRECIO
+        ============================== */
+
+        const precio =
+            tarjeta.querySelector('.price');
+
+
+        if (precio) {
+
+            precio.textContent = nuevoPrecio;
+
+        }
+
+
+        /* ==============================
+           CAMBIAR DESCRIPCIÓN
+        ============================== */
+
+        const descripcion =
+            tarjeta.querySelector('.product-description');
+
+
+        if (descripcion) {
+
+            descripcion.textContent =
+                nuevaDescripcion;
+
+        }
+
+
+        /* ==============================
+           BUSCAR BOTONES
+        ============================== */
+
+        const botones =
+            tarjeta.querySelectorAll(
+                '.option-button'
+            );
+
+
+        /* ==============================
+           QUITAR ACTIVE
+        ============================== */
 
         botones.forEach(function(btn) {
 
@@ -780,9 +924,9 @@ function cambiarImagen(imagenId, nuevaImagen, boton) {
     }
 
 
-    /* =================================
-       ACTIVAR BOTÓN SELECCIONADO
-    ================================== */
+    /* ==============================
+       ACTIVAR BOTÓN PRESIONADO
+    ============================== */
 
     boton.classList.add('active');
 
