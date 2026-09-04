@@ -1,342 +1,530 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Al Pastificio | Panini</title>
-
-<link rel="stylesheet" href="../css/categoria.css">
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet"
->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Panini</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
-
 <body class="categoria-panini">
-
 <div class="container">
 
-<!-- =================================
+<!-- ======================================
      HEADER
-================================== -->
+     ====================================== -->
 
 <header class="header">
-
-<img
-    src="../media/logo web.png"
-    class="logo"
-    alt="Al Pastificio"
->
-
-<a
-    href="../menu-es.html"
-    class="back"
->
-    ← Volver al menú
-</a>
-
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a href="../menu-es.html" class="back">
+        ← Volver al menú
+    </a>
 </header>
 
-
-<!-- =================================
-     HERO
-================================== -->
+<!-- ======================================
+     HERO DE CATEGORÍA
+     ====================================== -->
 
 <section class="category-hero">
-
-<img
-    src="../media/categorias/panini.jpeg"
-    alt="Panini"
-    class="category-image"
->
-
-<div class="category-overlay">
-
-    <h1>
-        PANINI
-    </h1>
-
-    <p>
-        Panini preparados con ingredientes frescos y deliciosas
-        combinaciones de sabores italianos.
-    </p>
-
-</div>
-
+    <img
+        src="../media/categorias/panini.jpeg"
+        alt="Panini"
+        class="category-image"
+    >
+    <div class="category-overlay">
+        <h1>PANINI</h1>
+        <p>
+            Panini preparados con ingredientes frescos y deliciosas
+            combinaciones de sabores italianos.
+        </p>
+    </div>
 </section>
 
-
-<!-- =================================
+<!-- ======================================
      PRODUCTOS
-================================== -->
+     ====================================== -->
 
 <section class="products">
 
-
-<!-- =================================
+<!-- ======================================
      PANINO HAWAIANO
-================================== -->
+     ====================================== -->
 
-<div class="product product-panino-hawaiano">
+<div
+    class="product product-panino-hawaiano"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Panino Hawaiano"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product-image-container">
-
-        <img
-            src="../media/fotos platos/panino-hawaiano.jpeg"
-            alt="Panino Hawaiano"
-            class="product-image"
-        >
-
-    </div>
-
-    <div class="product-info">
-
-        <div class="product-header">
-
-            <h3>
-                Panino Hawaiano
-            </h3>
-
-            <span class="price">
-                $0.00
-            </span>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/panino-hawaiano.jpeg"
+                alt="Panino Hawaiano"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Panino Hawaiano</h3>
+                    <span class="price">$28.000</span>
+                </div>
+                <p class="ingredients">
+                    Jamón, piña, tocineta y queso mozzarella.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <p>
-            Tomate rojo, jamón, piña y tocineta.
-        </p>
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/panino-hawaiano.jpeg"
+                    alt="Panino Hawaiano completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Panino Hawaiano</h3>
+                    <span class="price">$28.000</span>
+                </div>
+                <p>
+                    Nuestro pan especial de finas hierbas, acompañado de una suave
+                    salsa de mayonesa de la casa, tomate rojo, jamón, piña, tocineta
+                    y queso mozzarella. Horneado hasta conseguir un ligero tostado
+                    y un interior cálido y fundente, donde el dulzor de la piña
+                    contrasta con las notas saladas y ahumadas.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
     </div>
-
 </div>
 
-
-<!-- =================================
+<!-- ======================================
      PANINO MADURADOS
-================================== -->
+     ====================================== -->
 
-<div class="product product-panino-madurados">
+<div
+    class="product product-panino-madurados"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Panino Madurados"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product-image-container">
-
-        <img
-            src="../media/fotos platos/panino-madurados.jpeg"
-            alt="Panino Madurados"
-            class="product-image"
-        >
-
-    </div>
-
-    <div class="product-info">
-
-        <div class="product-header">
-
-            <h3>
-                Panino Madurados
-            </h3>
-
-            <span class="price">
-                $0.00
-            </span>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/panino-madurados.jpeg"
+                alt="Panino Madurados"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Panino Madurados</h3>
+                    <span class="price">$30.000</span>
+                </div>
+                <p class="ingredients">
+                    Salami, jamón, pepperoni y queso mozzarella.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <p>
-            Salami, jamón y pepperoni.
-        </p>
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/panino-madurados.jpeg"
+                    alt="Panino Madurados completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Panino Madurados</h3>
+                    <span class="price">$30.000</span>
+                </div>
+                <p>
+                    Pan de la casa con finas hierbas, acompañado de nuestra salsa
+                    especial de mayonesa, salami, jamón, pepperoni y queso mozzarella.
+                    Llevado al horno hasta obtener un delicado tostado exterior y un
+                    interior caliente y fundente, resaltando el carácter intenso y
+                    especiado de los embutidos.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
     </div>
-
 </div>
 
-
-<!-- =================================
+<!-- ======================================
      PANINO MILANÉS
-================================== -->
+     ====================================== -->
 
-<div class="product product-panino-milanes">
+<div
+    class="product product-panino-milanes"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Panino Milanés"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product-image-container">
-
-        <img
-            src="../media/fotos platos/panino-milanes.jpeg"
-            alt="Panino Milanés"
-            class="product-image"
-        >
-
-    </div>
-
-    <div class="product-info">
-
-        <div class="product-header">
-
-            <h3>
-                Panino Milanés
-            </h3>
-
-            <span class="price">
-                $0.00
-            </span>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/panino-milanes.jpeg"
+                alt="Panino Milanés"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Panino Milanés</h3>
+                    <span class="price">$29.000</span>
+                </div>
+                <p class="ingredients">
+                    Pollo, champiñones, jamón y queso mozzarella.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <p>
-            Pollo, champiñones y jamón.
-        </p>
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/panino-milanes.jpeg"
+                    alt="Panino Milanés completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Panino Milanés</h3>
+                    <span class="price">$29.000</span>
+                </div>
+                <p>
+                    Nuestro pan de finas hierbas, relleno con pollo, champiñones,
+                    jamón y queso mozzarella, acompañado de nuestra especial salsa
+                    de mayonesa. Horneado hasta lograr una textura ligeramente
+                    crujiente por fuera y un interior suave y fundente, en una
+                    combinación cálida y llena de sabor.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
     </div>
-
 </div>
 
-
-<!-- =================================
+<!-- ======================================
      PANINO PARMA
-================================== -->
+     ====================================== -->
 
-<div class="product product-panino-parma">
+<div
+    class="product product-panino-parma"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Panino Parma"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product-image-container">
-
-        <img
-            src="../media/fotos platos/panino-parma.jpeg"
-            alt="Panino Parma"
-            class="product-image"
-        >
-
-    </div>
-
-    <div class="product-info">
-
-        <div class="product-header">
-
-            <h3>
-                Panino Parma
-            </h3>
-
-            <span class="price">
-                $0.00
-            </span>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/panino-parma.jpeg"
+                alt="Panino Parma"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Panino Parma</h3>
+                    <span class="price">$31.000</span>
+                </div>
+                <p class="ingredients">
+                    Pollo, bocconcini, pesto y queso mozzarella.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <p>
-            Pollo, bocconcini y pesto.
-        </p>
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/panino-parma.jpeg"
+                    alt="Panino Parma completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Panino Parma</h3>
+                    <span class="price">$31.000</span>
+                </div>
+                <p>
+                    Pan artesanal de la casa, acompañado de nuestra salsa especial
+                    de mayonesa, pollo, bocconcini, pesto y queso mozzarella. Horneado
+                    hasta conseguir un ligero tostado, mientras el queso se funde y
+                    las notas frescas y aromáticas del pesto realzan la suavidad del pollo.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
     </div>
-
 </div>
 
-
-<!-- =================================
+<!-- ======================================
      PANINO CALABRIA
-================================== -->
+     ====================================== -->
 
-<div class="product product-panino-calabria">
+<div
+    class="product product-panino-calabria"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Panino Calabria"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product-image-container">
-
-        <img
-            src="../media/fotos platos/panino-calabria.jpeg"
-            alt="Panino Calabria"
-            class="product-image"
-        >
-
-    </div>
-
-    <div class="product-info">
-
-        <div class="product-header">
-
-            <h3>
-                Panino Calabria
-            </h3>
-
-            <span class="price">
-                $0.00
-            </span>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/panino-calabria.jpeg"
+                alt="Panino Calabria"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Panino Calabria</h3>
+                    <span class="price">$32.000</span>
+                </div>
+                <p class="ingredients">
+                    Salami, bocconcini, tomates secos y rúgula.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <p>
-            Salami, bocconcini, tomates secos y rúgula.
-        </p>
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/panino-calabria.jpeg"
+                    alt="Panino Calabria completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Panino Calabria</h3>
+                    <span class="price">$32.000</span>
+                </div>
+                <p>
+                    Nuestro pan especial de finas hierbas, acompañado de salsa de
+                    mayonesa de la casa, salami, bocconcini, tomates secos, rúgula
+                    y queso mozzarella. Llevado al horno para conseguir un delicado
+                    tostado y un interior fundente, donde los sabores intensos de los
+                    embutidos se equilibran con la frescura de la rúgula y el carácter
+                    de los tomates secos.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
     </div>
-
 </div>
 
-
-<!-- =================================
+<!-- ======================================
      PANINO FIORENTINO
-================================== -->
+     ====================================== -->
 
-<div class="product product-panino-fiorentino">
+<div
+    class="product product-panino-fiorentino"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Panino Fiorentino"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product-image-container">
-
-        <img
-            src="../media/fotos platos/panino-fiorentino.jpeg"
-            alt="Panino Fiorentino"
-            class="product-image"
-        >
-
-    </div>
-
-    <div class="product-info">
-
-        <div class="product-header">
-
-            <h3>
-                Panino Fiorentino
-            </h3>
-
-            <span class="price">
-                $0.00
-            </span>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/panino-fiorentino.jpeg"
+                alt="Panino Fiorentino"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Panino Fiorentino</h3>
+                    <span class="price">$30.000</span>
+                </div>
+                <p class="ingredients">
+                    Jamón, champiñones y salsa de queso azul.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <p>
-            Jamón, champiñones y salsa de queso azul.
-        </p>
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/panino-fiorentino.jpeg"
+                    alt="Panino Fiorentino completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Panino Fiorentino</h3>
+                    <span class="price">$30.000</span>
+                </div>
+                <p>
+                    Pan de la casa con finas hierbas, relleno de jamón, champiñones,
+                    salsa de queso azul y queso mozzarella, acompañado de nuestra
+                    especial salsa de mayonesa. Horneado hasta alcanzar un ligero
+                    tostado y una textura cremosa y fundente, donde la suavidad del
+                    jamón y los champiñones se encuentra con el carácter intenso del
+                    queso azul.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
     </div>
-
 </div>
-
 
 </section>
 
-
-<!-- =================================
+<!-- ======================================
      FOOTER
-================================== -->
+     ====================================== -->
 
 <footer class="footer">
-
-<img
-    src="../media/logo.png"
-    class="footer-logo"
-    alt="Al Pastificio"
->
-
-<p>
-    © 2026 Al Pastificio
-</p>
-
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
 </footer>
 
 </div>
 
-</body>
+<!-- ======================================
+     JAVASCRIPT
+     ====================================== -->
 
+<script>
+document.querySelectorAll('.product').forEach(function(card) {
+    const front = card.querySelector('.product-front');
+    const back = card.querySelector('.product-back');
+
+    function setFrontHeight() {
+        card.style.height = front.offsetHeight + 'px';
+    }
+
+    setFrontHeight();
+
+    window.addEventListener('resize', function() {
+        if (!card.classList.contains('is-flipped')) {
+            setFrontHeight();
+        } else {
+            card.style.height = back.offsetHeight + 'px';
+        }
+    });
+
+    card.addEventListener('click', function(event) {
+        if (
+            event.target.closest('button') ||
+            event.target.closest('a') ||
+            event.target.closest('.option-button')
+        ) {
+            return;
+        }
+
+        if (!this.classList.contains('is-flipped')) {
+            this.style.height = back.offsetHeight + 'px';
+            this.classList.add('is-flipped');
+            this.setAttribute('aria-pressed', 'true');
+        } else {
+            this.style.height = front.offsetHeight + 'px';
+            this.classList.remove('is-flipped');
+            this.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+    card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!this.classList.contains('is-flipped')) {
+                this.style.height = back.offsetHeight + 'px';
+                this.classList.add('is-flipped');
+                this.setAttribute('aria-pressed', 'true');
+            } else {
+                this.style.height = front.offsetHeight + 'px';
+                this.classList.remove('is-flipped');
+                this.setAttribute('aria-pressed', 'false');
+            }
+        }
+    });
+
+    const images = card.querySelectorAll('img');
+    images.forEach(function(image) {
+        image.addEventListener('load', function() {
+            if (!card.classList.contains('is-flipped')) {
+                setFrontHeight();
+            }
+        });
+    });
+});
+</script>
+
+</body>
 </html>

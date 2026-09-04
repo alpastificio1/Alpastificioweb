@@ -1,78 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Al Pastificio | Bebidas Alcohólicas</title>
-
-<link rel="stylesheet" href="../css/categoria.css">
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet"
->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Bebidas Alcohólicas</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
-
 <body class="categoria-bebidas-alcoholicas">
-
 <div class="container">
-
 
 <!-- =================================
      HEADER
 ================================== -->
 
 <header class="header">
-
     <img
         src="../media/logo web.png"
         class="logo"
         alt="Al Pastificio"
     >
-
     <a
         href="../menu-es.html"
         class="back"
     >
         ← Volver al menú
     </a>
-
 </header>
-
-
 
 <!-- =================================
      HERO
 ================================== -->
 
 <section class="category-hero">
-
     <img
         src="../media/categorias/bebidas-alcoholicas.jpeg"
         alt="Bebidas Alcohólicas"
         class="category-image"
     >
-
     <div class="category-overlay">
-
         <h1>BEBIDAS ALCOHÓLICAS</h1>
-
         <p>
             Copas, sangrías y cervezas seleccionadas
             para acompañar tu experiencia en Al Pastificio.
         </p>
-
     </div>
-
 </section>
-
-
 
 <!-- =================================
      PRODUCTOS
@@ -80,450 +56,442 @@
 
 <section class="products">
 
+<!-- =================================
+     CERVEZAS IMPORTADAS
+     CORONA / STELLA ARTOIS
+================================== -->
 
-
-    <!-- =================================
-         COPA DE SANGRÍA
-         TINTO / ROSADO
-    ================================== -->
-
-    <div class="product product-copa-sangria">
-
-        <img
-            src="../media/fotos platos/copa-sangria-tinto.jpeg"
-            alt="Copa de Sangría"
-            class="product-image"
-            id="imagen-copa-sangria"
-        >
-
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>Copa de Sangría</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-
-            <div class="product-options">
-
-                <!-- TINTO -->
-
-                <button
-                    type="button"
-                    class="option-button active"
-                    onclick="cambiarImagen(
-                        'imagen-copa-sangria',
-                        '../media/fotos platos/copa-sangria-tinto.jpeg',
-                        this
-                    )"
-                >
-                    Tinto
-                </button>
-
-
-                <!-- ROSADO -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-copa-sangria',
-                        '../media/fotos platos/copa-sangria-rosado.jpeg',
-                        this
-                    )"
-                >
-                    Rosado
-                </button>
-
-            </div>
-
-
-            <p>
-                Refrescante copa de sangría, disponible en tinto o rosado.
-            </p>
-
+<div class="product product-cervezas-importadas">
+    <img
+        src="../media/fotos platos/corona.jpeg"
+        alt="Cervezas Importadas"
+        class="product-image"
+        id="imagen-cervezas-importadas"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Cervezas Importadas</h3>
+            <span class="price">$13.000</span>
         </div>
 
-    </div>
+        <div class="product-options">
+            <!-- CORONA -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-importadas',
+                    '../media/fotos platos/corona.jpeg',
+                    '$13.000',
+                    'Selección de cervezas importadas de carácter refrescante y equilibrado, disponibles en Corona y Stella Artois. Ideales para acompañar nuestras preparaciones.',
+                    this
+                )"
+            >
+                Corona
+            </button>
 
-
-
-    <!-- =================================
-         COPA DE VINO
-         BLANCO / TINTO / ROSADO
-    ================================== -->
-
-    <div class="product product-copa-vino">
-
-        <img
-            src="../media/fotos platos/copa-vino-blanco.jpeg"
-            alt="Copa de Vino"
-            class="product-image"
-            id="imagen-copa-vino"
-        >
-
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>Copa de Vino</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-
-            <div class="product-options">
-
-                <!-- BLANCO -->
-
-                <button
-                    type="button"
-                    class="option-button active"
-                    onclick="cambiarImagen(
-                        'imagen-copa-vino',
-                        '../media/fotos platos/copa-vino-blanco.jpeg',
-                        this
-                    )"
-                >
-                    Blanco
-                </button>
-
-
-                <!-- TINTO -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-copa-vino',
-                        '../media/fotos platos/copa-vino-tinto.jpeg',
-                        this
-                    )"
-                >
-                    Tinto
-                </button>
-
-
-                <!-- ROSADO -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-copa-vino',
-                        '../media/fotos platos/copa-vino-rosado.jpeg',
-                        this
-                    )"
-                >
-                    Rosado
-                </button>
-
-            </div>
-
-
-            <p>
-                Copa de vino disponible en variedades blanco, tinto o rosado.
-            </p>
-
+            <!-- STELLA ARTOIS -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-importadas',
+                    '../media/fotos platos/stella-artois.jpeg',
+                    '$13.000',
+                    'Selección de cervezas importadas de carácter refrescante y equilibrado, disponibles en Corona y Stella Artois. Ideales para acompañar nuestras preparaciones.',
+                    this
+                )"
+            >
+                Stella Artois
+            </button>
         </div>
 
+        <p class="product-description">
+            Selección de cervezas importadas de carácter refrescante
+            y equilibrado, disponibles en Corona y Stella Artois.
+            Ideales para acompañar nuestras preparaciones.
+        </p>
     </div>
+</div>
 
+<!-- =================================
+     CERVEZAS NACIONALES
+     CLUB COLOMBIA / ÁGUILA LIGHT / POKER
+================================== -->
 
-
-    <!-- =================================
-         JARRA DE SANGRÍA
-         TINTO / ROSADO
-    ================================== -->
-
-    <div class="product product-jarra-sangria">
-
-        <img
-            src="../media/fotos platos/jarra-sangria-tinto.jpeg"
-            alt="Jarra de Sangría"
-            class="product-image"
-            id="imagen-jarra-sangria"
-        >
-
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>Jarra de Sangría</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-
-            <div class="product-options">
-
-                <!-- TINTO -->
-
-                <button
-                    type="button"
-                    class="option-button active"
-                    onclick="cambiarImagen(
-                        'imagen-jarra-sangria',
-                        '../media/fotos platos/jarra-sangria-tinto.jpeg',
-                        this
-                    )"
-                >
-                    Tinto
-                </button>
-
-
-                <!-- ROSADO -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-jarra-sangria',
-                        '../media/fotos platos/jarra-sangria-rosado.jpeg',
-                        this
-                    )"
-                >
-                    Rosado
-                </button>
-
-            </div>
-
-
-            <p>
-                Jarra de sangría para compartir, disponible en tinto o rosado.
-            </p>
-
+<div class="product product-cervezas-nacionales">
+    <img
+        src="../media/fotos platos/club-colombia.jpeg"
+        alt="Cervezas Nacionales"
+        class="product-image"
+        id="imagen-cervezas-nacionales"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Cervezas Nacionales</h3>
+            <span class="price">$10.000</span>
         </div>
 
-    </div>
+        <div class="product-options">
+            <!-- CLUB COLOMBIA -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-nacionales',
+                    '../media/fotos platos/club-colombia.jpeg',
+                    '$10.000',
+                    'Selección de cervezas colombianas refrescantes y ligeras, disponibles en Club Colombia, Águila Light y Poker, perfectas para acompañar la mesa.',
+                    this
+                )"
+            >
+                Club Colombia
+            </button>
 
+            <!-- ÁGUILA LIGHT -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-nacionales',
+                    '../media/fotos platos/aguila-light.jpeg',
+                    '$10.000',
+                    'Selección de cervezas colombianas refrescantes y ligeras, disponibles en Club Colombia, Águila Light y Poker, perfectas para acompañar la mesa.',
+                    this
+                )"
+            >
+                Águila Light
+            </button>
 
-
-    <!-- =================================
-         CERVEZAS NACIONALES
-         CLUB COLOMBIA / ÁGUILA LIGHT / POKER
-    ================================== -->
-
-    <div class="product product-cervezas-nacionales">
-
-        <img
-            src="../media/fotos platos/club-colombia.jpeg"
-            alt="Cervezas Nacionales"
-            class="product-image"
-            id="imagen-cervezas-nacionales"
-        >
-
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>Cervezas Nacionales</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-
-            <div class="product-options">
-
-                <!-- CLUB COLOMBIA -->
-
-                <button
-                    type="button"
-                    class="option-button active"
-                    onclick="cambiarImagen(
-                        'imagen-cervezas-nacionales',
-                        '../media/fotos platos/club-colombia.jpeg',
-                        this
-                    )"
-                >
-                    Club Colombia
-                </button>
-
-
-                <!-- ÁGUILA LIGHT -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-cervezas-nacionales',
-                        '../media/fotos platos/aguila-light.jpeg',
-                        this
-                    )"
-                >
-                    Águila Light
-                </button>
-
-
-                <!-- POKER -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-cervezas-nacionales',
-                        '../media/fotos platos/poker.jpeg',
-                        this
-                    )"
-                >
-                    Poker
-                </button>
-
-            </div>
-
-
-            <p>
-                Cervezas nacionales: Club Colombia, Águila Light y Poker.
-            </p>
-
+            <!-- POKER -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-nacionales',
+                    '../media/fotos platos/poker.jpeg',
+                    '$10.000',
+                    'Selección de cervezas colombianas refrescantes y ligeras, disponibles en Club Colombia, Águila Light y Poker, perfectas para acompañar la mesa.',
+                    this
+                )"
+            >
+                Poker
+            </button>
         </div>
 
+        <p class="product-description">
+            Selección de cervezas colombianas refrescantes y ligeras,
+            disponibles en Club Colombia, Águila Light y Poker,
+            perfectas para acompañar la mesa.
+        </p>
     </div>
+</div>
 
+<!-- =================================
+     COPA DE SANGRÍA
+     TINTO / ROSADO
+================================== -->
 
-
-    <!-- =================================
-         CERVEZAS IMPORTADAS
-         CORONA / STELLA ARTOIS
-    ================================== -->
-
-    <div class="product product-cervezas-importadas">
-
-        <img
-            src="../media/fotos platos/corona.jpeg"
-            alt="Cervezas Importadas"
-            class="product-image"
-            id="imagen-cervezas-importadas"
-        >
-
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>Cervezas Importadas</h3>
-
-                <span class="price">$0.00</span>
-
-            </div>
-
-
-            <div class="product-options">
-
-                <!-- CORONA -->
-
-                <button
-                    type="button"
-                    class="option-button active"
-                    onclick="cambiarImagen(
-                        'imagen-cervezas-importadas',
-                        '../media/fotos platos/corona.jpeg',
-                        this
-                    )"
-                >
-                    Corona
-                </button>
-
-
-                <!-- STELLA ARTOIS -->
-
-                <button
-                    type="button"
-                    class="option-button"
-                    onclick="cambiarImagen(
-                        'imagen-cervezas-importadas',
-                        '../media/fotos platos/stella-artois.jpeg',
-                        this
-                    )"
-                >
-                    Stella Artois
-                </button>
-
-            </div>
-
-
-            <p>
-                Cervezas importadas: Corona y Stella Artois.
-            </p>
-
+<div class="product product-copa-sangria">
+    <img
+        src="../media/fotos platos/copa-sangria-tinto.jpeg"
+        alt="Copa de Sangría"
+        class="product-image"
+        id="imagen-copa-sangria"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Copa de Sangría</h3>
+            <span class="price">$24.000</span>
         </div>
 
-    </div>
+        <div class="product-options">
+            <!-- TINTO -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-copa-sangria',
+                    '../media/fotos platos/copa-sangria-tinto.jpeg',
+                    '$24.000',
+                    'Refrescante sangría preparada a base de vino y frutas, con un delicado equilibrio entre dulzor, acidez y notas frutales. Una opción aromática y vibrante para compartir.',
+                    this
+                )"
+            >
+                Tinto
+            </button>
 
+            <!-- ROSADO -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-copa-sangria',
+                    '../media/fotos platos/copa-sangria-rosado.jpeg',
+                    '$24.000',
+                    'Refrescante sangría preparada a base de vino y frutas, con un delicado equilibrio entre dulzor, acidez y notas frutales. Una opción aromática y vibrante para compartir.',
+                    this
+                )"
+            >
+                Rosado
+            </button>
+        </div>
+
+        <p class="product-description">
+            Refrescante sangría preparada a base de vino y frutas,
+            con un delicado equilibrio entre dulzor, acidez y
+            notas frutales. Una opción aromática y vibrante
+            para compartir.
+        </p>
+    </div>
+</div>
+
+<!-- =================================
+     COPA DE VINO
+     BLANCO / TINTO / ROSADO
+================================== -->
+
+<div class="product product-copa-vino">
+    <img
+        src="../media/fotos platos/copa-vino-blanco.jpeg"
+        alt="Copa de Vino"
+        class="product-image"
+        id="imagen-copa-vino"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Copa de Vino</h3>
+            <span class="price">$18.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- BLANCO -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-copa-vino',
+                    '../media/fotos platos/copa-vino-blanco.jpeg',
+                    '$18.000',
+                    'Una selección de vino servido en copa, ideal para acompañar nuestras preparaciones y disfrutar de sus aromas, sabores y delicados matices.',
+                    this
+                )"
+            >
+                Blanco
+            </button>
+
+            <!-- TINTO -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-copa-vino',
+                    '../media/fotos platos/copa-vino-tinto.jpeg',
+                    '$18.000',
+                    'Una selección de vino servido en copa, ideal para acompañar nuestras preparaciones y disfrutar de sus aromas, sabores y delicados matices.',
+                    this
+                )"
+            >
+                Tinto
+            </button>
+
+            <!-- ROSADO -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-copa-vino',
+                    '../media/fotos platos/copa-vino-rosado.jpeg',
+                    '$18.000',
+                    'Una selección de vino servido en copa, ideal para acompañar nuestras preparaciones y disfrutar de sus aromas, sabores y delicados matices.',
+                    this
+                )"
+            >
+                Rosado
+            </button>
+        </div>
+
+        <p class="product-description">
+            Una selección de vino servido en copa, ideal para
+            acompañar nuestras preparaciones y disfrutar de
+            sus aromas, sabores y delicados matices.
+        </p>
+    </div>
+</div>
+
+<!-- =================================
+     JARRA DE SANGRÍA
+     TINTO / ROSADO
+================================== -->
+
+<div class="product product-jarra-sangria">
+    <img
+        src="../media/fotos platos/jarra-sangria-tinto.jpeg"
+        alt="Jarra de Sangría"
+        class="product-image"
+        id="imagen-jarra-sangria"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Jarra de Sangría</h3>
+            <span class="price">$82.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- TINTO -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jarra-sangria',
+                    '../media/fotos platos/jarra-sangria-tinto.jpeg',
+                    '$82.000',
+                    'Nuestra sangría está servida para compartir, preparada con vino y una selección de frutas que aportan frescura, dulzor y notas aromáticas a cada copa.',
+                    this
+                )"
+            >
+                Tinto
+            </button>
+
+            <!-- ROSADO -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jarra-sangria',
+                    '../media/fotos platos/jarra-sangria-rosado.jpeg',
+                    '$82.000',
+                    'Nuestra sangría está servida para compartir, preparada con vino y una selección de frutas que aportan frescura, dulzor y notas aromáticas a cada copa.',
+                    this
+                )"
+            >
+                Rosado
+            </button>
+        </div>
+
+        <p class="product-description">
+            Nuestra sangría está servida para compartir,
+            preparada con vino y una selección de frutas que
+            aportan frescura, dulzor y notas aromáticas a
+            cada copa.
+        </p>
+    </div>
+</div>
+
+<!-- =================================
+     BOTELLA DE VINO DE LA CASA
+================================== -->
+
+<div class="product product-botella-vino-casa">
+    <img
+        src="../media/fotos platos/botella-vino-casa.jpeg"
+        alt="Botella de Vino de la Casa"
+        class="product-image"
+        id="imagen-botella-vino-casa"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Botella de Vino de la Casa</h3>
+            <span class="price">$50.000</span>
+        </div>
+
+        <p class="product-description">
+            Vino seleccionado para acompañar la experiencia
+            gastronómica de Al Pastificio, con un perfil
+            equilibrado y agradable que armoniza con nuestras
+            preparaciones.
+        </p>
+    </div>
+</div>
 
 </section>
-
-
 
 <!-- =================================
      FOOTER
 ================================== -->
 
 <footer class="footer">
-
     <img
         src="../media/logo.png"
         class="footer-logo"
         alt="Al Pastificio"
     >
-
     <p>
         © 2026 Al Pastificio
     </p>
-
 </footer>
-
 
 </div>
 
-
-
 <!-- =================================
      JAVASCRIPT
-     CAMBIO DE IMÁGENES
+     CAMBIO DE IMAGEN,
+     PRECIO Y DESCRIPCIÓN
 ================================== -->
 
 <script>
-
-function cambiarImagen(imagenId, nuevaImagen, boton) {
-
+function cambiarImagen(
+    imagenId,
+    nuevaImagen,
+    nuevoPrecio,
+    nuevaDescripcion,
+    boton
+) {
+    /* ==============================
+       BUSCAR LA IMAGEN
+    ============================== */
     const imagen = document.getElementById(imagenId);
 
+    /* ==============================
+       CAMBIAR LA IMAGEN
+    ============================== */
     if (imagen) {
-
         imagen.src = nuevaImagen;
-
     }
 
-
+    /* ==============================
+       BUSCAR LA TARJETA
+    ============================== */
     const tarjeta = boton.closest('.product');
 
     if (tarjeta) {
+        /* ==============================
+           CAMBIAR PRECIO
+        ============================== */
+        const precio = tarjeta.querySelector('.price');
 
-        const botones =
-            tarjeta.querySelectorAll('.option-button');
+        if (precio) {
+            precio.textContent = nuevoPrecio;
+        }
 
+        /* ==============================
+           CAMBIAR DESCRIPCIÓN
+        ============================== */
+        const descripcion = tarjeta.querySelector('.product-description');
+
+        if (descripcion) {
+            descripcion.textContent = nuevaDescripcion;
+        }
+
+        /* ==============================
+           BUSCAR BOTONES
+        ============================== */
+        const botones = tarjeta.querySelectorAll('.option-button');
+
+        /* ==============================
+           QUITAR ACTIVE
+        ============================== */
         botones.forEach(function(btn) {
-
             btn.classList.remove('active');
-
         });
-
     }
 
-
+    /* ==============================
+       ACTIVAR BOTÓN PRESIONADO
+    ============================== */
     boton.classList.add('active');
-
 }
-
 </script>
 
-
 </body>
-
 </html>

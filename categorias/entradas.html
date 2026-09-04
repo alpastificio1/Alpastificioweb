@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Al Pastificio | Entradas</title>
-
-<!-- CSS PRINCIPAL -->
-<link rel="stylesheet" href="../css/categoria.css">
-
-<!-- FUENTES -->
-<link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet"
->
-
+    <title>Al Pastificio | Entradas</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
-
-<body>
-
+<body class="categoria-entradas">
 <div class="container">
 
 <!-- ======================================
@@ -28,45 +18,34 @@
      ====================================== -->
 
 <header class="header">
-
     <img
         src="../media/logo web.png"
         class="logo"
         alt="Al Pastificio"
     >
-
     <a href="../menu-es.html" class="back">
         ← Volver al menú
     </a>
-
 </header>
-
 
 <!-- ======================================
      HERO DE CATEGORÍA
      ====================================== -->
 
 <section class="category-hero">
-
     <img
         src="../media/categorias/entradas.jpeg"
         alt="Entradas"
         class="category-image"
     >
-
     <div class="category-overlay">
-
         <h1>ENTRADAS</h1>
-
         <p>
             Comienza tu experiencia italiana con nuestras entradas caseras,
             preparadas con ingredientes frescos y auténticos sabores italianos.
         </p>
-
     </div>
-
 </section>
-
 
 <!-- ======================================
      PRODUCTOS
@@ -74,774 +53,537 @@
 
 <section class="products">
 
+<!-- ======================================
+     QUESO BURRATA
+     ====================================== -->
 
-    <!-- ======================================
-         QUESO BURRATA
-         ====================================== -->
+<div
+    class="product product-queso-burrata"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Queso Burrata"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-queso-burrata"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Queso Burrata"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/queso-burrata.jpeg"
+                alt="Queso Burrata"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Queso Burrata</h3>
+                    <span class="price">$35.000</span>
+                </div>
+                <p class="ingredients">
+                    Burrata italiana, pesto artesanal, tomates cherry confitados,
+                    rúcula, reducción balsámica y panes tostados.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/queso-burrata.jpeg"
-                    alt="Queso Burrata"
-                    class="product-image"
+                    alt="Queso Burrata completo"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Queso Burrata</h3>
-
-                        <span class="price">
-                            $35.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Burrata italiana, pesto artesanal, tomates cherry confitados,
-                        rúcula, reducción balsámica y panes tostados.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/queso-burrata.jpeg"
-                        alt="Queso Burrata completo"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Queso Burrata</h3>
+                    <span class="price">$35.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Queso Burrata</h3>
-
-                        <span class="price">
-                            $35.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Delicada burrata italiana sobre una base de nuestro pesto
-                        artesanal, acompañada de tomates cherry confitados y hojas
-                        frescas de rúcula. Finalizada con un sutil toque de reducción
-                        balsámica y servida con crujientes panes tostados para
-                        compartir en la mesa.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Delicada burrata italiana sobre una base de nuestro pesto
+                    artesanal, acompañada de tomates cherry confitados y hojas
+                    frescas de rúcula. Finalizada con un sutil toque de reducción
+                    balsámica y servida con crujientes panes tostados para
+                    compartir en la mesa.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     BRUSCHETAS DE MOZZARELLA
+     ====================================== -->
 
-    <!-- ======================================
-         BRUSCHETAS DE MOZZARELLA
-         ====================================== -->
+<div
+    class="product product-bruschetas-mozzarella"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Bruschetas de Mozzarella"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-bruschetas-mozzarella"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Bruschetas de Mozzarella"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/bruschetas-mozzarella.jpeg"
+                alt="Bruschetas de Mozzarella"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Bruschetas de Mozzarella</h3>
+                    <span class="price">$20.000</span>
+                </div>
+                <p class="ingredients">
+                    Pan francés, salsa napolitana, tomate fresco,
+                    mozzarella y albahaca fresca.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/bruschetas-mozzarella.jpeg"
-                    alt="Bruschetas de Mozzarella"
-                    class="product-image"
+                    alt="Bruschetas de Mozzarella completas"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Bruschetas de Mozzarella</h3>
-
-                        <span class="price">
-                            $20.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Pan francés, salsa napolitana, tomate fresco,
-                        mozzarella y albahaca fresca.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/bruschetas-mozzarella.jpeg"
-                        alt="Bruschetas de Mozzarella completas"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Bruschetas de Mozzarella</h3>
+                    <span class="price">$20.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Bruschetas de Mozzarella</h3>
-
-                        <span class="price">
-                            $20.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Crujientes rebanadas de pan francés sobre una delicada capa
-                        de nuestra salsa napolitana, acompañadas de rodajas de tomate
-                        fresco y mozzarella. Gratinadas al horno hasta alcanzar una
-                        textura perfectamente fundente y finalizadas con hojas frescas
-                        de albahaca.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Crujientes rebanadas de pan francés sobre una delicada capa
+                    de nuestra salsa napolitana, acompañadas de rodajas de tomate
+                    fresco y mozzarella. Gratinadas al horno hasta alcanzar una
+                    textura perfectamente fundente y finalizadas con hojas frescas
+                    de albahaca.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     ALBÓNDIGAS NAPOLITANAS
+     ====================================== -->
 
-    <!-- ======================================
-         ALBÓNDIGAS NAPOLITANAS
-         ====================================== -->
+<div
+    class="product product-albondigas-napolitanas"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Albóndigas Napolitanas"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-albondigas-napolitanas"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Albóndigas Napolitanas"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/albondigas-napolitanas.jpeg"
+                alt="Albóndigas Napolitanas"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Albóndigas Napolitanas</h3>
+                    <span class="price">$23.000</span>
+                </div>
+                <p class="ingredients">
+                    Albóndigas de carne, salsa napolitana y queso fundido.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/albondigas-napolitanas.jpeg"
-                    alt="Albóndigas Napolitanas"
-                    class="product-image"
+                    alt="Albóndigas Napolitanas completas"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Albóndigas Napolitanas</h3>
-
-                        <span class="price">
-                            $23.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Albóndigas de carne, salsa napolitana y queso fundido.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/albondigas-napolitanas.jpeg"
-                        alt="Albóndigas Napolitanas completas"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Albóndigas Napolitanas</h3>
+                    <span class="price">$23.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Albóndigas Napolitanas</h3>
-
-                        <span class="price">
-                            $23.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Tiernas albóndigas de carne, elaboradas cuidadosamente y
-                        cocinadas hasta alcanzar una textura jugosa y delicada.
-                        Bañadas en nuestra salsa napolitana de la casa, de notas
-                        intensas de tomate y hierbas italianas, y coronadas con
-                        queso fundido que aporta cremosidad y un acabado irresistible.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Tiernas albóndigas de carne, elaboradas cuidadosamente y
+                    cocinadas hasta alcanzar una textura jugosa y delicada.
+                    Bañadas en nuestra salsa napolitana de la casa, de notas
+                    intensas de tomate y hierbas italianas, y coronadas con
+                    queso fundido que aporta cremosidad y un acabado irresistible.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     CHAMPIÑONES CON QUESO AZUL
+     ====================================== -->
 
-    <!-- ======================================
-         CHAMPIÑONES CON QUESO AZUL
-         ====================================== -->
+<div
+    class="product product-champinones-queso-azul"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Champiñones con Queso Azul"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-champinones-queso-azul"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Champiñones con Queso Azul"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/champiñones-queso-azul.jpeg"
+                alt="Champiñones con Queso Azul"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Champiñones con Queso Azul</h3>
+                    <span class="price">$25.000</span>
+                </div>
+                <p class="ingredients">
+                    Champiñones frescos y salsa de queso azul.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/champiñones-queso-azul.jpeg"
-                    alt="Champiñones con Queso Azul"
-                    class="product-image"
+                    alt="Champiñones con Queso Azul completos"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Champiñones con Queso Azul</h3>
-
-                        <span class="price">
-                            $25.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Champiñones frescos y salsa de queso azul.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/champiñones-queso-azul.jpeg"
-                        alt="Champiñones con Queso Azul completos"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Champiñones con Queso Azul</h3>
+                    <span class="price">$25.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Champiñones con Queso Azul</h3>
-
-                        <span class="price">
-                            $25.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Champiñones frescos, cuidadosamente salteados para resaltar
-                        sus aromas y conservar su textura, acompañados de una
-                        aterciopelada salsa de queso azul. Un contraste elegante
-                        entre la suavidad de los hongos y el carácter intenso,
-                        ligeramente salino y profundo del queso.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Champiñones frescos, cuidadosamente salteados para resaltar
+                    sus aromas y conservar su textura, acompañados de una
+                    aterciopelada salsa de queso azul. Un contraste elegante
+                    entre la suavidad de los hongos y el carácter intenso,
+                    ligeramente salino y profundo del queso.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     CHAMPIÑONES AL AJILLO
+     ====================================== -->
 
-    <!-- ======================================
-         CHAMPIÑONES AL AJILLO
-         ====================================== -->
+<div
+    class="product product-champinones-al-ajillo"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Champiñones al Ajillo"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-champinones-al-ajillo"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Champiñones al Ajillo"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/champiñones-al-ajillo.jpeg"
+                alt="Champiñones al Ajillo"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Champiñones al Ajillo</h3>
+                    <span class="price">$22.000</span>
+                </div>
+                <p class="ingredients">
+                    Champiñones frescos, aceite de oliva, ajo
+                    y hierbas aromáticas.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/champiñones-al-ajillo.jpeg"
-                    alt="Champiñones al Ajillo"
-                    class="product-image"
+                    alt="Champiñones al Ajillo completos"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Champiñones al Ajillo</h3>
-
-                        <span class="price">
-                            $22.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Champiñones frescos, aceite de oliva, ajo
-                        y hierbas aromáticas.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/champiñones-al-ajillo.jpeg"
-                        alt="Champiñones al Ajillo completos"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Champiñones al Ajillo</h3>
+                    <span class="price">$22.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Champiñones al Ajillo</h3>
-
-                        <span class="price">
-                            $22.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Champiñones frescos salteados delicadamente en aceite de
-                        oliva, infusionado con ajo y hierbas aromáticas. Una
-                        preparación sencilla y elegante, donde los sabores de la
-                        tierra se encuentran con notas cálidas de especias y un
-                        sutil acabado mediterráneo.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Champiñones frescos salteados delicadamente en aceite de
+                    oliva, infusionado con ajo y hierbas aromáticas. Una
+                    preparación sencilla y elegante, donde los sabores de la
+                    tierra se encuentran con notas cálidas de especias y un
+                    sutil acabado mediterráneo.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     SOPA DE TOMATE
+     ====================================== -->
 
-    <!-- ======================================
-         SOPA DE TOMATE
-         ====================================== -->
+<div
+    class="product product-sopa-tomate"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Sopa de Tomate"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-sopa-tomate"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Sopa de Tomate"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/sopa-tomate.jpeg"
+                alt="Sopa de Tomate"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Sopa de Tomate</h3>
+                    <span class="price">$25.000</span>
+                </div>
+                <p class="ingredients">
+                    Tomate, hierbas italianas y delicadas notas de especias.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/sopa-tomate.jpeg"
-                    alt="Sopa de Tomate"
-                    class="product-image"
+                    alt="Sopa de Tomate completa"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Sopa de Tomate</h3>
-
-                        <span class="price">
-                            $25.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Tomate, hierbas italianas y delicadas notas de especias.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/sopa-tomate.jpeg"
-                        alt="Sopa de Tomate completa"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Sopa de Tomate</h3>
+                    <span class="price">$25.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Sopa de Tomate</h3>
-
-                        <span class="price">
-                            $25.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Una delicada crema de tomate preparada a fuego lento para
-                        concentrar sus sabores y alcanzar una textura suave y sedosa.
-                        Aromatizada con hierbas italianas y sutiles notas especiadas,
-                        evoca la esencia de la cocina tradicional italiana en una
-                        preparación reconfortante y refinada.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Una delicada crema de tomate preparada a fuego lento para
+                    concentrar sus sabores y alcanzar una textura suave y sedosa.
+                    Aromatizada con hierbas italianas y sutiles notas especiadas,
+                    evoca la esencia de la cocina tradicional italiana en una
+                    preparación reconfortante y refinada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     CREMA DE CHAMPIÑONES
+     ====================================== -->
 
-    <!-- ======================================
-         CREMA DE CHAMPIÑONES
-         ====================================== -->
+<div
+    class="product product-crema-champinones"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Crema de Champiñones"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-crema-champinones"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Crema de Champiñones"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/crema-champiñones.jpeg"
+                alt="Crema de Champiñones"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Crema de Champiñones</h3>
+                    <span class="price">$26.000</span>
+                </div>
+                <p class="ingredients">
+                    Champiñones frescos, crema, hierbas y delicado sazón.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/crema-champiñones.jpeg"
-                    alt="Crema de Champiñones"
-                    class="product-image"
+                    alt="Crema de Champiñones completa"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Crema de Champiñones</h3>
-
-                        <span class="price">
-                            $26.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Champiñones frescos, crema, hierbas y delicado sazón.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/crema-champiñones.jpeg"
-                        alt="Crema de Champiñones completa"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Crema de Champiñones</h3>
+                    <span class="price">$26.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Crema de Champiñones</h3>
-
-                        <span class="price">
-                            $26.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Suave crema elaborada a partir de champiñones frescos,
-                        cuidadosamente cocinados para preservar sus aromas y
-                        profundidad de sabor. Su textura aterciopelada y delicado
-                        sazón crean una entrada cálida y elegante, inspirada en
-                        la tradición de la cocina europea.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Suave crema elaborada a partir de champiñones frescos,
+                    cuidadosamente cocinados para preservar sus aromas y
+                    profundidad de sabor. Su textura aterciopelada y delicado
+                    sazón crean una entrada cálida y elegante, inspirada en
+                    la tradición de la cocina europea.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     ENSALADA CAPRESE
+     ====================================== -->
 
-    <!-- ======================================
-         ENSALADA CAPRESE
-         ====================================== -->
+<div
+    class="product product-ensalada-capresse"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Ensalada Caprese"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div
-        class="product product-ensalada-capresse"
-        tabindex="0"
-        role="button"
-        aria-label="Ver descripción de Ensalada Caprese"
-        aria-pressed="false"
-    >
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/ensalada-capresse.jpeg"
+                alt="Ensalada Caprese"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Ensalada Caprese</h3>
+                    <span class="price">$24.000</span>
+                </div>
+                <p class="ingredients">
+                    Tomate, queso bocconcini, rúcula, aceite de oliva,
+                    pesto y reducción balsámica.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
 
-        <div class="product-inner">
-
-
-            <!-- FRENTE -->
-
-            <div class="product-face product-front">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
                     src="../media/fotos platos/ensalada-capresse.jpeg"
-                    alt="Ensalada Caprese"
-                    class="product-image"
+                    alt="Ensalada Caprese completa"
+                    class="product-back-image-img"
                 >
-
-                <div class="product-info">
-
-                    <div class="product-header">
-
-                        <h3>Ensalada Caprese</h3>
-
-                        <span class="price">
-                            $24.000
-                        </span>
-
-                    </div>
-
-                    <p class="ingredients">
-                        Tomate, queso bocconcini, rúcula, aceite de oliva,
-                        pesto y reducción balsámica.
-                    </p>
-
-                </div>
-
             </div>
-
-
-            <!-- REVERSO -->
-
-            <div class="product-face product-back">
-
-                <div class="product-back-image">
-
-                    <img
-                        src="../media/fotos platos/ensalada-capresse.jpeg"
-                        alt="Ensalada Caprese completa"
-                        class="product-back-image-img"
-                    >
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Ensalada Caprese</h3>
+                    <span class="price">$24.000</span>
                 </div>
-
-                <div class="product-back-info">
-
-                    <div class="product-header">
-
-                        <h3>Ensalada Caprese</h3>
-
-                        <span class="price">
-                            $24.000
-                        </span>
-
-                    </div>
-
-                    <p>
-                        Frescas rodajas de tomate y queso bocconcini, acompañadas
-                        de hojas de rúcula fresca, un delicado toque de aceite de
-                        oliva, pesto y reducción balsámica. Una combinación clásica
-                        de la cocina italiana, donde la frescura, suavidad y aromas
-                        mediterráneos se integran en una entrada ligera y equilibrada.
-                    </p>
-
-                    <span class="flip-hint">
-                        Toca para volver
-                    </span>
-
-                </div>
-
+                <p>
+                    Frescas rodajas de tomate y queso bocconcini, acompañadas
+                    de hojas de rúcula fresca, un delicado toque de aceite de
+                    oliva, pesto y reducción balsámica. Una combinación clásica
+                    de la cocina italiana, donde la frescura, suavidad y aromas
+                    mediterráneos se integran en una entrada ligera y equilibrada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
             </div>
-
         </div>
 
     </div>
-
+</div>
 
 </section>
-
 
 <!-- ======================================
      FOOTER
      ====================================== -->
 
 <footer class="footer">
-
     <img
         src="../media/logo.png"
         class="footer-logo"
         alt="Al Pastificio"
     >
-
     <p>
         © 2026 Al Pastificio
     </p>
-
 </footer>
 
 </div>
@@ -851,58 +593,25 @@
      ====================================== -->
 
 <script>
-
 document.querySelectorAll('.product').forEach(function(card) {
-
     const front = card.querySelector('.product-front');
     const back = card.querySelector('.product-back');
 
-
-    /*
-     * Coloca la tarjeta inicialmente
-     * con la altura exacta del frente.
-     */
-
     function setFrontHeight() {
-
         card.style.height = front.offsetHeight + 'px';
-
     }
-
-
-    /*
-     * Al cargar la página.
-     */
 
     setFrontHeight();
 
-
-    /*
-     * Si cambia el tamaño de la pantalla,
-     * recalculamos la altura.
-     */
-
     window.addEventListener('resize', function() {
-
         if (!card.classList.contains('is-flipped')) {
-
             setFrontHeight();
-
         } else {
-
             card.style.height = back.offsetHeight + 'px';
-
         }
-
     });
 
-
-    /*
-     * Al tocar la tarjeta.
-     */
-
     card.addEventListener('click', function(event) {
-
         if (
             event.target.closest('button') ||
             event.target.closest('a') ||
@@ -911,107 +620,42 @@ document.querySelectorAll('.product').forEach(function(card) {
             return;
         }
 
-
-        /*
-         * Si está mostrando el frente,
-         * medimos el reverso antes de girar.
-         */
-
         if (!this.classList.contains('is-flipped')) {
-
             this.style.height = back.offsetHeight + 'px';
-
             this.classList.add('is-flipped');
-
-            this.setAttribute(
-                'aria-pressed',
-                'true'
-            );
-
+            this.setAttribute('aria-pressed', 'true');
         } else {
-
-            /*
-             * Si está mostrando el reverso,
-             * volvemos a la altura del frente.
-             */
-
             this.style.height = front.offsetHeight + 'px';
-
             this.classList.remove('is-flipped');
-
-            this.setAttribute(
-                'aria-pressed',
-                'false'
-            );
-
+            this.setAttribute('aria-pressed', 'false');
         }
-
     });
-
-
-    /*
-     * Accesibilidad con teclado.
-     */
 
     card.addEventListener('keydown', function(event) {
-
-        if (
-            event.key === 'Enter' ||
-            event.key === ' '
-        ) {
-
+        if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-
             if (!this.classList.contains('is-flipped')) {
-
                 this.style.height = back.offsetHeight + 'px';
-
                 this.classList.add('is-flipped');
-
-                this.setAttribute(
-                    'aria-pressed',
-                    'true'
-                );
-
+                this.setAttribute('aria-pressed', 'true');
             } else {
-
                 this.style.height = front.offsetHeight + 'px';
-
                 this.classList.remove('is-flipped');
-
-                this.setAttribute(
-                    'aria-pressed',
-                    'false'
-                );
-
+                this.setAttribute('aria-pressed', 'false');
             }
-
         }
-
     });
-
-
-    /*
-     * Si las imágenes tardan en cargar,
-     * recalculamos la altura del frente.
-     */
 
     const images = card.querySelectorAll('img');
-
     images.forEach(function(image) {
-
         image.addEventListener('load', function() {
-
             if (!card.classList.contains('is-flipped')) {
-
                 setFrontHeight();
-
             }
-
         });
-
     });
-
 });
-
 </script>
+
+</body>
+</html>

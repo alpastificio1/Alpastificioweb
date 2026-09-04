@@ -1,510 +1,776 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Al Pastificio | Pizzas</title>
-
-<link rel="stylesheet" href="../css/categoria.css">
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet"
->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Pizzas</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
 </head>
-
 <body class="categoria-pizzas">
-
 <div class="container">
 
-<!-- =================================
+<!-- ======================================
      HEADER
-================================== -->
+     ====================================== -->
 
 <header class="header">
-
     <img
         src="../media/logo web.png"
         class="logo"
         alt="Al Pastificio"
     >
-
-    <a
-        href="../menu-es.html"
-        class="back"
-    >
+    <a href="../menu-es.html" class="back">
         ← Volver al menú
     </a>
-
 </header>
 
-
-
-<!-- =================================
-     HERO
-================================== -->
+<!-- ======================================
+     HERO DE CATEGORÍA
+     ====================================== -->
 
 <section class="category-hero">
-
     <img
         src="../media/categorias/pizzas.jpeg"
         alt="Pizzas"
         class="category-image"
     >
-
     <div class="category-overlay">
-
-        <h1>
-            PIZZAS
-        </h1>
-
+        <h1>PIZZAS</h1>
         <p>
             Pizzas preparadas con ingredientes frescos y combinaciones
             inspiradas en los sabores de la cocina italiana.
         </p>
-
     </div>
-
 </section>
 
-
-
-<!-- =================================
+<!-- ======================================
      PRODUCTOS
-================================== -->
+     ====================================== -->
 
 <section class="products">
 
+<!-- ======================================
+     PIZZA PALERMO
+     ====================================== -->
 
-    <!-- =================================
-         PIZZA PALERMO
-    ================================== -->
+<div
+    class="product product-pizza-palermo"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Palermo"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <div class="product product-pizza-palermo">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-palermo.jpeg"
                 alt="Pizza Palermo"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Palermo</h3>
+                    <span class="price">$36.000</span>
+                </div>
+                <p class="ingredients">
+                    Tomates, maíz y tocineta.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza Palermo
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-palermo.jpeg"
+                    alt="Pizza Palermo completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Tomates, maíz y tocineta.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Palermo</h3>
+                    <span class="price">$36.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con nuestra salsa napolitana
+                    y queso mozzarella, acompañada de tomates, maíz y tocineta.
+                    Horneada hasta lograr una base dorada y crujiente, con un
+                    equilibrio entre frescura, dulzor y notas ahumadas.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA MARGARITA
+     ====================================== -->
 
+<div
+    class="product product-pizza-margarita"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Margarita"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PIZZA MARGARITA
-    ================================== -->
-
-    <div class="product product-pizza-margarita">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-margarita.jpeg"
                 alt="Pizza Margarita"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Margarita</h3>
+                    <span class="price">$30.000</span>
+                </div>
+                <p class="ingredients">
+                    Tomate rojo y albahaca fresca.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza Margarita
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-margarita.jpeg"
+                    alt="Pizza Margarita completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Tomate rojo y albahaca.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Margarita</h3>
+                    <span class="price">$30.000</span>
+                </div>
+                <p>
+                    Nuestra masa de pizza artesanal, cubierta con salsa napolitana,
+                    mozzarella, tomate rojo y albahaca fresca. Una combinación
+                    clásica y equilibrada, donde la frescura del tomate y los
+                    aromas de la albahaca realzan la suavidad del queso fundido.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA HAWAIANA
+     ====================================== -->
 
+<div
+    class="product product-pizza-hawaiana"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Hawaiana"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PIZZA HAWAIANA
-    ================================== -->
-
-    <div class="product product-pizza-hawaiana">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-hawaiana.jpeg"
                 alt="Pizza Hawaiana"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Hawaiana</h3>
+                    <span class="price">$33.000</span>
+                </div>
+                <p class="ingredients">
+                    Jamón y piña.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza Hawaiana
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-hawaiana.jpeg"
+                    alt="Pizza Hawaiana completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Jamón y piña.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Hawaiana</h3>
+                    <span class="price">$33.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal acompañada de nuestra salsa napolitana,
+                    mozzarella, jamón y piña. Horneada hasta fundir el queso y
+                    combinar el carácter salado del jamón con el delicado dulzor
+                    de la fruta.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA BARI
+     ====================================== -->
 
+<div
+    class="product product-pizza-bari"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Bari"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PIZZA BARI
-    ================================== -->
-
-    <div class="product product-pizza-bari">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-bari.jpeg"
                 alt="Pizza Bari"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Bari</h3>
+                    <span class="price">$37.000</span>
+                </div>
+                <p class="ingredients">
+                    Pollo y champiñones.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza Bari
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-bari.jpeg"
+                    alt="Pizza Bari completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Pollo y champiñones.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Bari</h3>
+                    <span class="price">$37.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con salsa napolitana y
+                    mozzarella, acompañada de tiernos trozos de pollo y champiñones.
+                    Una combinación suave y cremosa, donde los sabores de la tierra
+                    se integran con la delicadeza del pollo y el queso fundido.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA MÓDENA
+     ====================================== -->
 
+<div
+    class="product product-pizza-modena"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Módena"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PIZZA MÓDENA
-    ================================== -->
-
-    <div class="product product-pizza-modena">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-modena.jpeg"
                 alt="Pizza Módena"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Módena</h3>
+                    <span class="price">$40.000</span>
+                </div>
+                <p class="ingredients">
+                    Pepperoni, salami, tocineta y jamón.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza Módena
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-modena.jpeg"
+                    alt="Pizza Módena completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Pepperoni, salami, tocineta y jamón.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Módena</h3>
+                    <span class="price">$40.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con nuestra salsa napolitana
+                    y mozzarella, acompañada de pepperoni, salami, tocineta y jamón.
+                    Una pizza de carácter intenso y abundante, con notas especiadas,
+                    salinas y ahumadas que se integran al fundirse en el horno.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA FLORENCIA
+     ====================================== -->
 
+<div
+    class="product product-pizza-florencia"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Florencia"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PIZZA FLORENCIA
-    ================================== -->
-
-    <div class="product product-pizza-florencia">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-florencia.jpeg"
                 alt="Pizza Florencia"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Florencia</h3>
+                    <span class="price">$39.000</span>
+                </div>
+                <p class="ingredients">
+                    Pollo, rúgula, aguacate y reducción balsámica.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza Florencia
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-florencia.jpeg"
+                    alt="Pizza Florencia completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Pollo en cubos, rúgula, aguacate y reducción balsámica.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Florencia</h3>
+                    <span class="price">$39.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal con salsa napolitana y mozzarella,
+                    acompañada de pollo en cubos, rúgula y aguacate, finalizada
+                    con una delicada reducción balsámica. Una combinación de
+                    contrastes entre la suavidad, frescura y notas ligeramente dulces.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA VEGETARIANA
+     ====================================== -->
 
+<div
+    class="product product-pizza-vegetariana"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Vegetariana"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         VEGETARIANA
-    ================================== -->
-
-    <div class="product product-pizza-vegetariana">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-vegetariana.jpeg"
                 alt="Pizza Vegetariana"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Vegetariana</h3>
+                    <span class="price">$35.000</span>
+                </div>
+                <p class="ingredients">
+                    Calabacín, cebolla, tomates cherry, berenjenas y rúgula.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Vegetariana
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-vegetariana.jpeg"
+                    alt="Pizza Vegetariana completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Calabacín, cebolla, tomates cherry, berenjenas y rúgula.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Vegetariana</h3>
+                    <span class="price">$35.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con salsa napolitana y
+                    mozzarella, acompañada de calabacín, cebolla, tomates cherry,
+                    berenjenas y rúgula. Una combinación fresca y colorida, donde
+                    cada vegetal aporta su propia textura y carácter.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PIZZA DE QUESOS
+     ====================================== -->
 
+<div
+    class="product product-pizza-de-quesos"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza de Quesos"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PIZZA DE QUESOS
-    ================================== -->
-
-    <div class="product product-pizza-de-quesos">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-4-quesos.jpeg"
                 alt="Pizza de Quesos"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza de Quesos</h3>
+                    <span class="price">$38.000</span>
+                </div>
+                <p class="ingredients">
+                    Mozzarella, parmesano, holandés, feta y queso azul.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pizza de Quesos
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-4-quesos.jpeg"
+                    alt="Pizza de Quesos completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                Mozzarella, parmesano, holandés, feta y salsa de queso azul.
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza de Quesos</h3>
+                    <span class="price">$38.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con salsa napolitana y una
+                    selección de mozzarella, parmesano, queso holandés y feta,
+                    finalizada con nuestra salsa de queso azul. Una preparación
+                    cremosa y de carácter intenso, donde diferentes matices y
+                    texturas de queso se encuentran en cada bocado.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     JAMÓN Y QUESO
+     ====================================== -->
 
+<div
+    class="product product-pizza-jamon-y-queso"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Jamón y Queso"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         JAMÓN Y QUESO
-    ================================== -->
-
-    <div class="product product-pizza-jamon-y-queso">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-jamon-queso.jpeg"
                 alt="Pizza Jamón y Queso"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Jamón y Queso</h3>
+                    <span class="price">$32.000</span>
+                </div>
+                <p class="ingredients">
+                    Jamón y queso mozzarella.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Jamón y Queso
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-jamon-queso.jpeg"
+                    alt="Pizza Jamón y Queso completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Jamón y Queso</h3>
+                    <span class="price">$32.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con nuestra salsa napolitana,
+                    mozzarella y jamón. Horneada hasta alcanzar un acabado dorado
+                    y fundente, en una combinación sencilla y clásica que destaca
+                    por su suavidad y sabor.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
+</div>
 
+<!-- ======================================
+     PEPPERONI
+     ====================================== -->
 
+<div
+    class="product product-pizza-pepperoni"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Pizza Pepperoni"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         PEPPERONI
-    ================================== -->
-
-    <div class="product product-pizza-pepperoni">
-
-        <div class="product-image-container">
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
             <img
                 src="../media/fotos platos/pizza-peperoni.jpeg"
                 alt="Pizza Pepperoni"
                 class="product-image"
             >
-
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Pizza Pepperoni</h3>
+                    <span class="price">$34.000</span>
+                </div>
+                <p class="ingredients">
+                    Pepperoni y queso mozzarella.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
         </div>
 
-        <div class="product-info">
-
-            <div class="product-header">
-
-                <h3>
-                    Pepperoni
-                </h3>
-
-                <span class="price">
-                    $0.00
-                </span>
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/pizza-peperoni.jpeg"
+                    alt="Pizza Pepperoni completa"
+                    class="product-back-image-img"
+                >
             </div>
-
-            <p>
-                
-            </p>
-
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Pizza Pepperoni</h3>
+                    <span class="price">$34.000</span>
+                </div>
+                <p>
+                    Masa de pizza artesanal cubierta con nuestra salsa napolitana,
+                    mozzarella y pepperoni. Horneada hasta fundir el queso y
+                    resaltar las notas especiadas y ligeramente ahumadas del
+                    pepperoni, en una preparación clásica, intensa y llena de carácter.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
         </div>
 
     </div>
-
+</div>
 
 </section>
 
-
-
-<!-- =================================
+<!-- ======================================
      FOOTER
-================================== -->
+     ====================================== -->
 
 <footer class="footer">
-
     <img
         src="../media/logo.png"
         class="footer-logo"
         alt="Al Pastificio"
     >
-
     <p>
         © 2026 Al Pastificio
     </p>
-
 </footer>
 
 </div>
 
-</body>
+<!-- ======================================
+     JAVASCRIPT
+     ====================================== -->
 
+<script>
+document.querySelectorAll('.product').forEach(function(card) {
+    const front = card.querySelector('.product-front');
+    const back = card.querySelector('.product-back');
+
+    function setFrontHeight() {
+        card.style.height = front.offsetHeight + 'px';
+    }
+
+    setFrontHeight();
+
+    window.addEventListener('resize', function() {
+        if (!card.classList.contains('is-flipped')) {
+            setFrontHeight();
+        } else {
+            card.style.height = back.offsetHeight + 'px';
+        }
+    });
+
+    card.addEventListener('click', function(event) {
+        if (
+            event.target.closest('button') ||
+            event.target.closest('a') ||
+            event.target.closest('.option-button')
+        ) {
+            return;
+        }
+
+        if (!this.classList.contains('is-flipped')) {
+            this.style.height = back.offsetHeight + 'px';
+            this.classList.add('is-flipped');
+            this.setAttribute('aria-pressed', 'true');
+        } else {
+            this.style.height = front.offsetHeight + 'px';
+            this.classList.remove('is-flipped');
+            this.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+    card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!this.classList.contains('is-flipped')) {
+                this.style.height = back.offsetHeight + 'px';
+                this.classList.add('is-flipped');
+                this.setAttribute('aria-pressed', 'true');
+            } else {
+                this.style.height = front.offsetHeight + 'px';
+                this.classList.remove('is-flipped');
+                this.setAttribute('aria-pressed', 'false');
+            }
+        }
+    });
+
+    const images = card.querySelectorAll('img');
+    images.forEach(function(image) {
+        image.addEventListener('load', function() {
+            if (!card.classList.contains('is-flipped')) {
+                setFrontHeight();
+            }
+        });
+    });
+});
+</script>
+
+</body>
 </html>

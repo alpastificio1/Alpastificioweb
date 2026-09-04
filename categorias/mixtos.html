@@ -1,434 +1,646 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Al Pastificio | Mixtos</title>
-
     <link rel="stylesheet" href="../css/categoria.css">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet"
     >
-
 </head>
-
-
 <body class="categoria-mixtos">
-
-
 <div class="container">
 
+<!-- ======================================
+     HEADER
+     ====================================== -->
 
-    <!-- =================================
-         HEADER
-    ================================== -->
+<header class="header">
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a href="../menu-es.html" class="back">
+        ← Volver al menú
+    </a>
+</header>
 
-    <header class="header">
+<!-- ======================================
+     HERO DE CATEGORÍA
+     ====================================== -->
 
-        <img
-            src="../media/logo web.png"
-            class="logo"
-            alt="Al Pastificio"
-        >
+<section class="category-hero">
+    <img
+        src="../media/categorias/mixtos.jpeg"
+        alt="Mixtos"
+        class="category-image"
+    >
+    <div class="category-overlay">
+        <h1>MIXTOS</h1>
+        <p>
+            Combinaciones especiales que reúnen nuestros mejores sabores,
+            carnes, pastas y ensaladas en un solo plato.
+        </p>
+    </div>
+</section>
 
-        <a
-            href="../menu-es.html"
-            class="back"
-        >
-            ← Volver al menú
-        </a>
+<!-- ======================================
+     PRODUCTOS
+     ====================================== -->
 
-    </header>
+<section class="products">
 
+<!-- ======================================
+     MIX TOSCANA
+     ====================================== -->
 
+<div
+    class="product product-mix-toscana"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Toscana"
+    aria-pressed="false"
+>
+    <div class="product-inner">
 
-    <!-- =================================
-         HERO
-    ================================== -->
-
-    <section class="category-hero">
-
-        <img
-            src="../media/categorias/mixtos.jpeg"
-            alt="Mixtos"
-            class="category-image"
-        >
-
-        <div class="category-overlay">
-
-            <h1>
-                MIXTOS
-            </h1>
-
-            <p>
-                Combinaciones especiales que reúnen nuestros mejores sabores,
-                carnes, pastas y ensaladas en un solo plato.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =================================
-         PRODUCTOS
-    ================================== -->
-
-    <section class="products">
-
-
-        <!-- =================================
-             MIX TOSCANA
-        ================================== -->
-
-        <div class="product product-mix-toscana">
-
-            <div class="product-image-container">
-
-                <img
-                    src="../media/fotos platos/mix-toscana.jpeg"
-                    alt="Mix Toscana"
-                    class="product-image"
-                >
-
-            </div>
-
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-toscana.jpeg"
+                alt="Mix Toscana"
+                class="product-image"
+            >
             <div class="product-info">
-
                 <div class="product-header">
-
-                    <h3>
-                        Mix Toscana
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Toscana</h3>
+                    <span class="price">$46.000</span>
                 </div>
-
-                <p>
+                <p class="ingredients">
                     Solomito, pasta napolitana y ensalada de la casa.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX ROMANO
-        ================================== -->
-
-        <div class="product product-mix-romano">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-romano.jpeg"
-                    alt="Mix Romano"
-                    class="product-image"
+                    src="../media/fotos platos/mix-toscana.jpeg"
+                    alt="Mix Toscana completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix Romano
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Toscana</h3>
+                    <span class="price">$46.000</span>
                 </div>
-
                 <p>
+                    Solomito acompañado de pasta napolitana y ensalada de la casa.
+                    Una combinación de sabores clásicos, donde el carácter de la
+                    carne se equilibra con la intensidad del tomate y las hierbas
+                    italianas, junto con la frescura de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX ROMANO
+     ====================================== -->
+
+<div
+    class="product product-mix-romano"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Romano"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-romano.jpeg"
+                alt="Mix Romano"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix Romano</h3>
+                    <span class="price">$43.000</span>
+                </div>
+                <p class="ingredients">
                     Chuletón, pasta carbonara y ensalada César.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX NÁPOLI
-        ================================== -->
-
-        <div class="product product-mix-napoli">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-napoli.jpeg"
-                    alt="Mix Nápoli"
-                    class="product-image"
+                    src="../media/fotos platos/mix-romano.jpeg"
+                    alt="Mix Romano completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix Nápoli
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Romano</h3>
+                    <span class="price">$43.000</span>
                 </div>
-
                 <p>
+                    Chuletón acompañado de pasta carbonara y ensalada César.
+                    Una combinación abundante y equilibrada que reúne el carácter
+                    de la carne con la cremosidad de la carbonara y la frescura
+                    de la clásica ensalada César.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX NÁPOLI
+     ====================================== -->
+
+<div
+    class="product product-mix-napoli"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Nápoli"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-napoli.jpeg"
+                alt="Mix Nápoli"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix Nápoli</h3>
+                    <span class="price">$39.000</span>
+                </div>
+                <p class="ingredients">
                     Chuletón, pasta amatriciana y ensalada de la casa.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX MANZO
-        ================================== -->
-
-        <div class="product product-mix-manzo">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-manzo.jpeg"
-                    alt="Mix Manzo"
-                    class="product-image"
+                    src="../media/fotos platos/mix-napoli.jpeg"
+                    alt="Mix Nápoli completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix Manzo
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Nápoli</h3>
+                    <span class="price">$39.000</span>
                 </div>
-
                 <p>
+                    Chuletón acompañado de pasta amatriciana y ensalada de la casa.
+                    Una combinación de carácter intenso, donde la carne se complementa
+                    con los sabores profundos de la salsa de tomate y la frescura
+                    de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX MANZO
+     ====================================== -->
+
+<div
+    class="product product-mix-manzo"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Manzo"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-manzo.jpeg"
+                alt="Mix Manzo"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix Manzo</h3>
+                    <span class="price">$42.000</span>
+                </div>
+                <p class="ingredients">
                     Solomito, papa frita y ensalada de la casa.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX SICILIA
-        ================================== -->
-
-        <div class="product product-mix-sicilia">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-sicilia.jpeg"
-                    alt="Mix Sicilia"
-                    class="product-image"
+                    src="../media/fotos platos/mix-manzo.jpeg"
+                    alt="Mix Manzo completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix Sicilia
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Manzo</h3>
+                    <span class="price">$42.000</span>
                 </div>
-
                 <p>
+                    Solomito acompañado de papas fritas y ensalada de la casa.
+                    Una propuesta que combina la jugosidad y carácter de la carne
+                    con el toque crujiente de las papas y la frescura de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX SICILIA
+     ====================================== -->
+
+<div
+    class="product product-mix-sicilia"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Sicilia"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-sicilia.jpeg"
+                alt="Mix Sicilia"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix Sicilia</h3>
+                    <span class="price">$52.000</span>
+                </div>
+                <p class="ingredients">
                     Salmón, pasta al pesto y ensalada de la casa.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX LUCCA
-        ================================== -->
-
-        <div class="product product-mix-lucca">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-lucca.jpeg"
-                    alt="Mix Lucca"
-                    class="product-image"
+                    src="../media/fotos platos/mix-sicilia.jpeg"
+                    alt="Mix Sicilia completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix Lucca
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Sicilia</h3>
+                    <span class="price">$52.000</span>
                 </div>
-
                 <p>
+                    Salmón acompañado de pasta al pesto y ensalada de la casa.
+                    Una combinación delicada y aromática, donde la suavidad del
+                    salmón se integra con las notas frescas de la albahaca y la
+                    frescura de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX LUCCA
+     ====================================== -->
+
+<div
+    class="product product-mix-lucca"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Lucca"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-lucca.jpeg"
+                alt="Mix Lucca"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix Lucca</h3>
+                    <span class="price">$42.000</span>
+                </div>
+                <p class="ingredients">
                     Filete de pollo, pasta carbonara y ensalada César.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX SAN REMO
-        ================================== -->
-
-        <div class="product product-mix-san-remo">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-san-remo.jpeg"
-                    alt="Mix San Remo"
-                    class="product-image"
+                    src="../media/fotos platos/mix-lucca.jpeg"
+                    alt="Mix Lucca completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix San Remo
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix Lucca</h3>
+                    <span class="price">$42.000</span>
                 </div>
-
                 <p>
+                    Filete de pollo acompañado de pasta carbonara y ensalada César.
+                    Una combinación que reúne la suavidad de la carne con la
+                    cremosidad de la pasta y el carácter fresco y ligeramente
+                    salino de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX SAN REMO
+     ====================================== -->
+
+<div
+    class="product product-mix-san-remo"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix San Remo"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-san-remo.jpeg"
+                alt="Mix San Remo"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix San Remo</h3>
+                    <span class="price">$45.000</span>
+                </div>
+                <p class="ingredients">
                     Solomito, pasta Alfredo y ensalada César.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
-
-
-        <!-- =================================
-             MIX BOLONIA
-        ================================== -->
-
-        <div class="product product-mix-bolonia">
-
-            <div class="product-image-container">
-
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
                 <img
-                    src="../media/fotos platos/mix-bolonia.jpeg"
-                    alt="Mix Bolonia"
-                    class="product-image"
+                    src="../media/fotos platos/mix-san-remo.jpeg"
+                    alt="Mix San Remo completo"
+                    class="product-back-image-img"
                 >
-
             </div>
-
-            <div class="product-info">
-
+            <div class="product-back-info">
                 <div class="product-header">
-
-                    <h3>
-                        Mix Bolonia
-                    </h3>
-
-                    <span class="price">
-                        $0.00
-                    </span>
-
+                    <h3>Mix San Remo</h3>
+                    <span class="price">$45.000</span>
                 </div>
-
                 <p>
+                    Solomito acompañado de pasta Alfredo y ensalada César.
+                    La suavidad y jugosidad de la carne se complementan con la
+                    textura cremosa de la pasta y el contraste fresco de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ======================================
+     MIX BOLONIA
+     ====================================== -->
+
+<div
+    class="product product-mix-bolonia"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Mix Bolonia"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/mix-bolonia.jpeg"
+                alt="Mix Bolonia"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Mix Bolonia</h3>
+                    <span class="price">$43.000</span>
+                </div>
+                <p class="ingredients">
                     Filete de pollo, pasta boloñesa y ensalada de la casa.
                 </p>
-
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
             </div>
-
         </div>
 
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/mix-bolonia.jpeg"
+                    alt="Mix Bolonia completo"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Mix Bolonia</h3>
+                    <span class="price">$43.000</span>
+                </div>
+                <p>
+                    Filete de pollo acompañado de pasta boloñesa y ensalada de la casa.
+                    Una combinación equilibrada entre la suavidad del pollo, la
+                    intensidad de la salsa de tomate y carne, y la frescura de la ensalada.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
 
-    </section>
+    </div>
+</div>
 
+</section>
 
+<!-- ======================================
+     FOOTER
+     ====================================== -->
 
-    <!-- =================================
-         FOOTER
-    ================================== -->
-
-    <footer class="footer">
-
-        <img
-            src="../media/logo.png"
-            class="footer-logo"
-            alt="Al Pastificio"
-        >
-
-        <p>
-            © 2026 Al Pastificio
-        </p>
-
-    </footer>
-
+<footer class="footer">
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
+</footer>
 
 </div>
 
+<!-- ======================================
+     JAVASCRIPT
+     ====================================== -->
+
+<script>
+document.querySelectorAll('.product').forEach(function(card) {
+    const front = card.querySelector('.product-front');
+    const back = card.querySelector('.product-back');
+
+    function setFrontHeight() {
+        card.style.height = front.offsetHeight + 'px';
+    }
+
+    setFrontHeight();
+
+    window.addEventListener('resize', function() {
+        if (!card.classList.contains('is-flipped')) {
+            setFrontHeight();
+        } else {
+            card.style.height = back.offsetHeight + 'px';
+        }
+    });
+
+    card.addEventListener('click', function(event) {
+        if (
+            event.target.closest('button') ||
+            event.target.closest('a') ||
+            event.target.closest('.option-button')
+        ) {
+            return;
+        }
+
+        if (!this.classList.contains('is-flipped')) {
+            this.style.height = back.offsetHeight + 'px';
+            this.classList.add('is-flipped');
+            this.setAttribute('aria-pressed', 'true');
+        } else {
+            this.style.height = front.offsetHeight + 'px';
+            this.classList.remove('is-flipped');
+            this.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+    card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!this.classList.contains('is-flipped')) {
+                this.style.height = back.offsetHeight + 'px';
+                this.classList.add('is-flipped');
+                this.setAttribute('aria-pressed', 'true');
+            } else {
+                this.style.height = front.offsetHeight + 'px';
+                this.classList.remove('is-flipped');
+                this.setAttribute('aria-pressed', 'false');
+            }
+        }
+    });
+
+    const images = card.querySelectorAll('img');
+    images.forEach(function(image) {
+        image.addEventListener('load', function() {
+            if (!card.classList.contains('is-flipped')) {
+                setFrontHeight();
+            }
+        });
+    });
+});
+</script>
 
 </body>
-
 </html>
