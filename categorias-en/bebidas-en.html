@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Drinks</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body class="categoria-bebidas">
+<div class="container">
+
+<!-- ======================================
+     HEADER
+     ====================================== -->
+
+<header class="header">
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a
+        href="../menu-en.html"
+        class="back"
+    >
+        ← Back to Menu
+    </a>
+</header>
+
+<!-- ======================================
+     HERO
+     ====================================== -->
+
+<section class="category-hero">
+    <img
+        src="../media/categorias/bebidas.jpeg"
+        alt="Drinks"
+        class="category-image"
+    >
+    <div class="category-overlay">
+        <h1>DRINKS</h1>
+        <p>
+            Juices, lemonades and refreshing beverages prepared
+            to accompany your experience at Al Pastificio.
+        </p>
+    </div>
+</section>
+
+<!-- ======================================
+     PRODUCTS
+     ====================================== -->
+
+<section class="products">
+
+<!-- ======================================
+     FLAVORED SODAS
+     RED BERRIES / TAMARIND /
+     PASSION FRUIT / LULO
+====================================== -->
+
+<div class="product product-sodas-saborizadas">
+    <img
+        src="../media/fotos platos/soda-saborizada-frutos-rojos.jpeg"
+        alt="Flavored Soda"
+        class="product-image"
+        id="imagen-sodas-saborizadas"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Flavored Sodas</h3>
+            <span class="price">$16.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- RED BERRIES -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-frutos-rojos.jpeg',
+                    '$16.000',
+                    'Refreshing soda combined with a selection of fruity flavors for a balance between freshness, sweetness and acidity. Available in tamarind, red berries, lulo and passion fruit.',
+                    this
+                )"
+            >
+                Red Berries
+            </button>
+
+            <!-- TAMARIND -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-tamarindo.jpeg',
+                    '$16.000',
+                    'Refreshing soda combined with a selection of fruity flavors for a balance between freshness, sweetness and acidity. Available in tamarind, red berries, lulo and passion fruit.',
+                    this
+                )"
+            >
+                Tamarind
+            </button>
+
+            <!-- PASSION FRUIT -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-maracuya.jpeg',
+                    '$16.000',
+                    'Refreshing soda combined with a selection of fruity flavors for a balance between freshness, sweetness and acidity. Available in tamarind, red berries, lulo and passion fruit.',
+                    this
+                )"
+            >
+                Passion Fruit
+            </button>
+
+            <!-- LULO -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-sodas-saborizadas',
+                    '../media/fotos platos/soda-saborizada-lulo.jpeg',
+                    '$16.000',
+                    'Refreshing soda combined with a selection of fruity flavors for a balance between freshness, sweetness and acidity. Available in tamarind, red berries, lulo and passion fruit.',
+                    this
+                )"
+            >
+                Lulo
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Refreshing soda combined with a selection of fruity flavors
+            for a balance between freshness, sweetness and acidity.
+            Available in tamarind, red berries, lulo and passion fruit.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     COCONUT LEMONADE
+====================================== -->
+
+<div class="product product-limonada-coco">
+    <img
+        src="../media/fotos platos/limonada-de-coco.jpeg"
+        alt="Coconut Lemonade"
+        class="product-image"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Coconut Lemonade</h3>
+            <span class="price">$15.000</span>
+        </div>
+        <p class="product-description">
+            A refreshing combination of lemon and coconut, where citrus
+            acidity meets the smoothness and creaminess of coconut.
+            A tropical, balanced and delicately sweet beverage.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     NATURAL LEMONADE
+====================================== -->
+
+<div class="product product-limonada-natural">
+    <img
+        src="../media/fotos platos/limonada-natural.jpeg"
+        alt="Natural Lemonade"
+        class="product-image"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Natural Lemonade</h3>
+            <span class="price">$9.000</span>
+        </div>
+        <p class="product-description">
+            Classic and refreshing lemonade prepared with natural lemon,
+            citrusy and vibrant. A light and balanced drink, ideal
+            to accompany any dish.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     MINT LEMONADE
+====================================== -->
+
+<div class="product product-limonada-hierbabuena">
+    <img
+        src="../media/fotos platos/limonada-hierba-buena.jpeg"
+        alt="Mint Lemonade"
+        class="product-image"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Mint Lemonade</h3>
+            <span class="price">$12.000</span>
+        </div>
+        <p class="product-description">
+            Natural lemonade with a fresh and aromatic character, with
+            fresh mint leaves. Its balance between acidity and freshness
+            makes it a light and revitalizing option.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     MANGO JUICE
+     WATER / MILK
+====================================== -->
+
+<div class="product product-jugo-mango">
+    <img
+        src="../media/fotos platos/jugo-mango-en-agua.jpeg"
+        alt="Mango Juice"
+        class="product-image"
+        id="imagen-jugo-mango"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Mango Juice</h3>
+            <span class="price">$10.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- WATER -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mango',
+                    '../media/fotos platos/jugo-mango-en-agua.jpeg',
+                    '$10.000',
+                    'Juice prepared with mango pulp, light texture and naturally sweet flavor. Its tropical notes and freshness make this drink a simple and refreshing option.',
+                    this
+                )"
+            >
+                Water
+            </button>
+
+            <!-- MILK -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mango',
+                    '../media/fotos platos/jugo-mango-en-leche.jpeg',
+                    '$12.000',
+                    'Fresh mango pulp combined with milk to create a creamy and velvety beverage. Its tropical sweetness blends with the smoothness of milk in a balanced and comforting preparation.',
+                    this
+                )"
+            >
+                Milk
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Juice prepared with mango pulp, light texture and naturally
+            sweet flavor. Its tropical notes and freshness make this
+            drink a simple and refreshing option.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     BLACKBERRY JUICE
+     WATER / MILK
+====================================== -->
+
+<div class="product product-jugo-mora">
+    <img
+        src="../media/fotos platos/jugo-mora-en-agua.jpeg"
+        alt="Blackberry Juice"
+        class="product-image"
+        id="imagen-jugo-mora"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Blackberry Juice</h3>
+            <span class="price">$10.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- WATER -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mora',
+                    '../media/fotos platos/jugo-mora-en-agua.jpeg',
+                    '$10.000',
+                    'Blackberry juice prepared in water, with a delicate balance between sweetness and acidity. Its fruity and refreshing profile offers a light, aromatic and full-bodied drink.',
+                    this
+                )"
+            >
+                Water
+            </button>
+
+            <!-- MILK -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-mora',
+                    '../media/fotos platos/jugo-mora-en-leche.jpeg',
+                    '$12.000',
+                    'Blackberry pulp and milk are combined in a creamy drink, with intense fruity character and delicate notes between sweet and acidic. A smooth and refreshing preparation, with an enveloping texture.',
+                    this
+                )"
+            >
+                Milk
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Blackberry juice prepared in water, with a delicate balance
+            between sweetness and acidity. Its fruity and refreshing
+            profile offers a light, aromatic and full-bodied drink.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     STRAWBERRY JUICE
+     WATER / MILK
+====================================== -->
+
+<div class="product product-jugo-fresa">
+    <img
+        src="../media/fotos platos/jugo-fresa-en-agua.jpeg"
+        alt="Strawberry Juice"
+        class="product-image"
+        id="imagen-jugo-fresa"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Strawberry Juice</h3>
+            <span class="price">$10.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- WATER -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-fresa',
+                    '../media/fotos platos/jugo-fresa-en-agua.jpeg',
+                    '$10.000',
+                    'Strawberry pulp transformed into a fresh and light juice, with delicate sweet notes and a pleasant fruity character. A refreshing option that highlights the natural expression of the fruit.',
+                    this
+                )"
+            >
+                Water
+            </button>
+
+            <!-- MILK -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-fresa',
+                    '../media/fotos platos/jugo-fresa-en-leche.jpeg',
+                    '$12.000',
+                    'Strawberry pulp mixed with milk until reaching a creamy and silky texture. Its delicate sweetness and fruity notes give rise to a smooth, balanced and pleasantly aromatic drink.',
+                    this
+                )"
+            >
+                Milk
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Strawberry pulp transformed into a fresh and light juice, with
+            delicate sweet notes and a pleasant fruity character. A
+            refreshing option that highlights the natural expression of the fruit.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     PASSION FRUIT JUICE
+     WATER / MILK
+====================================== -->
+
+<div class="product product-jugo-maracuya">
+    <img
+        src="../media/fotos platos/jugo-maracuya-en-agua.jpeg"
+        alt="Passion Fruit Juice"
+        class="product-image"
+        id="imagen-jugo-maracuya"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Passion Fruit Juice</h3>
+            <span class="price">$10.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- WATER -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jugo-maracuya',
+                    '../media/fotos platos/jugo-maracuya-en-agua.jpeg',
+                    '$10.000',
+                    'Passion fruit juice prepared in water, with a fresh and aromatic expression. Its characteristic tropical acidity provides a vibrant and refreshing flavor in every sip.',
+                    this
+                )"
+            >
+                Water
+            </button>
+
+            <!-- MILK -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jugo-maracuya',
+                    '../media/fotos platos/jugo-maracuya-en-leche.jpeg',
+                    '$12.000',
+                    'The aromatic intensity of passion fruit meets the smoothness of milk in a creamy combination with tropical character. A balanced mix between acidity, sweetness and silky texture.',
+                    this
+                )"
+            >
+                Milk
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Passion fruit juice prepared in water, with a fresh and
+            aromatic expression. Its characteristic tropical acidity
+            provides a vibrant and refreshing flavor in every sip.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     SOFT DRINKS
+     COCA-COLA / QUATRO /
+     SODA / CANADA DRY
+====================================== -->
+
+<div class="product product-gaseosas">
+    <img
+        src="../media/fotos platos/coca-cola.jpeg"
+        alt="Soft Drinks"
+        class="product-image"
+        id="imagen-gaseosas"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Soft Drinks</h3>
+            <span class="price">$8.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- COCA-COLA -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/coca-cola.jpeg',
+                    '$8.000',
+                    'Selection of Coca-Cola soft drinks, with options for all tastes: Quatro, soda, Coca-Cola Zero, Coca-Cola and Canada Dry.',
+                    this
+                )"
+            >
+                Coca-Cola
+            </button>
+
+            <!-- QUATRO -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/quatro.jpeg',
+                    '$8.000',
+                    'Selection of Coca-Cola soft drinks, with options for all tastes: Quatro, soda, Coca-Cola Zero, Coca-Cola and Canada Dry.',
+                    this
+                )"
+            >
+                Quatro
+            </button>
+
+            <!-- SODA -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/soda.jpeg',
+                    '$8.000',
+                    'Selection of Coca-Cola soft drinks, with options for all tastes: Quatro, soda, Coca-Cola Zero, Coca-Cola and Canada Dry.',
+                    this
+                )"
+            >
+                Soda
+            </button>
+
+            <!-- CANADA DRY -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-gaseosas',
+                    '../media/fotos platos/canada-dry.jpeg',
+                    '$8.000',
+                    'Selection of Coca-Cola soft drinks, with options for all tastes: Quatro, soda, Coca-Cola Zero, Coca-Cola and Canada Dry.',
+                    this
+                )"
+            >
+                Canada Dry
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Selection of Coca-Cola soft drinks, with options for
+            all tastes: Quatro, soda, Coca-Cola Zero, Coca-Cola and Canada Dry.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     WATER BOTTLE
+     SPARKLING / STILL
+====================================== -->
+
+<div class="product product-botella-agua">
+    <img
+        src="../media/fotos platos/agua-con-gas.jpeg"
+        alt="Water Bottle"
+        class="product-image"
+        id="imagen-botella-agua"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Water Bottle</h3>
+            <span class="price">$9.000</span>
+        </div>
+
+        <div class="product-options">
+
+            <!-- SPARKLING -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-botella-agua',
+                    '../media/fotos platos/agua-con-gas.jpeg',
+                    '$9.000',
+                    'Mineralized water with delicate bubbles, clean and refreshing profile. A light and elegant option to accompany the gastronomic experience.',
+                    this
+                )"
+            >
+                Sparkling
+            </button>
+
+            <!-- STILL -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-botella-agua',
+                    '../media/fotos platos/agua-sin-gas.jpeg',
+                    '$8.000',
+                    'Water with clean and refreshing taste, ideal to accompany dishes and enjoy a balanced gastronomic experience.',
+                    this
+                )"
+            >
+                Still
+            </button>
+
+        </div>
+
+        <p class="product-description">
+            Mineralized water with delicate bubbles, clean and refreshing
+            profile. A light and elegant option to accompany the
+            gastronomic experience.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<!-- ======================================
+     FOOTER
+     ====================================== -->
+
+<footer class="footer">
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
+</footer>
+
+</div>
+
+<!-- ======================================
+     JAVASCRIPT
+     IMAGE, PRICE AND
+     DESCRIPTION CHANGE
+====================================== -->
+
+<script>
+function cambiarImagen(
+    imagenId,
+    nuevaImagen,
+    nuevoPrecio,
+    nuevaDescripcion,
+    boton
+) {
+
+    /* ==============================
+       GET IMAGE
+    ============================== */
+    const imagen =
+        document.getElementById(imagenId);
+
+    /* ==============================
+       CHANGE IMAGE
+    ============================== */
+    if (imagen) {
+        imagen.src = nuevaImagen;
+    }
+
+    /* ==============================
+       GET CARD
+    ============================== */
+    const tarjeta =
+        boton.closest('.product');
+
+    if (tarjeta) {
+
+        /* ==============================
+           CHANGE PRICE
+        ============================== */
+        const precio =
+            tarjeta.querySelector('.price');
+
+        if (precio) {
+            precio.textContent = nuevoPrecio;
+        }
+
+        /* ==============================
+           CHANGE DESCRIPTION
+        ============================== */
+        const descripcion =
+            tarjeta.querySelector('.product-description');
+
+        if (descripcion) {
+            descripcion.textContent =
+                nuevaDescripcion;
+        }
+
+        /* ==============================
+           GET BUTTONS
+        ============================== */
+        const botones =
+            tarjeta.querySelectorAll(
+                '.option-button'
+            );
+
+        /* ==============================
+           REMOVE ACTIVE
+        ============================== */
+        botones.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+    }
+
+    /* ==============================
+       ACTIVATE PRESSED BUTTON
+    ============================== */
+    boton.classList.add('active');
+}
+</script>
+
+</body>
+</html>

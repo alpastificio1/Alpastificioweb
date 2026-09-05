@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Alcoholic Beverages</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body class="categoria-bebidas-alcoholicas">
+<div class="container">
+
+<!-- ======================================
+     HEADER
+     ====================================== -->
+
+<header class="header">
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a
+        href="../menu-en.html"
+        class="back"
+    >
+        ← Back to Menu
+    </a>
+</header>
+
+<!-- ======================================
+     HERO
+     ====================================== -->
+
+<section class="category-hero">
+    <img
+        src="../media/categorias/bebidas-alcoholicas.jpeg"
+        alt="Alcoholic Beverages"
+        class="category-image"
+    >
+    <div class="category-overlay">
+        <h1>ALCOHOLIC BEVERAGES</h1>
+        <p>
+            Glasses, sangrias and selected beers
+            to accompany your experience at Al Pastificio.
+        </p>
+    </div>
+</section>
+
+<!-- ======================================
+     PRODUCTS
+     ====================================== -->
+
+<section class="products">
+
+<!-- ======================================
+     IMPORTED BEERS
+     CORONA / STELLA ARTOIS
+====================================== -->
+
+<div class="product product-cervezas-importadas">
+    <img
+        src="../media/fotos platos/corona.jpeg"
+        alt="Imported Beers"
+        class="product-image"
+        id="imagen-cervezas-importadas"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Imported Beers</h3>
+            <span class="price">$13.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- CORONA -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-importadas',
+                    '../media/fotos platos/corona.jpeg',
+                    '$13.000',
+                    'Selection of imported beers with a refreshing and balanced character, available in Corona and Stella Artois. Ideal to accompany our dishes.',
+                    this
+                )"
+            >
+                Corona
+            </button>
+
+            <!-- STELLA ARTOIS -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-importadas',
+                    '../media/fotos platos/stella-artois.jpeg',
+                    '$13.000',
+                    'Selection of imported beers with a refreshing and balanced character, available in Corona and Stella Artois. Ideal to accompany our dishes.',
+                    this
+                )"
+            >
+                Stella Artois
+            </button>
+        </div>
+
+        <p class="product-description">
+            Selection of imported beers with a refreshing and balanced
+            character, available in Corona and Stella Artois.
+            Ideal to accompany our dishes.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     NATIONAL BEERS
+     CLUB COLOMBIA / ÁGUILA LIGHT / POKER
+====================================== -->
+
+<div class="product product-cervezas-nacionales">
+    <img
+        src="../media/fotos platos/club-colombia.jpeg"
+        alt="National Beers"
+        class="product-image"
+        id="imagen-cervezas-nacionales"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>National Beers</h3>
+            <span class="price">$10.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- CLUB COLOMBIA -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-nacionales',
+                    '../media/fotos platos/club-colombia.jpeg',
+                    '$10.000',
+                    'Selection of refreshing and light Colombian beers, available in Club Colombia, Águila Light and Poker, perfect to accompany the table.',
+                    this
+                )"
+            >
+                Club Colombia
+            </button>
+
+            <!-- ÁGUILA LIGHT -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-nacionales',
+                    '../media/fotos platos/aguila-light.jpeg',
+                    '$10.000',
+                    'Selection of refreshing and light Colombian beers, available in Club Colombia, Águila Light and Poker, perfect to accompany the table.',
+                    this
+                )"
+            >
+                Águila Light
+            </button>
+
+            <!-- POKER -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-cervezas-nacionales',
+                    '../media/fotos platos/poker.jpeg',
+                    '$10.000',
+                    'Selection of refreshing and light Colombian beers, available in Club Colombia, Águila Light and Poker, perfect to accompany the table.',
+                    this
+                )"
+            >
+                Poker
+            </button>
+        </div>
+
+        <p class="product-description">
+            Selection of refreshing and light Colombian beers,
+            available in Club Colombia, Águila Light and Poker,
+            perfect to accompany the table.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     SANGRIA GLASS
+     RED / ROSÉ
+====================================== -->
+
+<div class="product product-copa-sangria">
+    <img
+        src="../media/fotos platos/copa-sangria-tinto.jpeg"
+        alt="Sangria Glass"
+        class="product-image"
+        id="imagen-copa-sangria"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Sangria Glass</h3>
+            <span class="price">$24.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- RED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-copa-sangria',
+                    '../media/fotos platos/copa-sangria-tinto.jpeg',
+                    '$24.000',
+                    'Refreshing sangria prepared with wine and fruits, with a delicate balance between sweetness, acidity and fruity notes. An aromatic and vibrant option to share.',
+                    this
+                )"
+            >
+                Red
+            </button>
+
+            <!-- ROSÉ -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-copa-sangria',
+                    '../media/fotos platos/copa-sangria-rosado.jpeg',
+                    '$24.000',
+                    'Refreshing sangria prepared with wine and fruits, with a delicate balance between sweetness, acidity and fruity notes. An aromatic and vibrant option to share.',
+                    this
+                )"
+            >
+                Rosé
+            </button>
+        </div>
+
+        <p class="product-description">
+            Refreshing sangria prepared with wine and fruits,
+            with a delicate balance between sweetness, acidity and
+            fruity notes. An aromatic and vibrant option to share.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     WINE GLASS
+     WHITE / RED / ROSÉ
+====================================== -->
+
+<div class="product product-copa-vino">
+    <img
+        src="../media/fotos platos/copa-vino-blanco.jpeg"
+        alt="Wine Glass"
+        class="product-image"
+        id="imagen-copa-vino"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Wine Glass</h3>
+            <span class="price">$18.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- WHITE -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-copa-vino',
+                    '../media/fotos platos/copa-vino-blanco.jpeg',
+                    '$18.000',
+                    'A selection of wine served by the glass, ideal to accompany our dishes and enjoy its aromas, flavors and delicate nuances.',
+                    this
+                )"
+            >
+                White
+            </button>
+
+            <!-- RED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-copa-vino',
+                    '../media/fotos platos/copa-vino-tinto.jpeg',
+                    '$18.000',
+                    'A selection of wine served by the glass, ideal to accompany our dishes and enjoy its aromas, flavors and delicate nuances.',
+                    this
+                )"
+            >
+                Red
+            </button>
+
+            <!-- ROSÉ -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-copa-vino',
+                    '../media/fotos platos/copa-vino-rosado.jpeg',
+                    '$18.000',
+                    'A selection of wine served by the glass, ideal to accompany our dishes and enjoy its aromas, flavors and delicate nuances.',
+                    this
+                )"
+            >
+                Rosé
+            </button>
+        </div>
+
+        <p class="product-description">
+            A selection of wine served by the glass, ideal to
+            accompany our dishes and enjoy its aromas, flavors
+            and delicate nuances.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     SANGRIA PITCHER
+     RED / ROSÉ
+====================================== -->
+
+<div class="product product-jarra-sangria">
+    <img
+        src="../media/fotos platos/jarra-sangria-tinto.jpeg"
+        alt="Sangria Pitcher"
+        class="product-image"
+        id="imagen-jarra-sangria"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Sangria Pitcher</h3>
+            <span class="price">$82.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- RED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-jarra-sangria',
+                    '../media/fotos platos/jarra-sangria-tinto.jpeg',
+                    '$82.000',
+                    'Our sangria is served to share, prepared with wine and a selection of fruits that bring freshness, sweetness and aromatic notes to each glass.',
+                    this
+                )"
+            >
+                Red
+            </button>
+
+            <!-- ROSÉ -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-jarra-sangria',
+                    '../media/fotos platos/jarra-sangria-rosado.jpeg',
+                    '$82.000',
+                    'Our sangria is served to share, prepared with wine and a selection of fruits that bring freshness, sweetness and aromatic notes to each glass.',
+                    this
+                )"
+            >
+                Rosé
+            </button>
+        </div>
+
+        <p class="product-description">
+            Our sangria is served to share,
+            prepared with wine and a selection of fruits that
+            bring freshness, sweetness and aromatic notes to
+            each glass.
+        </p>
+    </div>
+</div>
+
+<!-- ======================================
+     HOUSE WINE BOTTLE
+====================================== -->
+
+<div class="product product-botella-vino-casa">
+    <img
+        src="../media/fotos platos/botella-vino-casa.jpeg"
+        alt="House Wine Bottle"
+        class="product-image"
+        id="imagen-botella-vino-casa"
+    >
+    <div class="product-info">
+        <div class="product-header">
+            <h3>House Wine Bottle</h3>
+            <span class="price">$50.000</span>
+        </div>
+
+        <p class="product-description">
+            Wine selected to accompany the gastronomic
+            experience at Al Pastificio, with a balanced
+            and pleasant profile that harmonizes with our
+            dishes.
+        </p>
+    </div>
+</div>
+
+</section>
+
+<!-- ======================================
+     FOOTER
+     ====================================== -->
+
+<footer class="footer">
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
+</footer>
+
+</div>
+
+<!-- ======================================
+     JAVASCRIPT
+     IMAGE, PRICE AND
+     DESCRIPTION CHANGE
+====================================== -->
+
+<script>
+function cambiarImagen(
+    imagenId,
+    nuevaImagen,
+    nuevoPrecio,
+    nuevaDescripcion,
+    boton
+) {
+    /* ==============================
+       GET IMAGE
+    ============================== */
+    const imagen = document.getElementById(imagenId);
+
+    /* ==============================
+       CHANGE IMAGE
+    ============================== */
+    if (imagen) {
+        imagen.src = nuevaImagen;
+    }
+
+    /* ==============================
+       GET CARD
+    ============================== */
+    const tarjeta = boton.closest('.product');
+
+    if (tarjeta) {
+        /* ==============================
+           CHANGE PRICE
+        ============================== */
+        const precio = tarjeta.querySelector('.price');
+
+        if (precio) {
+            precio.textContent = nuevoPrecio;
+        }
+
+        /* ==============================
+           CHANGE DESCRIPTION
+        ============================== */
+        const descripcion = tarjeta.querySelector('.product-description');
+
+        if (descripcion) {
+            descripcion.textContent = nuevaDescripcion;
+        }
+
+        /* ==============================
+           GET BUTTONS
+        ============================== */
+        const botones = tarjeta.querySelectorAll('.option-button');
+
+        /* ==============================
+           REMOVE ACTIVE
+        ============================== */
+        botones.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+    }
+
+    /* ==============================
+       ACTIVATE PRESSED BUTTON
+    ============================== */
+    boton.classList.add('active');
+}
+</script>
+
+</body>
+</html>

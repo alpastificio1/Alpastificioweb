@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Kids Menu</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body class="categoria-menu-infantil">
+<div class="container">
+
+<!-- =================================
+     HEADER
+================================== -->
+
+<header class="header">
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a
+        href="../menu-en.html"
+        class="back"
+    >
+        ← Back to Menu
+    </a>
+</header>
+
+<!-- =================================
+     PRODUCT
+================================== -->
+
+<section class="products">
+    <div class="product product-menu-infantil">
+
+        <!-- REPRESENTATIVE IMAGE -->
+        <img
+            src="../media/fotos platos/menu-infantil.jpeg"
+            alt="Kids Menu"
+            class="product-image"
+        >
+
+        <div class="product-info">
+
+            <!-- NAME AND PRICE -->
+            <div class="product-header">
+                <h3>
+                    Kids Menu
+                </h3>
+                <span class="price">
+                    $29.000
+                </span>
+            </div>
+
+            <!-- =========================
+                 PROTEIN
+            ========================== -->
+            <p class="option-title">
+                <strong>Choose your protein</strong>
+            </p>
+            <div class="product-options">
+                <button
+                    type="button"
+                    class="option-button active"
+                    onclick="seleccionarOpcion(this)"
+                >
+                    Chicken Cubes
+                </button>
+                <button
+                    type="button"
+                    class="option-button"
+                    onclick="seleccionarOpcion(this)"
+                >
+                    Beef Tenderloin Cubes
+                </button>
+            </div>
+
+            <!-- =========================
+                 SIDE DISH
+            ========================== -->
+            <p class="option-title">
+                <strong>Choose your side dish</strong>
+            </p>
+            <div class="product-options">
+                <button
+                    type="button"
+                    class="option-button active"
+                    onclick="seleccionarOpcion(this)"
+                >
+                    French Fries
+                </button>
+                <button
+                    type="button"
+                    class="option-button"
+                    onclick="seleccionarOpcion(this)"
+                >
+                    Alfredo Pasta
+                </button>
+            </div>
+
+            <!-- =========================
+                 DRINK
+            ========================== -->
+            <p class="option-title">
+                <strong>Choose your drink</strong>
+            </p>
+            <div class="product-options">
+                <button
+                    type="button"
+                    class="option-button active"
+                    onclick="seleccionarOpcion(this)"
+                >
+                    Juice
+                </button>
+                <button
+                    type="button"
+                    class="option-button"
+                    onclick="seleccionarOpcion(this)"
+                >
+                    Soda
+                </button>
+            </div>
+
+            <!-- =========================
+                 DESCRIPTION
+            ========================== -->
+            <p class="product-description">
+                An option designed for the little ones,
+                with chicken cubes or beef tenderloin
+                accompanied by french fries or Alfredo pasta.
+                Includes juice or soda and a delicious ice cream
+                to finish.
+            </p>
+
+            <!-- =========================
+                 ICE CREAM
+            ========================== -->
+            <p class="helado-incluido">
+                🍦 Ice cream included.
+            </p>
+
+        </div>
+    </div>
+</section>
+
+<!-- =================================
+     FOOTER
+================================== -->
+
+<footer class="footer">
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
+</footer>
+
+</div>
+
+<!-- =================================
+     JAVASCRIPT
+================================== -->
+
+<script>
+function seleccionarOpcion(boton) {
+    const grupo = boton.closest('.product-options');
+    if (!grupo) return;
+
+    const botones = grupo.querySelectorAll('.option-button');
+    botones.forEach(function(btn) {
+        btn.classList.remove('active');
+    });
+
+    boton.classList.add('active');
+}
+</script>
+
+</body>
+</html>
