@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Pastificio | Panini</title>
-    <link rel="stylesheet" href="../css/categoria.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet"
-    >
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Pastificio | Panini</title>
+<link rel="stylesheet" href="../css/categoria.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+>
 </head>
 <body class="categoria-panini">
 <div class="container">
 
-<!-- ======================================
+
+<!-- =================================
      HEADER
-     ====================================== -->
+================================== -->
+
 
 <header class="header">
     <img
@@ -23,14 +25,19 @@
         class="logo"
         alt="Al Pastificio"
     >
-    <a href="../menu-en.html" class="back">
-        ← Back to Menu
+    <a
+        href="../menu-en.html"
+        class="back"
+    >
+        ← Back to menu
     </a>
 </header>
 
-<!-- ======================================
-     CATEGORY HERO
-     ====================================== -->
+
+<!-- =================================
+     HERO
+================================== -->
+
 
 <section class="category-hero">
     <img
@@ -47,402 +54,403 @@
     </div>
 </section>
 
-<!-- ======================================
+
+<!-- =================================
      PRODUCTS
-     ====================================== -->
+================================== -->
+
 
 <section class="products">
 
-<!-- ======================================
-     HAWAIIAN PANINO
-     ====================================== -->
 
-<div
-    class="product product-panino-hawaiano"
-    tabindex="0"
-    role="button"
-    aria-label="View description of Hawaiian Panino"
-    aria-pressed="false"
->
-    <div class="product-inner">
+<!-- =================================
+     PANINO HAWAIANO
+     NOT GRATINATED / GRATINATED
+================================== -->
 
-        <!-- FRONT -->
-        <div class="product-face product-front">
-            <img
-                src="../media/fotos platos/panino-hawaiano.jpeg"
-                alt="Hawaiian Panino"
-                class="product-image"
+
+<div class="product product-panino-hawaiano">
+
+    <img
+        src="../media/fotos platos/panino-hawaiano.jpeg"
+        alt="Panino Hawaiano"
+        class="product-image"
+        id="imagen-panino-hawaiano"
+    >
+
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Panino Hawaiano</h3>
+            <span class="price">$35.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- NOT GRATINATED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-panino-hawaiano',
+                    '../media/fotos platos/panino-hawaiano.jpeg',
+                    '$35.000',
+                    'Artisan bread, accompanied by a smooth house-made mayonnaise sauce, red tomato, ham, pineapple, bacon and mozzarella cheese. Baked to achieve a light toast and a warm, melting interior, where the sweetness of the pineapple contrasts with the salty and smoky notes.',
+                    this
+                )"
             >
-            <div class="product-info">
-                <div class="product-header">
-                    <h3>Hawaiian Panino</h3>
-                    <span class="price">$28.000</span>
-                </div>
-                <p class="ingredients">
-                    Ham, pineapple, bacon and mozzarella cheese.
-                </p>
-                <span class="flip-hint-front">
-                    Tap image for more details
-                </span>
-            </div>
+                Not gratinated
+            </button>
+
+            <!-- GRATINATED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-panino-hawaiano',
+                    '../media/fotos platos/panino-hawaiano-gratinado.jpeg',
+                    '$35.000 + $10.000',
+                    'Artisan bread, accompanied by a smooth house-made mayonnaise sauce, red tomato, ham, pineapple, bacon and mozzarella cheese. Baked to achieve a light toast and a warm, melting interior, where the sweetness of the pineapple contrasts with the salty and smoky notes. Gratinated for a more golden and crispy finish.',
+                    this
+                )"
+            >
+                Gratinated
+            </button>
         </div>
 
-        <!-- BACK -->
-        <div class="product-face product-back">
-            <div class="product-back-image">
-                <img
-                    src="../media/fotos platos/panino-hawaiano.jpeg"
-                    alt="Hawaiian Panino complete"
-                    class="product-back-image-img"
-                >
-            </div>
-            <div class="product-back-info">
-                <div class="product-header">
-                    <h3>Hawaiian Panino</h3>
-                    <span class="price">$28.000</span>
-                </div>
-                <p>
-                    Our special herb bread, accompanied by a smooth
-                    house mayonnaise sauce, red tomato, ham, pineapple, bacon
-                    and mozzarella cheese. Baked until achieving a light toast
-                    and a warm and melted interior, where the sweetness of the pineapple
-                    contrasts with the salty and smoky notes.
-                </p>
-                <span class="flip-hint">
-                    Tap to go back
-                </span>
-            </div>
-        </div>
-
+        <p class="product-description">
+            Artisan bread, accompanied by a smooth house-made mayonnaise
+            sauce, red tomato, ham, pineapple, bacon and mozzarella cheese.
+            Baked to achieve a light toast and a warm, melting interior,
+            where the sweetness of the pineapple contrasts with the salty
+            and smoky notes.
+        </p>
     </div>
 </div>
 
-<!-- ======================================
-     CURED MEATS PANINO
-     ====================================== -->
 
-<div
-    class="product product-panino-madurados"
-    tabindex="0"
-    role="button"
-    aria-label="View description of Cured Meats Panino"
-    aria-pressed="false"
->
-    <div class="product-inner">
+<!-- =================================
+     PANINO MADURADOS
+     NOT GRATINATED / GRATINATED
+================================== -->
 
-        <!-- FRONT -->
-        <div class="product-face product-front">
-            <img
-                src="../media/fotos platos/panino-madurados.jpeg"
-                alt="Cured Meats Panino"
-                class="product-image"
+
+<div class="product product-panino-madurados">
+
+    <img
+        src="../media/fotos platos/panino-madurados.jpeg"
+        alt="Panino Madurados"
+        class="product-image"
+        id="imagen-panino-madurados"
+    >
+
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Panino Madurados</h3>
+            <span class="price">$34.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- NOT GRATINATED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-panino-madurados',
+                    '../media/fotos platos/panino-madurados.jpeg',
+                    '$34.000',
+                    'Artisan bread, accompanied by our special mayonnaise sauce, salami, ham, pepperoni and mozzarella cheese. Baked to obtain a delicate exterior toast and a hot, melting interior, highlighting the intense and spiced character of the cured meats.',
+                    this
+                )"
             >
-            <div class="product-info">
-                <div class="product-header">
-                    <h3>Cured Meats Panino</h3>
-                    <span class="price">$30.000</span>
-                </div>
-                <p class="ingredients">
-                    Salami, ham, pepperoni and mozzarella cheese.
-                </p>
-                <span class="flip-hint-front">
-                    Tap image for more details
-                </span>
-            </div>
+                Not gratinated
+            </button>
+
+            <!-- GRATINATED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-panino-madurados',
+                    '../media/fotos platos/panino-madurados-gratinado.jpeg',
+                    '$34.000 + $10.000',
+                    'Artisan bread, accompanied by our special mayonnaise sauce, salami, ham, pepperoni and mozzarella cheese. Baked to obtain a delicate exterior toast and a hot, melting interior, highlighting the intense and spiced character of the cured meats. Gratinated for a more golden and crispy finish.',
+                    this
+                )"
+            >
+                Gratinated
+            </button>
         </div>
 
-        <!-- BACK -->
-        <div class="product-face product-back">
-            <div class="product-back-image">
-                <img
-                    src="../media/fotos platos/panino-madurados.jpeg"
-                    alt="Cured Meats Panino complete"
-                    class="product-back-image-img"
-                >
-            </div>
-            <div class="product-back-info">
-                <div class="product-header">
-                    <h3>Cured Meats Panino</h3>
-                    <span class="price">$30.000</span>
-                </div>
-                <p>
-                    House herb bread, accompanied by our special
-                    mayonnaise sauce, salami, ham, pepperoni and mozzarella cheese.
-                    Baked until achieving a delicate exterior toast and a
-                    hot and melted interior, highlighting the intense and
-                    spiced character of the cured meats.
-                </p>
-                <span class="flip-hint">
-                    Tap to go back
-                </span>
-            </div>
-        </div>
-
+        <p class="product-description">
+            Artisan bread, accompanied by our special mayonnaise sauce,
+            salami, ham, pepperoni and mozzarella cheese. Baked to obtain
+            a delicate exterior toast and a hot, melting interior, highlighting
+            the intense and spiced character of the cured meats.
+        </p>
     </div>
 </div>
 
-<!-- ======================================
-     MILANESE PANINO
-     ====================================== -->
 
-<div
-    class="product product-panino-milanes"
-    tabindex="0"
-    role="button"
-    aria-label="View description of Milanese Panino"
-    aria-pressed="false"
->
-    <div class="product-inner">
+<!-- =================================
+     PANINO MILANÉS
+     NOT GRATINATED / GRATINATED
+================================== -->
 
-        <!-- FRONT -->
-        <div class="product-face product-front">
-            <img
-                src="../media/fotos platos/panino-milanes.jpeg"
-                alt="Milanese Panino"
-                class="product-image"
+
+<div class="product product-panino-milanes">
+
+    <img
+        src="../media/fotos platos/panino-milanes.jpeg"
+        alt="Panino Milanés"
+        class="product-image"
+        id="imagen-panino-milanes"
+    >
+
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Panino Milanés</h3>
+            <span class="price">$36.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- NOT GRATINATED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-panino-milanes',
+                    '../media/fotos platos/panino-milanes.jpeg',
+                    '$36.000',
+                    'Artisan bread, filled with chicken, mushrooms, ham and mozzarella cheese, accompanied by our special mayonnaise sauce. Baked to achieve a slightly crispy texture on the outside and a soft, melting interior, in a warm and flavorful combination.',
+                    this
+                )"
             >
-            <div class="product-info">
-                <div class="product-header">
-                    <h3>Milanese Panino</h3>
-                    <span class="price">$29.000</span>
-                </div>
-                <p class="ingredients">
-                    Chicken, mushrooms, ham and mozzarella cheese.
-                </p>
-                <span class="flip-hint-front">
-                    Tap image for more details
-                </span>
-            </div>
+                Not gratinated
+            </button>
+
+            <!-- GRATINATED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-panino-milanes',
+                    '../media/fotos platos/panino-milanes-gratinado.jpeg',
+                    '$36.000 + $10.000',
+                    'Artisan bread, filled with chicken, mushrooms, ham and mozzarella cheese, accompanied by our special mayonnaise sauce. Baked to achieve a slightly crispy texture on the outside and a soft, melting interior, in a warm and flavorful combination. Gratinated for a more golden and crispy finish.',
+                    this
+                )"
+            >
+                Gratinated
+            </button>
         </div>
 
-        <!-- BACK -->
-        <div class="product-face product-back">
-            <div class="product-back-image">
-                <img
-                    src="../media/fotos platos/panino-milanes.jpeg"
-                    alt="Milanese Panino complete"
-                    class="product-back-image-img"
-                >
-            </div>
-            <div class="product-back-info">
-                <div class="product-header">
-                    <h3>Milanese Panino</h3>
-                    <span class="price">$29.000</span>
-                </div>
-                <p>
-                    Our herb bread, filled with chicken, mushrooms,
-                    ham and mozzarella cheese, accompanied by our special
-                    mayonnaise sauce. Baked until achieving a slightly
-                    crispy texture on the outside and a soft and melted interior, in a
-                    combination that is warm and full of flavor.
-                </p>
-                <span class="flip-hint">
-                    Tap to go back
-                </span>
-            </div>
-        </div>
-
+        <p class="product-description">
+            Artisan bread, filled with chicken, mushrooms, ham and mozzarella
+            cheese, accompanied by our special mayonnaise sauce. Baked to
+            achieve a slightly crispy texture on the outside and a soft,
+            melting interior, in a warm and flavorful combination.
+        </p>
     </div>
 </div>
 
-<!-- ======================================
-     PARMA PANINO
-     ====================================== -->
 
-<div
-    class="product product-panino-parma"
-    tabindex="0"
-    role="button"
-    aria-label="View description of Parma Panino"
-    aria-pressed="false"
->
-    <div class="product-inner">
+<!-- =================================
+     PANINO PARMA
+     NOT GRATINATED / GRATINATED
+================================== -->
 
-        <!-- FRONT -->
-        <div class="product-face product-front">
-            <img
-                src="../media/fotos platos/panino-parma.jpeg"
-                alt="Parma Panino"
-                class="product-image"
+
+<div class="product product-panino-parma">
+
+    <img
+        src="../media/fotos platos/panino-parma.jpeg"
+        alt="Panino Parma"
+        class="product-image"
+        id="imagen-panino-parma"
+    >
+
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Panino Parma</h3>
+            <span class="price">$36.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- NOT GRATINATED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-panino-parma',
+                    '../media/fotos platos/panino-parma.jpeg',
+                    '$36.000',
+                    'Artisan bread, accompanied by our special mayonnaise sauce, chicken, bocconcini, pesto and mozzarella cheese. Baked to achieve a light toast, while the cheese melts and the fresh and aromatic notes of the pesto enhance the tenderness of the chicken.',
+                    this
+                )"
             >
-            <div class="product-info">
-                <div class="product-header">
-                    <h3>Parma Panino</h3>
-                    <span class="price">$31.000</span>
-                </div>
-                <p class="ingredients">
-                    Chicken, bocconcini, pesto and mozzarella cheese.
-                </p>
-                <span class="flip-hint-front">
-                    Tap image for more details
-                </span>
-            </div>
+                Not gratinated
+            </button>
+
+            <!-- GRATINATED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-panino-parma',
+                    '../media/fotos platos/panino-parma-gratinado.jpeg',
+                    '$36.000 + $10.000',
+                    'Artisan bread, accompanied by our special mayonnaise sauce, chicken, bocconcini, pesto and mozzarella cheese. Baked to achieve a light toast, while the cheese melts and the fresh and aromatic notes of the pesto enhance the tenderness of the chicken. Gratinated for a more golden and crispy finish.',
+                    this
+                )"
+            >
+                Gratinated
+            </button>
         </div>
 
-        <!-- BACK -->
-        <div class="product-face product-back">
-            <div class="product-back-image">
-                <img
-                    src="../media/fotos platos/panino-parma.jpeg"
-                    alt="Parma Panino complete"
-                    class="product-back-image-img"
-                >
-            </div>
-            <div class="product-back-info">
-                <div class="product-header">
-                    <h3>Parma Panino</h3>
-                    <span class="price">$31.000</span>
-                </div>
-                <p>
-                    House artisan bread, accompanied by our special
-                    mayonnaise sauce, chicken, bocconcini, pesto and mozzarella cheese. Baked
-                    until achieving a light toast, while the cheese melts and
-                    the fresh and aromatic notes of the pesto enhance the smoothness of the chicken.
-                </p>
-                <span class="flip-hint">
-                    Tap to go back
-                </span>
-            </div>
-        </div>
-
+        <p class="product-description">
+            Artisan bread, accompanied by our special mayonnaise sauce,
+            chicken, bocconcini, pesto and mozzarella cheese. Baked to
+            achieve a light toast, while the cheese melts and the fresh
+            and aromatic notes of the pesto enhance the tenderness of the chicken.
+        </p>
     </div>
 </div>
 
-<!-- ======================================
-     CALABRIA PANINO
-     ====================================== -->
 
-<div
-    class="product product-panino-calabria"
-    tabindex="0"
-    role="button"
-    aria-label="View description of Calabria Panino"
-    aria-pressed="false"
->
-    <div class="product-inner">
+<!-- =================================
+     PANINO CALABRIA
+     NOT GRATINATED / GRATINATED
+================================== -->
 
-        <!-- FRONT -->
-        <div class="product-face product-front">
-            <img
-                src="../media/fotos platos/panino-calabria.jpeg"
-                alt="Calabria Panino"
-                class="product-image"
+
+<div class="product product-panino-calabria">
+
+    <img
+        src="../media/fotos platos/panino-calabria.jpeg"
+        alt="Panino Calabria"
+        class="product-image"
+        id="imagen-panino-calabria"
+    >
+
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Panino Calabria</h3>
+            <span class="price">$37.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- NOT GRATINATED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-panino-calabria',
+                    '../media/fotos platos/panino-calabria.jpeg',
+                    '$37.000',
+                    'Artisan bread, accompanied by house-made mayonnaise sauce, salami, bocconcini, sun-dried tomatoes, arugula and mozzarella cheese. Baked to achieve a delicate toast and a melting interior, where the intense flavors of the cured meats balance with the freshness of the arugula and the character of the sun-dried tomatoes.',
+                    this
+                )"
             >
-            <div class="product-info">
-                <div class="product-header">
-                    <h3>Calabria Panino</h3>
-                    <span class="price">$32.000</span>
-                </div>
-                <p class="ingredients">
-                    Salami, bocconcini, sun-dried tomatoes and arugula.
-                </p>
-                <span class="flip-hint-front">
-                    Tap image for more details
-                </span>
-            </div>
+                Not gratinated
+            </button>
+
+            <!-- GRATINATED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-panino-calabria',
+                    '../media/fotos platos/panino-calabria-gratinado.jpeg',
+                    '$37.000 + $10.000',
+                    'Artisan bread, accompanied by house-made mayonnaise sauce, salami, bocconcini, sun-dried tomatoes, arugula and mozzarella cheese. Baked to achieve a delicate toast and a melting interior, where the intense flavors of the cured meats balance with the freshness of the arugula and the character of the sun-dried tomatoes. Gratinated for a more golden and crispy finish.',
+                    this
+                )"
+            >
+                Gratinated
+            </button>
         </div>
 
-        <!-- BACK -->
-        <div class="product-face product-back">
-            <div class="product-back-image">
-                <img
-                    src="../media/fotos platos/panino-calabria.jpeg"
-                    alt="Calabria Panino complete"
-                    class="product-back-image-img"
-                >
-            </div>
-            <div class="product-back-info">
-                <div class="product-header">
-                    <h3>Calabria Panino</h3>
-                    <span class="price">$32.000</span>
-                </div>
-                <p>
-                    Our special herb bread, accompanied by house
-                    mayonnaise sauce, salami, bocconcini, sun-dried tomatoes, arugula
-                    and mozzarella cheese. Baked to achieve a delicate
-                    toast and a melted interior, where the intense flavors of the
-                    cured meats are balanced with the freshness of the arugula and the character
-                    of the sun-dried tomatoes.
-                </p>
-                <span class="flip-hint">
-                    Tap to go back
-                </span>
-            </div>
-        </div>
-
+        <p class="product-description">
+            Artisan bread, accompanied by house-made mayonnaise sauce, salami,
+            bocconcini, sun-dried tomatoes, arugula and mozzarella cheese.
+            Baked to achieve a delicate toast and a melting interior, where
+            the intense flavors of the cured meats balance with the freshness
+            of the arugula and the character of the sun-dried tomatoes.
+        </p>
     </div>
 </div>
 
-<!-- ======================================
-     FLORENTINE PANINO
-     ====================================== -->
 
-<div
-    class="product product-panino-fiorentino"
-    tabindex="0"
-    role="button"
-    aria-label="View description of Florentine Panino"
-    aria-pressed="false"
->
-    <div class="product-inner">
+<!-- =================================
+     PANINO FIORENTINO
+     NOT GRATINATED / GRATINATED
+================================== -->
 
-        <!-- FRONT -->
-        <div class="product-face product-front">
-            <img
-                src="../media/fotos platos/panino-fiorentino.jpeg"
-                alt="Florentine Panino"
-                class="product-image"
+
+<div class="product product-panino-fiorentino">
+
+    <img
+        src="../media/fotos platos/panino-fiorentino.jpeg"
+        alt="Panino Fiorentino"
+        class="product-image"
+        id="imagen-panino-fiorentino"
+    >
+
+    <div class="product-info">
+        <div class="product-header">
+            <h3>Panino Fiorentino</h3>
+            <span class="price">$36.000</span>
+        </div>
+
+        <div class="product-options">
+            <!-- NOT GRATINATED -->
+            <button
+                type="button"
+                class="option-button active"
+                onclick="cambiarImagen(
+                    'imagen-panino-fiorentino',
+                    '../media/fotos platos/panino-fiorentino.jpeg',
+                    '$36.000',
+                    'Artisan bread, filled with ham, mushrooms, blue cheese sauce and mozzarella cheese, accompanied by our special mayonnaise sauce. Baked to achieve a light toast and a creamy, melting texture, where the tenderness of the ham and mushrooms meets the intense character of the blue cheese.',
+                    this
+                )"
             >
-            <div class="product-info">
-                <div class="product-header">
-                    <h3>Florentine Panino</h3>
-                    <span class="price">$30.000</span>
-                </div>
-                <p class="ingredients">
-                    Ham, mushrooms and blue cheese sauce.
-                </p>
-                <span class="flip-hint-front">
-                    Tap image for more details
-                </span>
-            </div>
+                Not gratinated
+            </button>
+
+            <!-- GRATINATED -->
+            <button
+                type="button"
+                class="option-button"
+                onclick="cambiarImagen(
+                    'imagen-panino-fiorentino',
+                    '../media/fotos platos/panino-fiorentino-gratinado.jpeg',
+                    '$36.000 + $10.000',
+                    'Artisan bread, filled with ham, mushrooms, blue cheese sauce and mozzarella cheese, accompanied by our special mayonnaise sauce. Baked to achieve a light toast and a creamy, melting texture, where the tenderness of the ham and mushrooms meets the intense character of the blue cheese. Gratinated for a more golden and crispy finish.',
+                    this
+                )"
+            >
+                Gratinated
+            </button>
         </div>
 
-        <!-- BACK -->
-        <div class="product-face product-back">
-            <div class="product-back-image">
-                <img
-                    src="../media/fotos platos/panino-fiorentino.jpeg"
-                    alt="Florentine Panino complete"
-                    class="product-back-image-img"
-                >
-            </div>
-            <div class="product-back-info">
-                <div class="product-header">
-                    <h3>Florentine Panino</h3>
-                    <span class="price">$30.000</span>
-                </div>
-                <p>
-                    House herb bread, filled with ham, mushrooms,
-                    blue cheese sauce and mozzarella cheese, accompanied by our
-                    special mayonnaise sauce. Baked until achieving a light
-                    toast and a creamy and melted texture, where the smoothness of the
-                    ham and mushrooms meets the intense character of the
-                    blue cheese.
-                </p>
-                <span class="flip-hint">
-                    Tap to go back
-                </span>
-            </div>
-        </div>
-
+        <p class="product-description">
+            Artisan bread, filled with ham, mushrooms, blue cheese sauce
+            and mozzarella cheese, accompanied by our special mayonnaise sauce.
+            Baked to achieve a light toast and a creamy, melting texture,
+            where the tenderness of the ham and mushrooms meets the intense
+            character of the blue cheese.
+        </p>
     </div>
 </div>
+
 
 </section>
 
-<!-- ======================================
+
+<!-- =================================
      FOOTER
-     ====================================== -->
+================================== -->
+
 
 <footer class="footer">
     <img
@@ -455,76 +463,90 @@
     </p>
 </footer>
 
+
 </div>
 
-<!-- ======================================
+
+<!-- =================================
      JAVASCRIPT
-     ====================================== -->
+     IMAGE, PRICE AND DESCRIPTION CHANGE
+================================== -->
+
 
 <script>
-document.querySelectorAll('.product').forEach(function(card) {
-    const front = card.querySelector('.product-front');
-    const back = card.querySelector('.product-back');
+function cambiarImagen(
+    imagenId,
+    nuevaImagen,
+    nuevoPrecio,
+    nuevaDescripcion,
+    boton
+) {
 
-    function setFrontHeight() {
-        card.style.height = front.offsetHeight + 'px';
+    /* ==============================
+       BUSCAR LA IMAGEN
+    ============================== */
+    const imagen =
+        document.getElementById(imagenId);
+
+    /* ==============================
+       CAMBIAR LA IMAGEN
+    ============================== */
+    if (imagen) {
+        imagen.src = nuevaImagen;
     }
 
-    setFrontHeight();
+    /* ==============================
+       BUSCAR LA TARJETA
+    ============================== */
+    const tarjeta =
+        boton.closest('.product');
 
-    window.addEventListener('resize', function() {
-        if (!card.classList.contains('is-flipped')) {
-            setFrontHeight();
-        } else {
-            card.style.height = back.offsetHeight + 'px';
+    if (tarjeta) {
+
+        /* ==============================
+           CAMBIAR PRECIO
+        ============================== */
+        const precio =
+            tarjeta.querySelector('.price');
+
+        if (precio) {
+            precio.textContent = nuevoPrecio;
         }
-    });
 
-    card.addEventListener('click', function(event) {
-        if (
-            event.target.closest('button') ||
-            event.target.closest('a') ||
-            event.target.closest('.option-button')
-        ) {
-            return;
+        /* ==============================
+           CAMBIAR DESCRIPCIÓN
+        ============================== */
+        const descripcion =
+            tarjeta.querySelector('.product-description');
+
+        if (descripcion) {
+            descripcion.textContent =
+                nuevaDescripcion;
         }
 
-        if (!this.classList.contains('is-flipped')) {
-            this.style.height = back.offsetHeight + 'px';
-            this.classList.add('is-flipped');
-            this.setAttribute('aria-pressed', 'true');
-        } else {
-            this.style.height = front.offsetHeight + 'px';
-            this.classList.remove('is-flipped');
-            this.setAttribute('aria-pressed', 'false');
-        }
-    });
+        /* ==============================
+           BUSCAR BOTONES
+        ============================== */
+        const botones =
+            tarjeta.querySelectorAll(
+                '.option-button'
+            );
 
-    card.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter' || event.key === ' ') {
-            event.preventDefault();
-            if (!this.classList.contains('is-flipped')) {
-                this.style.height = back.offsetHeight + 'px';
-                this.classList.add('is-flipped');
-                this.setAttribute('aria-pressed', 'true');
-            } else {
-                this.style.height = front.offsetHeight + 'px';
-                this.classList.remove('is-flipped');
-                this.setAttribute('aria-pressed', 'false');
-            }
-        }
-    });
-
-    const images = card.querySelectorAll('img');
-    images.forEach(function(image) {
-        image.addEventListener('load', function() {
-            if (!card.classList.contains('is-flipped')) {
-                setFrontHeight();
-            }
+        /* ==============================
+           QUITAR ACTIVE
+        ============================== */
+        botones.forEach(function(btn) {
+            btn.classList.remove('active');
         });
-    });
-});
+    }
+
+    /* ==============================
+       ACTIVAR BOTÓN PRESIONADO
+    ============================== */
+    boton.classList.add('active');
+}
 </script>
+
 
 </body>
 </html>

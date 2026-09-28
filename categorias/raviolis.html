@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Raviolis</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body class="categoria-raviolis">
+<div class="container">
+
+
+<!-- ======================================
+     HEADER
+     ======================================= -->
+
+
+<header class="header">
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a href="../menu-es.html" class="back">
+        ← Volver al menú
+    </a>
+</header>
+
+
+<!-- ======================================
+     HERO DE CATEGORÍA
+     ======================================= -->
+
+
+<section class="category-hero">
+    <img
+        src="../media/categorias/raviolis.jpeg"
+        alt="Raviolis"
+        class="category-image"
+    >
+    <div class="category-overlay">
+        <h1>RAVIOLIS</h1>
+        <p>
+            Raviolis caseros rellenos con ingredientes frescos,
+            acompañados de nuestras salsas tradicionales italianas.
+        </p>
+    </div>
+</section>
+
+
+<!-- ======================================
+     PRODUCTOS
+     ======================================= -->
+
+
+<section class="products">
+
+
+<!-- ======================================
+     RAVIOLIS DE VEGETALES
+     ======================================= -->
+
+
+<div
+    class="product product-raviolis-vegetales"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Raviolis de Vegetales"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/raviolis-vegetales.jpeg"
+                alt="Raviolis de Vegetales"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Raviolis de Vegetales</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p class="ingredients">
+                    Raviolis caseros rellenos de vegetales frescos.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
+
+
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/raviolis-vegetales.jpeg"
+                    alt="Raviolis de Vegetales completos"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Raviolis de Vegetales</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p>
+                    Raviolis caseros rellenos de una selección de vegetales frescos,
+                    acompañados de nuestras salsas tradicionales. Una opción ligera
+                    y aromática que resalta los sabores naturales de cada ingrediente.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- ======================================
+     RAVIOLIS DE POLLO
+     ======================================= -->
+
+
+<div
+    class="product product-raviolis-pollo"
+    tabindex="0"
+    role="button"
+    aria-label="Ver descripción de Raviolis de Pollo"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+
+        <!-- FRENTE -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/raviolis-pollo.jpeg"
+                alt="Raviolis de Pollo"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Raviolis de Pollo</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p class="ingredients">
+                    Raviolis caseros rellenos de pollo sazonado.
+                </p>
+                <span class="flip-hint-front">
+                    Toca la imagen para más detalles
+                </span>
+            </div>
+        </div>
+
+
+        <!-- REVERSO -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/raviolis-pollo.jpeg"
+                    alt="Raviolis de Pollo completos"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Raviolis de Pollo</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p>
+                    Raviolis caseros rellenos de pollo sazonado, acompañados de
+                    nuestras salsas tradicionales italianas. Una preparación
+                    cremosa y reconfortante, con un equilibrio entre suavidad y sabor.
+                </p>
+                <span class="flip-hint">
+                    Toca para volver
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</section>
+
+
+<!-- ======================================
+     FOOTER
+     ======================================= -->
+
+
+<footer class="footer">
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
+</footer>
+
+
+</div>
+
+
+<!-- ======================================
+     JAVASCRIPT
+     ======================================= -->
+
+
+<script>
+document.querySelectorAll('.product').forEach(function(card) {
+    const front = card.querySelector('.product-front');
+    const back = card.querySelector('.product-back');
+
+
+    function setFrontHeight() {
+        card.style.height = front.offsetHeight + 'px';
+    }
+
+
+    setFrontHeight();
+
+
+    window.addEventListener('resize', function() {
+        if (!card.classList.contains('is-flipped')) {
+            setFrontHeight();
+        } else {
+            card.style.height = back.offsetHeight + 'px';
+        }
+    });
+
+
+    card.addEventListener('click', function(event) {
+        if (
+            event.target.closest('button') ||
+            event.target.closest('a') ||
+            event.target.closest('.option-button')
+        ) {
+            return;
+        }
+
+
+        if (!this.classList.contains('is-flipped')) {
+            this.style.height = back.offsetHeight + 'px';
+            this.classList.add('is-flipped');
+            this.setAttribute('aria-pressed', 'true');
+        } else {
+            this.style.height = front.offsetHeight + 'px';
+            this.classList.remove('is-flipped');
+            this.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+
+    card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!this.classList.contains('is-flipped')) {
+                this.style.height = back.offsetHeight + 'px';
+                this.classList.add('is-flipped');
+                this.setAttribute('aria-pressed', 'true');
+            } else {
+                this.style.height = front.offsetHeight + 'px';
+                this.classList.remove('is-flipped');
+                this.setAttribute('aria-pressed', 'false');
+            }
+        }
+    });
+
+
+    const images = card.querySelectorAll('img');
+    images.forEach(function(image) {
+        image.addEventListener('load', function() {
+            if (!card.classList.contains('is-flipped')) {
+                setFrontHeight();
+            }
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>

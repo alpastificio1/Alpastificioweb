@@ -3,7 +3,6 @@ AL PASTIFICIO
 CATEGORÍAS DEL MENÚ
 ====================================== */
 
-
 :root {
     --verde: #495236;
     --verde-hover: #5C6943;
@@ -18,11 +17,9 @@ CATEGORÍAS DEL MENÚ
     --altura-platos-movil: 260px;
 }
 
-
 /* ======================================
 RESET
 ====================================== */
-
 
 * {
     margin: 0;
@@ -30,16 +27,13 @@ RESET
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 
-
 /* ======================================
 BODY
 ====================================== */
-
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -50,22 +44,18 @@ body {
     padding: 20px;
 }
 
-
 /* ======================================
 CONTENEDOR
 ====================================== */
-
 
 .container {
     width: 100%;
     max-width: 430px;
 }
 
-
 /* ======================================
 HEADER
 ====================================== */
-
 
 .header {
     width: 100%;
@@ -77,11 +67,9 @@ HEADER
     box-shadow: 0 12px 30px rgba(0, 0, 0, .18);
 }
 
-
 /* ======================================
 LOGO
 ====================================== */
-
 
 .logo {
     width: 185px;
@@ -90,11 +78,9 @@ LOGO
     margin: 0 auto;
 }
 
-
 /* ======================================
 BOTÓN VOLVER
 ====================================== */
-
 
 .back {
     display: inline-block;
@@ -108,16 +94,13 @@ BOTÓN VOLVER
     margin-bottom: 25px;
 }
 
-
 .back:hover {
     background: var(--verde-hover);
 }
 
-
 /* ======================================
 HERO
 ====================================== */
-
 
 .category-hero {
     position: relative;
@@ -129,7 +112,6 @@ HERO
     box-shadow: 0 15px 35px rgba(0, 0, 0, .20);
 }
 
-
 .category-image {
     width: 100%;
     height: 100%;
@@ -138,11 +120,9 @@ HERO
     transition: .5s;
 }
 
-
 .category-hero:hover .category-image {
     transform: scale(1.05);
 }
-
 
 .category-overlay {
     position: absolute;
@@ -156,7 +136,6 @@ HERO
     background: rgba(0, 0, 0, .42);
 }
 
-
 .category-overlay h1 {
     font-family: 'Playfair Display', serif;
     color: white;
@@ -166,7 +145,6 @@ HERO
     text-shadow: 0 4px 10px rgba(0, 0, 0, .45);
 }
 
-
 .category-overlay p {
     color: rgba(255, 255, 255, .95);
     line-height: 1.7;
@@ -175,11 +153,9 @@ HERO
     text-shadow: 0 2px 8px rgba(0, 0, 0, .45);
 }
 
-
 /* ======================================
 PRODUCTOS
 ====================================== */
-
 
 .products {
     display: flex;
@@ -187,11 +163,9 @@ PRODUCTOS
     gap: 18px;
 }
 
-
 /* ======================================
 TARJETAS GIRATORIAS
 ====================================== */
-
 
 .product {
     position: relative;
@@ -213,16 +187,13 @@ TARJETAS GIRATORIAS
         transform .3s ease;
 }
 
-
 .product:hover {
     transform: translateY(-3px);
 }
 
-
 /* ======================================
 CONTENEDOR INTERNO
 ====================================== */
-
 
 .product-inner {
     position: relative;
@@ -234,21 +205,17 @@ CONTENEDOR INTERNO
     transition: transform .7s cubic-bezier(.4, .2, .2, 1);
 }
 
-
 /* ======================================
 GIRO
 ====================================== */
-
 
 .product.is-flipped .product-inner {
     transform: rotateY(180deg);
 }
 
-
 /* ======================================
 CARAS
 ====================================== */
-
 
 .product-face {
     width: 100%;
@@ -266,11 +233,9 @@ CARAS
     -webkit-backface-visibility: hidden;
 }
 
-
 /* ======================================
 FRENTE
 ====================================== */
-
 
 .product-front {
     position: relative;
@@ -279,11 +244,9 @@ FRENTE
     transform: rotateY(0deg);
 }
 
-
 /* ======================================
 REVERSO
 ====================================== */
-
 
 .product-back {
     position: absolute;
@@ -295,11 +258,9 @@ REVERSO
     transform: rotateY(180deg);
 }
 
-
 /* ======================================
 IMAGEN DEL FRENTE
 ====================================== */
-
 
 .product-front .product-image {
     display: block;
@@ -312,16 +273,13 @@ IMAGEN DEL FRENTE
     transition: transform .3s ease;
 }
 
-
 /* ======================================
 INFORMACIÓN DEL FRENTE
 ====================================== */
 
-
 .product-front .product-info {
     padding: 18px 22px 22px;
 }
-
 
 .product-front .product-header {
     display: flex;
@@ -331,13 +289,11 @@ INFORMACIÓN DEL FRENTE
     margin-bottom: 10px;
 }
 
-
 .product-front .product-header h3 {
     font-size: 1.05rem;
     text-transform: uppercase;
     color: var(--texto);
 }
-
 
 .product-front .price {
     color: var(--verde);
@@ -345,14 +301,12 @@ INFORMACIÓN DEL FRENTE
     white-space: nowrap;
 }
 
-
 .product-front .ingredients {
     color: var(--texto-sec);
     line-height: 1.6;
     font-size: .95rem;
     margin: 0;
 }
-
 
 /* ======================================
 INDICACIÓN PARA GIRAR (FRENTE)
@@ -369,11 +323,9 @@ INDICACIÓN PARA GIRAR (FRENTE)
     opacity: .9;
 }
 
-
 /* ======================================
 IMAGEN DEL REVERSO
 ====================================== */
-
 
 .product-back-image {
     width: 100%;
@@ -388,7 +340,6 @@ IMAGEN DEL REVERSO
     overflow: hidden;
 }
 
-
 .product-back-image-img {
     display: block;
     width: 100%;
@@ -400,16 +351,13 @@ IMAGEN DEL REVERSO
     transition: transform .3s ease;
 }
 
-
 /* ======================================
 INFORMACIÓN DEL REVERSO
 ====================================== */
 
-
 .product-back-info {
     padding: 18px 22px 22px;
 }
-
 
 .product-back .product-header {
     display: flex;
@@ -419,20 +367,17 @@ INFORMACIÓN DEL REVERSO
     margin-bottom: 10px;
 }
 
-
 .product-back .product-header h3 {
     font-size: 1.05rem;
     text-transform: uppercase;
     color: var(--texto);
 }
 
-
 .product-back .price {
     color: var(--verde);
     font-weight: 700;
     white-space: nowrap;
 }
-
 
 .product-back p {
     color: var(--texto-sec);
@@ -441,11 +386,9 @@ INFORMACIÓN DEL REVERSO
     margin: 0;
 }
 
-
 /* ======================================
 INDICACIÓN PARA VOLVER
 ====================================== */
-
 
 .flip-hint {
     display: block;
@@ -457,11 +400,9 @@ INDICACIÓN PARA VOLVER
     font-style: italic;
 }
 
-
 /* ======================================
 IMÁGENES NORMALES
 ====================================== */
-
 
 .product-image {
     display: block;
@@ -474,11 +415,9 @@ IMÁGENES NORMALES
     transition: transform .3s ease;
 }
 
-
 /* ======================================
 BOTONES DE OPCIONES
 ====================================== */
-
 
 .product-options {
     display: flex;
@@ -486,7 +425,6 @@ BOTONES DE OPCIONES
     gap: 8px;
     margin-bottom: 14px;
 }
-
 
 .option-button {
     border: 1px solid var(--ocre);
@@ -506,23 +444,19 @@ BOTONES DE OPCIONES
     transition: .25s;
 }
 
-
 .option-button:hover,
 .option-button.active {
     background: var(--ocre);
     color: white;
 }
 
-
 /* ======================================
 INFORMACIÓN DEL PRODUCTO
 ====================================== */
 
-
 .product-info {
     padding: 18px 22px 22px;
 }
-
 
 .product-header {
     display: flex;
@@ -532,13 +466,11 @@ INFORMACIÓN DEL PRODUCTO
     margin-bottom: 10px;
 }
 
-
 .product-header h3 {
     font-size: 1.05rem;
     text-transform: uppercase;
     color: var(--texto);
 }
-
 
 .price {
     color: var(--verde);
@@ -546,18 +478,15 @@ INFORMACIÓN DEL PRODUCTO
     white-space: nowrap;
 }
 
-
 .product p {
     color: var(--texto-sec);
     line-height: 1.6;
     font-size: .95rem;
 }
 
-
 /* ======================================
 ENTRADAS - POSICIÓN DE IMÁGENES
 ====================================== */
-
 
 .product-burrata .product-image,
 .product-burrata .product-back-image-img,
@@ -567,13 +496,11 @@ ENTRADAS - POSICIÓN DE IMÁGENES
     transform: scale(1);
 }
 
-
 .product-bruschetas-mozzarella .product-image,
 .product-bruschetas-mozzarella .product-back-image-img {
     object-position: 50% 40%;
     transform: scale(1);
 }
-
 
 .product-albondigas-napolitanas .product-image,
 .product-albondigas-napolitanas .product-back-image-img {
@@ -581,13 +508,11 @@ ENTRADAS - POSICIÓN DE IMÁGENES
     transform: scale(1);
 }
 
-
 .product-champinones-queso-azul .product-image,
 .product-champinones-queso-azul .product-back-image-img {
     object-position: 50% 45%;
     transform: scale(1.1);
 }
-
 
 .product-champinones-al-ajillo .product-image,
 .product-champinones-al-ajillo .product-back-image-img {
@@ -595,13 +520,11 @@ ENTRADAS - POSICIÓN DE IMÁGENES
     transform: scale(1);
 }
 
-
 .product-berenjenas-napolitanas .product-image,
 .product-berenjenas-napolitanas .product-back-image-img {
     object-position: 50% 25%;
     transform: scale(1);
 }
-
 
 .product-sopa-tomate .product-image,
 .product-sopa-tomate .product-back-image-img {
@@ -609,13 +532,11 @@ ENTRADAS - POSICIÓN DE IMÁGENES
     transform: scale(1);
 }
 
-
 .product-crema-champinones .product-image,
 .product-crema-champinones .product-back-image-img {
     object-position: 50% 40%;
     transform: scale(1);
 }
-
 
 .product-sopa-minestrone .product-image,
 .product-sopa-minestrone .product-back-image-img {
@@ -623,11 +544,9 @@ ENTRADAS - POSICIÓN DE IMÁGENES
     transform: scale(1);
 }
 
-
 /* ======================================
 CATEGORÍAS CON IMAGEN GRANDE
 ====================================== */
-
 
 .categoria-bebidas .product-image,
 .categoria-cafes .product-image,
@@ -636,76 +555,63 @@ CATEGORÍAS CON IMAGEN GRANDE
     height: 300px;
 }
 
-
 /* ======================================
 BEBIDAS - INDIVIDUALES
 ====================================== */
-
 
 .product-jugo-mango .product-image {
     object-position: 50% 48%;
     transform: scale(1);
 }
 
-
 .product-jugo-mora .product-image {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-jugo-fresa .product-image {
     object-position: 50% 50%;
     transform: scale(1);
 }
 
-
 .product-jugo-maracuya .product-image {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-gaseosas .product-image {
     object-position: 50% 50%;
     transform: scale(1);
 }
 
-
 .product-botella-agua .product-image {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-limonada-natural .product-image {
     object-position: 50% 60%;
     transform: scale(1);
 }
 
-
 .product-limonada-hierbabuena .product-image {
     object-position: 50% 62%;
     transform: scale(1);
 }
-
 
 .product-limonada-coco .product-image {
     object-position: 50% 30%;
     transform: scale(1);
 }
 
-
 .product-sodas-saborizadas .product-image {
     object-position: 50% 30%;
     transform: scale(1);
 }
 
-
 /* ======================================
 CAFÉS - INDIVIDUALES
 ====================================== */
-
 
 .product-cappuccino .product-image,
 .product-cappuccino .product-back-image-img {
@@ -713,13 +619,11 @@ CAFÉS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-frappuccino .product-image,
 .product-frappuccino .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-americano .product-image,
 .product-americano .product-back-image-img {
@@ -727,13 +631,11 @@ CAFÉS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-latte .product-image,
 .product-latte .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-mocaccino .product-image,
 .product-mocaccino .product-back-image-img {
@@ -741,29 +643,24 @@ CAFÉS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-tinto .product-image,
 .product-tinto .product-back-image-img {
     object-position: 50% 30%;
     transform: scale(1);
 }
 
-
 /* ======================================
 BEBIDAS ALCOHÓLICAS - INDIVIDUALES
 ====================================== */
-
 
 .categoria-bebidas-alcoholicas .product-image {
     object-position: 50% 50%;
     transform: scale(1);
 }
 
-
 /* ======================================
 CÓCTELES - INDIVIDUALES
 ====================================== */
-
 
 .categoria-cocteles .product-image,
 .categoria-cocteles .product-back-image-img {
@@ -771,11 +668,9 @@ CÓCTELES - INDIVIDUALES
     transform: scale(1);
 }
 
-
 /* ======================================
 FOOTER
 ====================================== */
-
 
 .footer {
     text-align: center;
@@ -785,18 +680,15 @@ FOOTER
     font-size: .9rem;
 }
 
-
 .footer-logo {
     width: 90px;
     margin-bottom: 12px;
 }
 
-
 /* ======================================
 TARJETAS SIMPLES
 BEBIDAS, MENÚ INFANTIL, ALCOHÓLICAS Y CÓCTELES
 ====================================== */
-
 
 .categoria-bebidas .product,
 .categoria-menu-infantil .product,
@@ -815,14 +707,12 @@ BEBIDAS, MENÚ INFANTIL, ALCOHÓLICAS Y CÓCTELES
     transition: transform .3s ease;
 }
 
-
 .categoria-bebidas .product:hover,
 .categoria-menu-infantil .product:hover,
 .categoria-bebidas-alcoholicas .product:hover,
 .categoria-cocteles .product:hover {
     transform: translateY(-3px);
 }
-
 
 .categoria-bebidas .product-image,
 .categoria-menu-infantil .product-image,
@@ -836,16 +726,44 @@ BEBIDAS, MENÚ INFANTIL, ALCOHÓLICAS Y CÓCTELES
     transition: transform .3s ease;
 }
 
+/* ======================================
+PANINI - ESTILO COMO BEBIDAS
+====================================== */
+
+.categoria-panini .product {
+    background: var(--blanco);
+    border-radius: 18px;
+    border-left: 6px solid var(--ocre);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    overflow: hidden;
+
+    cursor: default;
+    perspective: none;
+
+    transition: transform .3s ease;
+}
+
+.categoria-panini .product:hover {
+    transform: translateY(-3px);
+}
+
+.categoria-panini .product-image {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .3s ease;
+}
 
 /* ======================================
 MIXTOS
 ====================================== */
 
-
 .categoria-mixtos .product {
     min-height: 0;
 }
-
 
 .categoria-mixtos .product-image-container {
     width: 100%;
@@ -854,16 +772,13 @@ MIXTOS
     overflow: hidden;
 }
 
-
 .categoria-mixtos .product-front .product-image {
     height: 300px;
 }
 
-
 /* ======================================
 MIXTOS - INDIVIDUALES
 ====================================== */
-
 
 .product-mix-toscana .product-image,
 .product-mix-toscana .product-back-image-img {
@@ -871,13 +786,11 @@ MIXTOS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-mix-romano .product-image,
 .product-mix-romano .product-back-image-img {
     object-position: 50% 65%;
     transform: scale(1);
 }
-
 
 .product-mix-napoli .product-image,
 .product-mix-napoli .product-back-image-img {
@@ -885,13 +798,11 @@ MIXTOS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-mix-manzo .product-image,
 .product-mix-manzo .product-back-image-img {
     object-position: 50% 70%;
     transform: scale(1);
 }
-
 
 .product-mix-sicilia .product-image,
 .product-mix-sicilia .product-back-image-img {
@@ -899,13 +810,11 @@ MIXTOS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-mix-lucca .product-image,
 .product-mix-lucca .product-back-image-img {
     object-position: 50% 75%;
     transform: scale(1);
 }
-
 
 .product-mix-san-remo .product-image,
 .product-mix-san-remo .product-back-image-img {
@@ -913,23 +822,19 @@ MIXTOS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-mix-bolonia .product-image,
 .product-mix-bolonia .product-back-image-img {
     object-position: 50% 40%;
     transform: scale(1);
 }
 
-
 /* ======================================
 PASTAS
 ====================================== */
 
-
 .categoria-pastas .product {
     min-height: 0;
 }
-
 
 .categoria-pastas .product-image-container {
     width: 100%;
@@ -938,16 +843,13 @@ PASTAS
     overflow: hidden;
 }
 
-
 .categoria-pastas .product-front .product-image {
     height: 250px;
 }
 
-
 /* ======================================
 PASTAS - INDIVIDUALES
 ====================================== */
-
 
 .product-pasta-bolonesa .product-image,
 .product-pasta-bolonesa .product-back-image-img {
@@ -955,13 +857,11 @@ PASTAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pasta-amatriciana .product-image,
 .product-pasta-amatriciana .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-pasta-champinones .product-image,
 .product-pasta-champinones .product-back-image-img {
@@ -969,20 +869,17 @@ PASTAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pasta-4-quesos .product-image,
 .product-pasta-4-quesos .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
 
-
 .product-pasta-alfredo .product-image,
 .product-pasta-alfredo .product-back-image-img {
-    object-position: 50% 50%;
+    object-position: 40% 20%;
     transform: scale(1);
 }
-
 
 .product-pasta-napolitana .product-image,
 .product-pasta-napolitana .product-back-image-img {
@@ -990,13 +887,11 @@ PASTAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pasta-carbonara .product-image,
 .product-pasta-carbonara .product-back-image-img {
     object-position: 50% 40%;
     transform: scale(1);
 }
-
 
 .product-pasta-amore-della-nona .product-image,
 .product-pasta-amore-della-nona .product-back-image-img {
@@ -1004,13 +899,11 @@ PASTAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pasta-pesto .product-image,
 .product-pasta-pesto .product-back-image-img {
     object-position: 50% 55%;
     transform: scale(1);
 }
-
 
 .product-pasta-marinera .product-image,
 .product-pasta-marinera .product-back-image-img {
@@ -1018,13 +911,11 @@ PASTAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pasta-vegetales .product-image,
 .product-pasta-vegetales .product-back-image-img {
     object-position: 50% 25%;
     transform: scale(1);
 }
-
 
 .product-pasta-al-burro .product-image,
 .product-pasta-al-burro .product-back-image-img {
@@ -1032,12 +923,10 @@ PASTAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 /* ======================================
 PIZZAS, ENTRADAS, AL HORNO,
 PANINI, ENSALADAS Y POSTRES
 ====================================== */
-
 
 .categoria-pizzas .product,
 .categoria-entradas .product,
@@ -1047,7 +936,6 @@ PANINI, ENSALADAS Y POSTRES
 .categoria-postres .product {
     min-height: 0;
 }
-
 
 .categoria-pizzas .product-image-container,
 .categoria-entradas .product-image-container,
@@ -1061,12 +949,10 @@ PANINI, ENSALADAS Y POSTRES
     overflow: hidden;
 }
 
-
 /* ======================================
 IMAGEN FRONTAL
-ALTURA CONTROLABLE DESDE :ROOT
+ALTURA CONTROLABLE DESDE ROOT
 ====================================== */
-
 
 .categoria-pizzas .product-front .product-image,
 .categoria-entradas .product-front .product-image,
@@ -1084,12 +970,10 @@ ALTURA CONTROLABLE DESDE :ROOT
     transition: transform .3s ease;
 }
 
-
 /* ======================================
 IMAGEN POSTERIOR
 MISMO ENCUADRE Y SCALE
 ====================================== */
-
 
 .categoria-pizzas .product-back-image-img,
 .categoria-entradas .product-back-image-img,
@@ -1107,11 +991,9 @@ MISMO ENCUADRE Y SCALE
     transition: transform .3s ease;
 }
 
-
 /* ======================================
 PIZZAS - INDIVIDUALES
 ====================================== */
-
 
 .product-pizza-palermo .product-image,
 .product-pizza-palermo .product-back-image-img {
@@ -1119,13 +1001,11 @@ PIZZAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pizza-margarita .product-image,
 .product-pizza-margarita .product-back-image-img {
     object-position: 50% 40%;
     transform: scale(1);
 }
-
 
 .product-pizza-hawaiana .product-image,
 .product-pizza-hawaiana .product-back-image-img {
@@ -1133,13 +1013,11 @@ PIZZAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pizza-bari .product-image,
 .product-pizza-bari .product-back-image-img {
     object-position: 50% 60%;
     transform: scale(1);
 }
-
 
 .product-pizza-modena .product-image,
 .product-pizza-modena .product-back-image-img {
@@ -1147,13 +1025,11 @@ PIZZAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pizza-florencia .product-image,
 .product-pizza-florencia .product-back-image-img {
     object-position: 50% 55%;
     transform: scale(1);
 }
-
 
 .product-pizza-vegetariana .product-image,
 .product-pizza-vegetariana .product-back-image-img {
@@ -1161,13 +1037,11 @@ PIZZAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pizza-de-quesos .product-image,
 .product-pizza-de-quesos .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-pizza-jamon-y-queso .product-image,
 .product-pizza-jamon-y-queso .product-back-image-img {
@@ -1175,18 +1049,15 @@ PIZZAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-pizza-pepperoni .product-image,
 .product-pizza-pepperoni .product-back-image-img {
     object-position: 50% 60%;
     transform: scale(1);
 }
 
-
 /* ======================================
 AL HORNO - INDIVIDUALES
 ====================================== */
-
 
 .product-horno-canelones-pollo-jamon-champinones .product-image,
 .product-horno-canelones-pollo-jamon-champinones .product-back-image-img {
@@ -1194,13 +1065,11 @@ AL HORNO - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-horno-canelones-bolonesa-tocineta .product-image,
 .product-horno-canelones-bolonesa-tocineta .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-horno-lasana-pollo-champinones .product-image,
 .product-horno-lasana-pollo-champinones .product-back-image-img {
@@ -1208,13 +1077,11 @@ AL HORNO - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-horno-lasana-bolonesa .product-image,
 .product-horno-lasana-bolonesa .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-horno-lasana-mixta .product-image,
 .product-horno-lasana-mixta .product-back-image-img {
@@ -1222,13 +1089,11 @@ AL HORNO - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-horno-gratinado-pollo .product-image,
 .product-horno-gratinado-pollo .product-back-image-img {
     object-position: 50% 30%;
     transform: scale(1);
 }
-
 
 .product-horno-gratinado-bolonesa .product-image,
 .product-horno-gratinado-bolonesa .product-back-image-img {
@@ -1236,18 +1101,15 @@ AL HORNO - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-horno-gratinado-vegetariano .product-image,
 .product-horno-gratinado-vegetariano .product-back-image-img {
     object-position: 50% 45%;
     transform: scale(1);
 }
 
-
 /* ======================================
 PANINI - INDIVIDUALES
 ====================================== */
-
 
 .product-panino-hawaiano .product-image,
 .product-panino-hawaiano .product-back-image-img {
@@ -1255,13 +1117,11 @@ PANINI - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-panino-madurados .product-image,
 .product-panino-madurados .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-panino-milanes .product-image,
 .product-panino-milanes .product-back-image-img {
@@ -1269,13 +1129,11 @@ PANINI - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-panino-parma .product-image,
 .product-panino-parma .product-back-image-img {
     object-position: 50% 40%;
     transform: scale(1);
 }
-
 
 .product-panino-calabria .product-image,
 .product-panino-calabria .product-back-image-img {
@@ -1283,18 +1141,15 @@ PANINI - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-panino-fiorentino .product-image,
 .product-panino-fiorentino .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
 
-
 /* ======================================
 ENSALADAS - INDIVIDUALES
 ====================================== */
-
 
 .product-ensalada-cesar .product-image,
 .product-ensalada-cesar .product-back-image-img {
@@ -1302,13 +1157,11 @@ ENSALADAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-ensalada-cesar-pollo .product-image,
 .product-ensalada-cesar-pollo .product-back-image-img {
     object-position: 50% 55%;
     transform: scale(1);
 }
-
 
 .product-ensalada-salmon .product-image,
 .product-ensalada-salmon .product-back-image-img {
@@ -1316,13 +1169,11 @@ ENSALADAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-ensalada-solomito .product-image,
 .product-ensalada-solomito .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-ensalada-marinera .product-image,
 .product-ensalada-marinera .product-back-image-img {
@@ -1330,13 +1181,11 @@ ENSALADAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-ensalada-otono-pollo .product-image,
 .product-ensalada-otono-pollo .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-ensalada-capresse .product-image,
 .product-ensalada-capresse .product-back-image-img {
@@ -1344,11 +1193,9 @@ ENSALADAS - INDIVIDUALES
     transform: scale(1);
 }
 
-
 /* ======================================
 POSTRES - INDIVIDUALES
 ====================================== */
-
 
 .product-postre-pie-limon .product-image,
 .product-postre-pie-limon .product-back-image-img {
@@ -1356,13 +1203,11 @@ POSTRES - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-postre-cheesecake .product-image,
 .product-postre-cheesecake .product-back-image-img {
     object-position: 50% 55%;
     transform: scale(1);
 }
-
 
 .product-postre-tiramisu .product-image,
 .product-postre-tiramisu .product-back-image-img {
@@ -1370,13 +1215,11 @@ POSTRES - INDIVIDUALES
     transform: scale(1);
 }
 
-
 .product-postre-brownie-helado .product-image,
 .product-postre-brownie-helado .product-back-image-img {
     object-position: 50% 50%;
     transform: scale(1);
 }
-
 
 .product-postre-copa-helado .product-image,
 .product-postre-copa-helado .product-back-image-img {
@@ -1384,11 +1227,9 @@ POSTRES - INDIVIDUALES
     transform: scale(1);
 }
 
-
 /* ======================================
 CELULARES
 ====================================== */
-
 
 @media (max-width: 480px) {
 
@@ -1571,13 +1412,23 @@ CELULARES
     .categoria-cocteles .product-info {
         padding: 16px 18px 20px;
     }
-}
 
+    /* ==================================
+    PANINI - ESTILO COMO BEBIDAS EN MÓVIL
+    ================================== */
+
+    .categoria-panini .product-image {
+        height: 260px;
+    }
+
+    .categoria-panini .product-info {
+        padding: 16px 18px 20px;
+    }
+}
 
 /* ======================================
 REDUCIR ANIMACIÓN
 ====================================== */
-
 
 @media (prefers-reduced-motion: reduce) {
 

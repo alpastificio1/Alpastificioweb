@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Pastificio | Raviolis</title>
+    <link rel="stylesheet" href="../css/categoria.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+<body class="categoria-raviolis">
+<div class="container">
+
+
+<!-- ======================================
+     HEADER
+     ======================================= -->
+
+
+<header class="header">
+    <img
+        src="../media/logo web.png"
+        class="logo"
+        alt="Al Pastificio"
+    >
+    <a href="../menu-en.html" class="back">
+        ← Back to Menu
+    </a>
+</header>
+
+
+<!-- ======================================
+     CATEGORY HERO
+     ======================================= -->
+
+
+<section class="category-hero">
+    <img
+        src="../media/categorias/raviolis.jpeg"
+        alt="Raviolis"
+        class="category-image"
+    >
+    <div class="category-overlay">
+        <h1>RAVIOLIS</h1>
+        <p>
+            Homemade raviolis filled with fresh ingredients,
+            accompanied by our traditional Italian sauces.
+        </p>
+    </div>
+</section>
+
+
+<!-- ======================================
+     PRODUCTS
+     ======================================= -->
+
+
+<section class="products">
+
+
+<!-- ======================================
+     VEGETABLE RAVIOLIS
+     ======================================= -->
+
+
+<div
+    class="product product-raviolis-vegetales"
+    tabindex="0"
+    role="button"
+    aria-label="View description of Vegetable Raviolis"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+
+        <!-- FRONT -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/raviolis-vegetales.jpeg"
+                alt="Vegetable Raviolis"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Vegetable Raviolis</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p class="ingredients">
+                    Homemade raviolis filled with fresh vegetables.
+                </p>
+                <span class="flip-hint-front">
+                    Tap image for more details
+                </span>
+            </div>
+        </div>
+
+
+        <!-- BACK -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/raviolis-vegetales.jpeg"
+                    alt="Vegetable Raviolis complete"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Vegetable Raviolis</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p>
+                    Homemade raviolis filled with a selection of fresh vegetables,
+                    accompanied by our traditional sauces. A light and aromatic
+                    option that highlights the natural flavors of each ingredient.
+                </p>
+                <span class="flip-hint">
+                    Tap to go back
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!-- ======================================
+     CHICKEN RAVIOLIS
+     ======================================= -->
+
+
+<div
+    class="product product-raviolis-pollo"
+    tabindex="0"
+    role="button"
+    aria-label="View description of Chicken Raviolis"
+    aria-pressed="false"
+>
+    <div class="product-inner">
+
+
+        <!-- FRONT -->
+        <div class="product-face product-front">
+            <img
+                src="../media/fotos platos/raviolis-pollo.jpeg"
+                alt="Chicken Raviolis"
+                class="product-image"
+            >
+            <div class="product-info">
+                <div class="product-header">
+                    <h3>Chicken Raviolis</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p class="ingredients">
+                    Homemade raviolis filled with seasoned chicken.
+                </p>
+                <span class="flip-hint-front">
+                    Tap image for more details
+                </span>
+            </div>
+        </div>
+
+
+        <!-- BACK -->
+        <div class="product-face product-back">
+            <div class="product-back-image">
+                <img
+                    src="../media/fotos platos/raviolis-pollo.jpeg"
+                    alt="Chicken Raviolis complete"
+                    class="product-back-image-img"
+                >
+            </div>
+            <div class="product-back-info">
+                <div class="product-header">
+                    <h3>Chicken Raviolis</h3>
+                    <span class="price">$00.000</span>
+                </div>
+                <p>
+                    Homemade raviolis filled with seasoned chicken, accompanied by
+                    our traditional Italian sauces. A creamy and comforting
+                    preparation, with a balance between smoothness and flavor.
+                </p>
+                <span class="flip-hint">
+                    Tap to go back
+                </span>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+</section>
+
+
+<!-- ======================================
+     FOOTER
+     ======================================= -->
+
+
+<footer class="footer">
+    <img
+        src="../media/logo.png"
+        class="footer-logo"
+        alt="Al Pastificio"
+    >
+    <p>
+        © 2026 Al Pastificio
+    </p>
+</footer>
+
+
+</div>
+
+
+<!-- ======================================
+     JAVASCRIPT
+     ======================================= -->
+
+
+<script>
+document.querySelectorAll('.product').forEach(function(card) {
+    const front = card.querySelector('.product-front');
+    const back = card.querySelector('.product-back');
+
+
+    function setFrontHeight() {
+        card.style.height = front.offsetHeight + 'px';
+    }
+
+
+    setFrontHeight();
+
+
+    window.addEventListener('resize', function() {
+        if (!card.classList.contains('is-flipped')) {
+            setFrontHeight();
+        } else {
+            card.style.height = back.offsetHeight + 'px';
+        }
+    });
+
+
+    card.addEventListener('click', function(event) {
+        if (
+            event.target.closest('button') ||
+            event.target.closest('a') ||
+            event.target.closest('.option-button')
+        ) {
+            return;
+        }
+
+
+        if (!this.classList.contains('is-flipped')) {
+            this.style.height = back.offsetHeight + 'px';
+            this.classList.add('is-flipped');
+            this.setAttribute('aria-pressed', 'true');
+        } else {
+            this.style.height = front.offsetHeight + 'px';
+            this.classList.remove('is-flipped');
+            this.setAttribute('aria-pressed', 'false');
+        }
+    });
+
+
+    card.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            if (!this.classList.contains('is-flipped')) {
+                this.style.height = back.offsetHeight + 'px';
+                this.classList.add('is-flipped');
+                this.setAttribute('aria-pressed', 'true');
+            } else {
+                this.style.height = front.offsetHeight + 'px';
+                this.classList.remove('is-flipped');
+                this.setAttribute('aria-pressed', 'false');
+            }
+        }
+    });
+
+
+    const images = card.querySelectorAll('img');
+    images.forEach(function(image) {
+        image.addEventListener('load', function() {
+            if (!card.classList.contains('is-flipped')) {
+                setFrontHeight();
+            }
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
